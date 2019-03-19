@@ -12,6 +12,7 @@
 	<classpathentry kind="src" path="log.regular"/>
 	<classpathentry kind="src" path="log.math"/>
 	<classpathentry kind="src" path="alg.other"/>
+	<classpathentry kind="src" path="log.game"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

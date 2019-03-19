@@ -1,4 +1,4 @@
-package binary_tree;
+package binary_tree_apply;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

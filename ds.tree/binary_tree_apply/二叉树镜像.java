@@ -1,4 +1,4 @@
-package binary_tree;
+package binary_tree_apply;
 /** 
  *@author liujun
  *@date£º 2018-7-21 ÉÏÎç10:46:09
