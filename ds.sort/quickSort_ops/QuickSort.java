@@ -10,27 +10,34 @@ package quickSort_ops;
  *2.当i找到比标杆元素小的，发生交换，
  *3.最后一个比对元素跟标杆元素交换  
  *4.比对结束，由中间结点划分两部分，递归重复1.2。
- *注意事项：
- *1）mid先加一，再交换
- *2）为什么是left<right作为判定条件？
- *   因为递归调用quick_sort_duplexing(A, left, low-1)时，
- *   存在left>low-1使程序出错
+ *  注意事项：
+ *  1）mid先加一，再交换
+ *  2）为什么是left<right作为判定条件？
+ *    因为递归调用quick_sort_duplexing(A, left, low-1)时，
+ *    存在left>low-1使程序出错
  *
  *双向快排：
  *1.设高低指针，低指针从左往右找大于标杆的元素，高指针找小的
  *2.交换高低指针所指向的元素
  *3.交换标杆和低指针所指向的元素
  *4.依次递归
- *注意事项：
- *1）发生两次数值交换
- *2）left, right, low, high, mid,交换需注意
+ *  注意事项：
+ *  1）发生两次数值交换
+ *  2）left, right, low, high, mid,交换需注意
+ *  
+ *改进快排
+ *1.
+ *2.
+ *  注意事项：
+ *  1）
+ *  2）
  *@version 1.0
  */
 
 public class QuickSort {
 
 	//单向快排：
-	public void Quick_sort_Simplex(int [] sort_num, int left, int right) {
+	public int[] QuickSortSimplex(int [] sort_num, int left, int right) {
 
 		//定位变量
 		int mid = left;
@@ -51,13 +58,14 @@ public class QuickSort {
 			sort_num[mid] = sort_num[left];
 			sort_num[left] = temp;
 			//递归
-			Quick_sort_Simplex(sort_num, left, mid - 1);
-			Quick_sort_Simplex(sort_num, mid + 1, right);
+			QuickSortSimplex(sort_num, left, mid - 1);
+			QuickSortSimplex(sort_num, mid + 1, right);
 		}
+		return sort_num;
 	}
 	
 	//双向快排
-	public void Quick_sort_duplexing(int [] sort_num, int left, int right) {
+	public int[] QuickSortDuplexing(int [] sort_num, int left, int right) {
 
 		int mid = left;
 		int temp = 0;
@@ -88,8 +96,15 @@ public class QuickSort {
 			sort_num[mid] = sort_num[left];
 			sort_num[left] = temp;
 			//递归
-			Quick_sort_Simplex(sort_num, left, mid - 1);
-			Quick_sort_duplexing(sort_num, mid + 1, right);
+			QuickSortDuplexing(sort_num, left, mid - 1);
+			QuickSortDuplexing(sort_num, mid + 1, right);
 		}
+		return sort_num;
 	}
+	
+	public int[] QuickSortInsert(int [] sort_num, int left, int right) {
+		
+		return sort_num;
+	}
+
 }

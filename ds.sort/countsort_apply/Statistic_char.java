@@ -1,4 +1,4 @@
-package bucketsort_apply;
+package countsort_apply;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  *1）map方法：
  *  判断字符是否在map中，在的话加一并且判断是否等于三，等于直接输出
  *  map中没有，则置一。
- *2）桶排序：
+ *2）计数排序：
  *  设置26*2个桶，对应位加一。
  *注意事项：
  *1）判断是否是空串
@@ -46,7 +46,7 @@ public class Statistic_char {
 		}
 		return ' ';
 	}
-	//桶排序
+	//计数排序
 	public char Statistic_char_bucket(String s) {
 		int [] bucket = new int[58];
 		for (int i = 0; i < s.length(); i++) {
