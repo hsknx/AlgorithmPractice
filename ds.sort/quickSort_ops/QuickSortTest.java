@@ -7,7 +7,7 @@ package quickSort_ops;
  *@URL:
  *@version 1.0
  */
-public class Test {
+public class QuickSortTest {
 
 	public static void main(String[] args) {
 		//测试数据，期望输出：123456789

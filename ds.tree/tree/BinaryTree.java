@@ -20,9 +20,9 @@ import java.util.Stack;
 //二叉树的数据结构
 public class BinaryTree{
 	
-	BinaryTree left;   //左孩子
-	BinaryTree right;  //右孩子
-	int value = 0;      //默认二叉树的值为0
+	public BinaryTree left;   //左孩子
+	public BinaryTree right;  //右孩子
+	public int value = 0;      //默认二叉树的值为0
 	public static int count = 0;//定义一个全局静态计数变量
 	
 	public BinaryTree(int value) {
@@ -156,36 +156,5 @@ public class BinaryTree{
 				System.out.println();
 			}
 		}
-	}
-	
-	//查找二叉树中x和y的最小公共父节点
-	public BinaryTree findxandy(BinaryTree root, int x, int y) {
-		// TODO Auto-generated method stub
-
-		if (findx(root.left, x) && findx(root.left, y)) {
-			return findxandy(root.left, x, y);
-			
-		}else if (findx(root.right, x) && findx(root.right, y)) {
-			return findxandy(root.right, x, y);
-			
-		}else if (findx(root.left, x) && findx(root.right, y) 
-				|| findx(root.right, x) && findx(root.left, y)) {
-			return root;
-			
-		}else {
-			return null;
-		}
-	}
-	
-	//查找二叉树中是否含有x
-	public boolean findx(BinaryTree root, int x) {
-
-		if (null == root) {
-			return false;
-		}
-		if (root.value == x) {
-			return true;
-		}
-		return findx(root.left, x)||findx(root.right, x);
 	}
 }
