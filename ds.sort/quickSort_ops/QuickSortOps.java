@@ -1,0 +1,12 @@
+package quickSort_ops;
+/** 
+ *@author liujun
+ *@date£º 2019-3-23 ÏÂÎç12:08:37
+ *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@description:
+ *@URL:
+ *@version 1.0
+ */
+public class QuickSortOps {
+
+}

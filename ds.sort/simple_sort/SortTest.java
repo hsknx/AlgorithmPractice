@@ -1,4 +1,4 @@
-package sort;
+package simple_sort;
 /** 
  *@author liujun
  *@date£∫ 2018-7-19 œ¬ŒÁ01:16:13
@@ -26,11 +26,6 @@ public class SortTest {
 		//Insertion_sort ins = new Insertion_sort();
 		//sort_num = ins.Insertion_sort(sort_num);
 		
-		//øÏÀŸ≈≈–Ú≤‚ ‘
-		/*QuickSort quick_s = new QuickSort();
-		//quick_s.Quick_sort_Simplex(sort_num, 0, sort_num.length-1);
-		quick_s.Quick_sort_duplexing(sort_num, 0, sort_num.length-1);
-		*/
 		//∂—≈≈–Ú
 		HeapSort hp = new HeapSort();
 		hp.heapSort(sort_num);
