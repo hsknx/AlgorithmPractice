@@ -10,7 +10,13 @@ package sort;
  */
 public class CountSort {
 
-	public  int[] countsort(int[] array) {
+	public  int[] countSort(int[] array) {
+		
+		//安全性检测
+		if(array.length == 0){
+			return array;
+		}
+		
 		//1、找出原始数组的最大最小值
 		int max = array[0];
 		int min = array[0];

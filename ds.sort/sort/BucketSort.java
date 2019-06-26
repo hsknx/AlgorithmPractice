@@ -32,11 +32,10 @@ public class BucketSort {
 
 		//默认桶大小，即链表长度
 		int defaultBucketSize = 10;
-		return bucketSor1t(array, defaultBucketSize);
+		return bucketsort(array, defaultBucketSize);
 	}
 	
-	//因为测试用例使用了反射方法，为了不要引起参数错误，所以修改为bucketSor1t
-	public int[] bucketSor1t(int[] array, int bucketsize) {
+	public int[] bucketsort(int[] array, int bucketsize) {
 
 		//安全性检测
 		if(array.length == 0){

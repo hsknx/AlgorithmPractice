@@ -12,7 +12,7 @@ package sort;
  */
 public class MergeSort {
 
-	public int[] mergesort(int[] array) {
+	public int[] mergeSort(int[] array) {
 		int[] temp = new int[array.length];
 		return mergesort(array, 0, array.length-1, temp);
 	}

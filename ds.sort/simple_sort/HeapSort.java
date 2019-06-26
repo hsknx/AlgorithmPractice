@@ -25,7 +25,6 @@ public class HeapSort {
 		if (heap == null || heap.length <= 1) {  
             return heap;  
         }
-		
 		//³õÊÔ»¯½¨¶Ñ
 		for (int i = (heap.length - 1) / 2; i >= 0 ; i--) {
 			heapify(heap, i, heap.length - 1);

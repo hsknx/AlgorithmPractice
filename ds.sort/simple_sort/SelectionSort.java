@@ -10,7 +10,7 @@ package simple_sort;
 
 public class SelectionSort {
 
-	public int [] Selection_sort(int [] sort_num) {
+	public int [] selectionSort(int [] sort_num) {
 		// TODO Auto-generated constructor stub
 		int length = sort_num.length;
 		int temp = 0;
