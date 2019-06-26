@@ -1,4 +1,4 @@
-package countsort_apply;
+package sort_apply;
 
 import java.util.HashMap;
 import java.util.Map;

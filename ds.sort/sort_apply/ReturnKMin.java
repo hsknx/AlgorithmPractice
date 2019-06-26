@@ -1,4 +1,4 @@
-package quicksort_apply;
+package sort_apply;
 /** 
  *@author liujun
  *@date£º 2018-8-25 ÏÂÎç04:58:29

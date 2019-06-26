@@ -19,13 +19,16 @@ public class 老虎机 {
 	static int money;
 	static Random random = new Random();
 	static String[] palyname = {"天福","双七","双星","西瓜","铃铛","芒果","橘子","苹果",};
+	static int lastMoney = 0;
+	static boolean flag__limitless = false;
 	
-	static private void putmoney() {
+	static public void putmoney() {
 		System.out.println("输入钱的数量：");
 		money = Integer.parseInt(scan.nextLine().trim());
+		lastMoney = money;
 	}
 	
-	static private void input() {
+	static public void input() {
 		while(true){
 			System.out.print("              ");
 			for(String i : palyname){
@@ -34,6 +37,7 @@ public class 老虎机 {
 			System.out.println();
 			System.out.print("输入分数：");
 			String s = scan.nextLine();
+			
 			//如果是回车，则继续上一局输入的分数
 			if(s.trim().equals("")){
 				for(int y :score){
@@ -49,8 +53,13 @@ public class 老虎机 {
 						Check(s);
 					}
 			System.out.println("余额："+money);
+			if(money < 0){
+				System.out.println("余额不足,仅剩：" + lastMoney);
+				return;
+			}
 			chance();
 			System.out.println("剩余总金币数量："+money);
+			lastMoney = money;
 			System.out.println();
 		}
 	}
@@ -66,7 +75,7 @@ public class 老虎机 {
 			if(!c[i].equals("")){
 				score[count] = Integer.parseInt(c[i]);
 				//每个分数不能超过99,超过部分取99
-				if(score[count] > 99){
+				if(score[count] > 99 && !flag__limitless){
 					score[count] = 99;
 				}
 				//扣钱
@@ -79,6 +88,7 @@ public class 老虎机 {
 			}
 		}
 	}
+	
 	static TreeMap<String, Integer> tr = new TreeMap<String, Integer>();
 	//概率程序
 	static private void chance() {
@@ -170,7 +180,7 @@ public class 老虎机 {
 				}
 				return sum;
 			case 24://"开火车"
-				int f = switchnum(random.nextInt(12));
+				int f = switchnum(random.nextInt(29));
 				if(f == 0){
 					System.out.println("开火车失效！！！");
 					break;
@@ -207,21 +217,28 @@ public class 老虎机 {
 	static private int switchnum(int key) {
 		switch (key) {
 		case 0:
-			return 1;
 		case 1:
-			return 1;
 		case 2:
-			return 1;
 		case 3:
 			return 1;
 		case 4:
-			return 2;
 		case 5:
-			return 2;
 		case 6:
-			return 3;
+			return 2;
 		case 7:
+		case 8:
+		case 9:
+			return 3;
+		case 10:
+		case 11:
 			return 4;
+		case 12:
+		case 13:
+			return 5;
+		case 14:
+			return 6;
+		case 17:
+			return 7;
 		default:
 			return 0;
 		}

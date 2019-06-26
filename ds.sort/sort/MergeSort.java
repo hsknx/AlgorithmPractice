@@ -29,26 +29,26 @@ public class MergeSort {
 	}
 	
 	//闭区间合并
-	public void sort(int[] array, int left, int right, int end, int[] temp) {
+	public void sort(int[] array, int left, int mid, int right, int[] temp) {
 
 		int l = left;
-		int r = right+1;
-		int j=left;
-		while(l<=right && r<=end){
+		int r = mid + 1;
+		int j = left;
+		while(l <= mid && r <= right){
 			if(array[l] < array[r]){
 				temp[j++] = array[r++];
 			}else{
 				temp[j++] = array[l++];
 			}
 		}
-		while(l<=right){
+		while(l <= mid){
 			temp[j++] = array[l++];
 		}
-		while(r<=end){
+		while(r <= right){
 			temp[j++] = array[r++];
 		}
 		//灌装数组
-		for (int i = left; i <= end; i++) {
+		for (int i = left; i <= right; i++) {
 			array[i] = temp[i];
 		}
 	}

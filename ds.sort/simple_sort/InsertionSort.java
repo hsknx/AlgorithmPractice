@@ -11,7 +11,7 @@ package simple_sort;
 public class InsertionSort {
 
 	public int [] Insertion_sort(int [] sort_num) {
-		// TODO Auto-generated constructor stub
+
 		int temp = 0;
 		
 		//外部循环从1开始，直到最后

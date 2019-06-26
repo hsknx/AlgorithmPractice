@@ -219,11 +219,13 @@ public class RedBlackTree {
 	//Ö÷·½·¨²âÊÔ
 	public static void main(String[] args) {
 		RedBlackTree root = new RedBlackTree();
-		int[] array = {8,2,4,6,5,7,9,1,3};
+		int[] array1 = {8,2,4,6,5,7,9,1,3};
+		
+		int[] array = {0, 2, 2, 3, 3, 3, 4, 5, 9, 9, 9, 10, 10, 12, 12, 13, 14, 15, 15, 15, 16, 17, 19, 19, 20, 21, 21, 21, 25, 25, 26, 26, 26, 27, 28, 30, 31, 31, 32, 34, 34, 35, 37, 39, 40, 41, 41, 42, 42, 42, 42, 45, 46, 46, 46, 46, 47, 50, 51, 54, 54, 55, 56, 59, 62, 65, 65, 65, 67, 67, 69, 71, 74, 75, 76, 77, 77, 78, 78, 79, 79, 80, 80, 80, 80, 82, 82, 82, 82, 84, 85, 85, 85, 89, 89, 91, 95, 98, 98, 100};
 		for (int i = 0; i < array.length; i++) {
 			root = root.add(root, array[i]);
 		}
-		System.out.println(root.containsKey(45));
+		//System.out.println(root.containsKey(45));
 		root.print(root);
 	}
 }

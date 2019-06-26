@@ -1,4 +1,4 @@
-package array;
+package sort_apply;
 
 import java.util.Arrays;
 import java.util.Scanner;

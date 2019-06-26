@@ -17,8 +17,8 @@ public class SimpleSortTest {
 		int [] sort_num1 = {1,1,2,2,2,2,5,5,5,5,2,2,2};
 		
 		System.out.print("原始数据：");
-		for (int i = 0; i < sort_num.length; i++) {
-			System.out.print(sort_num[i]+" ");
+		for (int i : sort_num) {
+			System.out.print(i + " ");
 		}
 		System.out.println();
 		System.out.print("排序后    ：");
@@ -37,7 +37,7 @@ public class SimpleSortTest {
 		
 		//堆排序
 		HeapSort hp = new HeapSort();
-		hp.heapSort(sort_num);
+		sort_num = hp.heapSort(sort_num);
 		
 		//输出数组
 		for (int i = 0; i < sort_num.length; i++) {

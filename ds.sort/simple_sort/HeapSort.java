@@ -20,10 +20,10 @@ package simple_sort;
 
 public class HeapSort {
 
-	public void heapSort(int [] heap) {
+	public int[] heapSort(int [] heap) {
 		//输入检查
 		if (heap == null || heap.length <= 1) {  
-            return;  
+            return heap;  
         }
 		
 		//初试化建堆
@@ -38,6 +38,7 @@ public class HeapSort {
 			heap[i] = temp;
 			heapify(heap, 0, i-1);
 		}
+		return heap;  
 	}
 	
 	//整堆函数
