@@ -1,12 +1,11 @@
 package sort;
 
-import java.util.HashMap;
-
 /** 
  *@author liujun
  *@date： 2018-8-22 下午05:03:35
  *@author—Email:ljfirst@mail.ustc.edu.cn
  *@description:桶排序
+ *数据结构采用数组加链表
  *@version 1.0
  */
 public class BucketSort {

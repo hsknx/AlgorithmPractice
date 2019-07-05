@@ -1,4 +1,4 @@
-package sort;
+package quickSort_ops;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -21,12 +21,12 @@ public class PowerfulTest {
 		int[] expected = new int[]{};
 		try {
 			
-			String packagename = "sort.";
-			String classname = "CountSort";
+			String packagename = "quickSort_ops.";
+			String classname = "QuickSortOps";
 			String s = packagename + classname;
 			Class<?> demoClass = Class.forName(s);
 			
-			CountSort demo = (CountSort) demoClass.newInstance();
+			QuickSortOps demo = (QuickSortOps) demoClass.newInstance();
 			Method[] methods = demoClass.getMethods();			
 			
 			for (Method method : methods) {

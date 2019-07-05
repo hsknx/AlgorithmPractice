@@ -36,8 +36,17 @@ package quickSort_ops;
 
 public class QuickSort {
 
+	public int[] QuickSortSimplex(int [] sort_num) {
+		long time1 = System.nanoTime();
+		QuicksortSimplex(sort_num, 0, sort_num.length - 1);
+		long time2 = System.nanoTime() - time1;
+		System.out.println("QuickSortSimplex用时："+time2);
+		
+		return sort_num;
+	}
+	
 	//单向快排：
-	public int[] QuickSortSimplex(int [] sort_num, int left, int right) {
+	public int[] QuicksortSimplex(int [] sort_num, int left, int right) {
 
 		//定位变量
 		int mid = left;
@@ -58,14 +67,20 @@ public class QuickSort {
 			sort_num[mid] = sort_num[left];
 			sort_num[left] = temp;
 			//递归
-			QuickSortSimplex(sort_num, left, mid - 1);
-			QuickSortSimplex(sort_num, mid + 1, right);
+			QuicksortSimplex(sort_num, left, mid - 1);
+			QuicksortSimplex(sort_num, mid + 1, right);
 		}
 		return sort_num;
 	}
 	
+	public int[] QuickSortDuplexing(int [] sort_num) {
+		// TODO Auto-generated method stub
+		QuicksortDuplexing(sort_num, 0, sort_num.length - 1);
+		return sort_num;
+	}
+	
 	//双向快排
-	public int[] QuickSortDuplexing(int [] sort_num, int left, int right) {
+	public int[] QuicksortDuplexing(int [] sort_num, int left, int right) {
 
 		int mid = left;
 		int temp = 0;
@@ -96,14 +111,9 @@ public class QuickSort {
 			sort_num[mid] = sort_num[left];
 			sort_num[left] = temp;
 			//递归
-			QuickSortDuplexing(sort_num, left, mid - 1);
-			QuickSortDuplexing(sort_num, mid + 1, right);
+			QuicksortDuplexing(sort_num, left, mid - 1);
+			QuicksortDuplexing(sort_num, mid + 1, right);
 		}
-		return sort_num;
-	}
-	
-	public int[] QuickSortInsert(int [] sort_num, int left, int right) {
-		
 		return sort_num;
 	}
 
