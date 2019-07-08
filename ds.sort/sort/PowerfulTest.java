@@ -22,11 +22,11 @@ public class PowerfulTest {
 		try {
 			
 			String packagename = "sort.";
-			String classname = "CountSort";
+			String classname = "RadixSort";
 			String s = packagename + classname;
 			Class<?> demoClass = Class.forName(s);
 			
-			CountSort demo = (CountSort) demoClass.newInstance();
+			RadixSort demo = (RadixSort) demoClass.newInstance();
 			Method[] methods = demoClass.getMethods();			
 			
 			for (Method method : methods) {
