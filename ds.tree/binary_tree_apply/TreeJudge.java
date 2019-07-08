@@ -73,7 +73,10 @@ public class TreeJudge {
 		btb.create_preOrder(btb, B, 0);
 		
 		//×ÓÊ÷ÅÐ¶Ï
-		TreeJudge zishu = new TreeJudge();
-	    System.out.println(zishu.judgeTree(bta,btb));
+		/*TreeJudge zishu = new TreeJudge();
+	    System.out.println(zishu.judgeTree(bta,btb));*/
+		TreeJudgeOps tjo = new TreeJudgeOps();
+		System.out.println(tjo.subTreePreOrderSequence(bta));
+		System.out.println(tjo.subTreeInOrderSequence(bta));
 	}
 }
