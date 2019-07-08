@@ -52,7 +52,7 @@ public class RadixSort {
 				radixbucket[temp][radixpoint[temp]] = array[i];
 				radixpoint[temp]++;
 			}
-			//基数统计,通过桶内指针判断桶内是否还有元素
+			//基数统计合并,通过桶内指针判断桶内是否还有元素
 			int bucketcount = 0;
 			for (int i = 0; i < 10; i++) {
 				int j = 0;
