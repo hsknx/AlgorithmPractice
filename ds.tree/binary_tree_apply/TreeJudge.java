@@ -62,6 +62,7 @@ public class TreeJudge {
 		int [] A = {8,8,9,-1,-1,2,4,7,-1,-1,7,-1,-1,-1,-1};
 		//BÊý×é
 		int [] B = {8,9,-1,-1,2,-1,-1};
+		//int [] B = {9,-1,-1};
 
 		binary_tree bta = new binary_tree();
 		binary_tree btb = new binary_tree();
@@ -73,10 +74,11 @@ public class TreeJudge {
 		btb.create_preOrder(btb, B, 0);
 		
 		//×ÓÊ÷ÅÐ¶Ï
-		/*TreeJudge zishu = new TreeJudge();
-	    System.out.println(zishu.judgeTree(bta,btb));*/
-		TreeJudgeOps tjo = new TreeJudgeOps();
-		System.out.println(tjo.subTreePreOrderSequence(bta));
-		System.out.println(tjo.subTreeInOrderSequence(bta));
+		TreeJudge zishu = new TreeJudge();
+	    System.out.println(zishu.judgeTree(bta,btb));
+		
+		/*TreeJudgeOps tjo = new TreeJudgeOps();
+		System.out.println(tjo.treeJudgeOps(bta, btb));
+		*/
 	}
 }

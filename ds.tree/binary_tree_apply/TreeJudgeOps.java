@@ -1,5 +1,7 @@
 package binary_tree_apply;
 
+import string.KMP;
+
 /** 
  *@author liujun
  *@date£º 2019-7-8 ÏÂÎç03:48:46
@@ -41,8 +43,9 @@ public class TreeJudgeOps {
 	}
 	
 	//×ÓÊ÷×Ö·û´®Æ¥Åä
-	public boolean subTreeKmp(String s1, String s2) {
+	public boolean subTreeKmp(String source, String pattern) {
 
-		return true;
+		KMP kmp = new KMP();
+		return kmp.kmp(source, pattern);
 	}
 }
