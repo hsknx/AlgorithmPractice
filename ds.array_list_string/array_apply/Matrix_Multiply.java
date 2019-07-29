@@ -1,4 +1,4 @@
-package array;
+package array_apply;
 /** 
  *@author liujun
  *@date£º 2018-7-19 ÏÂÎç03:07:41

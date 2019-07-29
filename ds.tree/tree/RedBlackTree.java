@@ -1,8 +1,5 @@
 package tree;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /** 
  *@author liujun
  *@date： 2018-8-29 下午10:29:42
@@ -20,6 +17,8 @@ public class RedBlackTree {
 	RedBlackTree parent;
 	String color ;
 	
+	static RedBlackTree root = new RedBlackTree(-1);
+	
 	//构造函数
 	public RedBlackTree() {
 		// TODO Auto-generated constructor stub
@@ -33,52 +32,20 @@ public class RedBlackTree {
 		color = "RED";
 	}
 
-	//右旋函数,注意：右旋使用当且仅当结点的左孩子存在时，因此，不需要对point.right进行判断。
-	private RedBlackTree rotateRight(RedBlackTree root, RedBlackTree point) {
-
-		RedBlackTree pleft = point.left;
-		//处理point左孩子的右孩子问题
-		point.left = pleft.right;
-		if (null != pleft.right) {
-			pleft.right.parent = point;
+	public RedBlackTree add(int[] array) {
+		
+		root.clear();
+		for (int i = 0; i < array.length; i++) {
+			root = add(root, array[i]);
 		}
-		//处理point的父节点问题
-		pleft.parent = point.parent;
-		if (null == point.parent) {
-			root = pleft;
-		}else if(point.parent.left == point){
-			point.parent.left = pleft;
-		}else {
-			point.parent.right = pleft;
-		}
-		//处理point自身问题
-		pleft.right = point;
-		point.parent = pleft;
+		
 		return root;
 	}
-	
-	//左旋函数,注意：左旋使用当且仅当结点的右孩子存在时，因此，不需要对point.right进行判断。
-	private RedBlackTree rotateLeft(RedBlackTree root, RedBlackTree point) {
 
-		RedBlackTree pright = point.right;
-		//处理point右孩子的左孩子问题
-		point.right = pright.left;
-		if (null != pright.left) {
-			pright.left.parent = point;
-		}
-		//处理point的父节点问题
-		pright.parent = point.parent;
-		if (null == point.parent) {
-			root = pright;
-		}else if(point.parent.left == point){
-			point.parent.left = pright;
-		}else {
-			point.parent.right = pright;
-		}
-		//处理point自身问题
-		pright.left = point;
-		point.parent = pright;
-		return root;
+	public RedBlackTree add(int value) {
+		
+		root.clear();
+		return root = add(root, value);
 	}
 	
 	//放入元素
@@ -114,6 +81,53 @@ public class RedBlackTree {
 			root = insertFixup(root, point);
 		}
 		return root;
+	}
+	
+	public boolean containsKey(int value) {
+		
+		return root.containsKey(root, value);
+	}
+
+	//元素检查
+	public boolean containsKey(RedBlackTree root, int value) {
+
+		if(root == null){
+			return false;
+		}
+		if(root.value == value){
+			return true;
+		}
+		
+		return containsKey(root.left, value) || containsKey(root.right, value);
+	}
+	
+	//移除元素
+	public void remove(int value) {
+
+	}
+	
+	public void remove(RedBlackTree root, int value) {
+
+		if(!root.containsKey(value)){
+			return ;
+		}
+		
+	}
+	//清理
+	public void clear() {
+
+		root = new RedBlackTree();
+	}
+	
+	//中序输出红黑树，从小到大
+	public void print(RedBlackTree root) {
+
+		if (null == root) {
+			return;
+		}
+		print(root.left);
+		System.out.print(root.value + " ");
+		print(root.right);
 	}
 	
 	//调整红黑树的颜色：红叔问题和黑叔问题，其中黑叔问题继续分为左右孩子问题
@@ -194,37 +208,61 @@ public class RedBlackTree {
 		return root;
 	}
 	
-	//元素检查
-	public boolean containsKey(int value) {
+	//右旋函数,注意：右旋使用当且仅当结点的左孩子存在时，因此，不需要对point.right进行判断。
+	private RedBlackTree rotateRight(RedBlackTree root, RedBlackTree point) {
 
-		return false;
-	}
-	
-	//移除元素
-	public void remove() {
-
-	}
-	
-	//中序输出红黑树，从小到大
-	public void print(RedBlackTree root) {
-
-		if (null == root) {
-			return;
+		RedBlackTree pleft = point.left;
+		//处理point左孩子的右孩子问题
+		point.left = pleft.right;
+		if (null != pleft.right) {
+			pleft.right.parent = point;
 		}
-		print(root.left);
-		System.out.print(root.value + " ");
-		print(root.right);
+		//处理point的父节点问题
+		pleft.parent = point.parent;
+		if (null == point.parent) {
+			root = pleft;
+		}else if(point.parent.left == point){
+			point.parent.left = pleft;
+		}else {
+			point.parent.right = pleft;
+		}
+		//处理point自身问题
+		pleft.right = point;
+		point.parent = pleft;
+		return root;
+	}
+	
+	//左旋函数,注意：左旋使用当且仅当结点的右孩子存在时，因此，不需要对point.right进行判断。
+	private RedBlackTree rotateLeft(RedBlackTree root, RedBlackTree point) {
+
+		RedBlackTree pright = point.right;
+		//处理point右孩子的左孩子问题
+		point.right = pright.left;
+		if (null != pright.left) {
+			pright.left.parent = point;
+		}
+		//处理point的父节点问题
+		pright.parent = point.parent;
+		if (null == point.parent) {
+			root = pright;
+		}else if(point.parent.left == point){
+			point.parent.left = pright;
+		}else {
+			point.parent.right = pright;
+		}
+		//处理point自身问题
+		pright.left = point;
+		point.parent = pright;
+		return root;
 	}
 	
 	//主方法测试
 	public static void main(String[] args) {
-		RedBlackTree root = new RedBlackTree();
-		int[] array1 = {8,2,4,6,5,7,9,1,3};
+		//RedBlackTree root = new RedBlackTree();
+		//int[] array1 = {8,2,4,6,5,7,9,1,3};
 		
 		int[] array = {0, 2, 2, 3, 3, 3, 4, 5, 9, 9, 9, 10, 10, 12, 12, 13, 14, 15, 15, 15, 16, 17, 19, 19, 20, 21, 21, 21, 25, 25, 26, 26, 26, 27, 28, 30, 31, 31, 32, 34, 34, 35, 37, 39, 40, 41, 41, 42, 42, 42, 42, 45, 46, 46, 46, 46, 47, 50, 51, 54, 54, 55, 56, 59, 62, 65, 65, 65, 67, 67, 69, 71, 74, 75, 76, 77, 77, 78, 78, 79, 79, 80, 80, 80, 80, 82, 82, 82, 82, 84, 85, 85, 85, 89, 89, 91, 95, 98, 98, 100};
-		for (int i = 0; i < array.length; i++) {
-			root = root.add(root, array[i]);
-		}
+		root.add(array);
 		//System.out.println(root.containsKey(45));
 		root.print(root);
 	}

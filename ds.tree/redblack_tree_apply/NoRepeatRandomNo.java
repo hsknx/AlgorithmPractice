@@ -2,9 +2,10 @@ package redblack_tree_apply;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Scanner;
 import java.util.Set;
 import java.util.TreeSet;
+
+import tree.RedBlackTree;
 
 /**
  *@author liujun
@@ -24,7 +25,7 @@ public class NoRepeatRandomNo {
 	//使用红黑树
 	private void useMap(int[] array) {
 		//红黑树
-		TreeSet<Integer> set = new TreeSet<Integer>();
+		/*TreeSet<Integer> set = new TreeSet<Integer>();
         for(int i = 0 ; i < array.length ; i++){
             int curr = array[i];
             set.add(curr);
@@ -32,7 +33,14 @@ public class NoRepeatRandomNo {
         //循环输出
         for(Integer i : set){
             System.out.print(i);
-        }
+        }*/
+		
+		//自创红黑树
+		RedBlackTree rbt = new RedBlackTree();
+		rbt = rbt.add(array);
+		rbt.print(rbt);
+		System.out.println(rbt.containsKey(81));
+		System.out.println(rbt.containsKey(8));
 	}
 	
 	//使用桶排序：为防止数据超大，使用map来当做桶。
@@ -65,9 +73,12 @@ public class NoRepeatRandomNo {
 	}
 	
 	public static void main(String[] args) {
-		int[] num = {2,2,3,3,4,4,5,5,6,6};
+		int[] num = {8,2,4,6,9,5,7,3,1};
 		NoRepeatRandomNo np = new NoRepeatRandomNo();
-		//np.useMap(num);
-		np.useBucket(num);
+		np.useMap(num);
+		
+		int[] num1 = {81,22,43,64,95,56,77,38,19};
+		np.useMap(num1);
+		//np.useBucket(num);
 	}
 }

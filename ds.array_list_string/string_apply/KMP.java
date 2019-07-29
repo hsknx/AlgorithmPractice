@@ -1,4 +1,4 @@
-package string;
+package string_apply;
 /** 
  *@author liujun
  *@date£º 2019-7-8 ÏÂÎç04:57:00

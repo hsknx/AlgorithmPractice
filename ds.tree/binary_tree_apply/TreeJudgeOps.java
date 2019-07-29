@@ -1,6 +1,6 @@
 package binary_tree_apply;
 
-import string.KMP;
+import string_apply.KMP;
 
 /** 
  *@author liujun
