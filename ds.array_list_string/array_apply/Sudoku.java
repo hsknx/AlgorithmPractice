@@ -1,13 +1,7 @@
 package array_apply;
 
-import java.util.Arrays;
-import java.util.HashSet;
 import java.util.Scanner;
-import java.util.Set;
-import java.util.TreeMap;
-
 import math.Bitcount;
-
 import tree.RedBlackTree;
 
 /** 
