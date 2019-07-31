@@ -21,13 +21,12 @@ public class RedBlackTree {
 	
 	//构造函数
 	public RedBlackTree() {
-		// TODO Auto-generated constructor stub
+
 		this.value = -1;
 		color = "RED";
 	}
 	
 	public RedBlackTree(int value) {
-		// TODO Auto-generated constructor stub
 		this.value = value;
 		color = "RED";
 	}
@@ -38,7 +37,6 @@ public class RedBlackTree {
 		for (int i = 0; i < array.length; i++) {
 			root = add(root, array[i]);
 		}
-		
 		return root;
 	}
 
@@ -83,6 +81,36 @@ public class RedBlackTree {
 		return root;
 	}
 	
+	//返回这个元素在树中的排序数(从小到大)
+	//仅仅找到该节点，并计算其左子树有多少节点即可
+	public int get(int value) {
+
+		return get(root, value);
+	}
+	
+	public int get(RedBlackTree root, int value) {
+
+		if(!root.containsKey(value)){
+			return -1;
+		}
+		if(root.value == value){
+			return countTreeNum(root.left) + 1;
+		}
+		if(value < root.value){
+			return get(root.left, value);
+		}else{
+			return countTreeNum(root.left) + 1 + get(root.right, value);
+		}
+	}
+	
+	public int countTreeNum(RedBlackTree root) {
+
+		if(root == null){
+			return 0;
+		}
+		return 1 + countTreeNum(root.left) + countTreeNum(root.right);
+	}
+	
 	public boolean containsKey(int value) {
 		
 		return root.containsKey(root, value);
@@ -97,8 +125,11 @@ public class RedBlackTree {
 		if(root.value == value){
 			return true;
 		}
-		
-		return containsKey(root.left, value) || containsKey(root.right, value);
+		if(value < root.value){
+			return containsKey(root.left, value);
+		}else{
+			return containsKey(root.right, value);
+		}
 	}
 	
 	//移除元素
@@ -262,8 +293,13 @@ public class RedBlackTree {
 		//int[] array1 = {8,2,4,6,5,7,9,1,3};
 		
 		int[] array = {0, 2, 2, 3, 3, 3, 4, 5, 9, 9, 9, 10, 10, 12, 12, 13, 14, 15, 15, 15, 16, 17, 19, 19, 20, 21, 21, 21, 25, 25, 26, 26, 26, 27, 28, 30, 31, 31, 32, 34, 34, 35, 37, 39, 40, 41, 41, 42, 42, 42, 42, 45, 46, 46, 46, 46, 47, 50, 51, 54, 54, 55, 56, 59, 62, 65, 65, 65, 67, 67, 69, 71, 74, 75, 76, 77, 77, 78, 78, 79, 79, 80, 80, 80, 80, 82, 82, 82, 82, 84, 85, 85, 85, 89, 89, 91, 95, 98, 98, 100};
+		System.out.println(array.length);
 		root.add(array);
-		//System.out.println(root.containsKey(45));
+		System.out.println(root.containsKey(45));
 		root.print(root);
+		System.out.println();
+		System.out.println(root.get(16));
+		System.out.println(root.get(95));
+		System.out.println(root.get(45));
 	}
 }

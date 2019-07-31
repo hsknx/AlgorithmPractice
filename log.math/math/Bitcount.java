@@ -70,6 +70,17 @@ public class Bitcount {
 		System.out.println(i & 0x3f);
 	}
 	
+	public int byteCountComplementMethod11(int i) {
+
+		i = i - ((i >>> 1) & 0x55555555);
+		i = (i & 0x33333333) + ((i >>> 2) & 0x33333333);
+		i = (i + (i >>> 4)) & 0x0f0f0f0f;
+		i = i + (i >>> 8);
+		i = i + (i >>> 16);
+		//0x3f，因为32字节，最多32个1，使用&的话，用到7位。
+		return i & 0x3f;
+	}
+	
 	//获取二进制补码中1位的数量：末尾1取反法
 	private void byteCountComplementMethod2(int num) {
 
