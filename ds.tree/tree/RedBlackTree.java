@@ -132,18 +132,97 @@ public class RedBlackTree {
 		}
 	}
 	
-	//移除元素
 	public void remove(int value) {
-
+		remove(root, value);
 	}
 	
+	//移除元素,共两种情况：1.叶子结点    2、仅有左孩子或者右孩子的结点
 	public void remove(RedBlackTree root, int value) {
 
 		if(!root.containsKey(value)){
 			return ;
 		}
 		
+		
 	}
+	
+	//判断类型的时候，1、先看待删除的节点的颜色，
+	//           2、再看兄弟节点的颜色，
+	//           3、再看侄子节点的颜色（侄子节点3.1、先看远侄子3.2、再看近侄子），
+	//           4、最后看父亲节点的颜色
+	
+	//情况一：删除叶子节点为红色，直接删除的情况
+	public void deleteRedLeaf(RedBlackTree root) {
+
+		if(root == null){
+			return ;
+		}
+		if(root.parent.left == root){
+			root.parent.left = null;
+		}else{
+			root.parent.right = null;
+		}
+	}
+	
+	//情况二：删除叶子节点为黑色
+	//情况2.1：待删除节点D的兄弟节点S为红色
+	public void deleteBlackLeafwithRedBrother(RedBlackTree root, RedBlackTree point){
+		if(point == null){
+			return ;
+		}
+		//待删除结点为左孩子
+		if(point.parent.left == point){
+			RedBlackTree tempRight = point.parent.right;
+			//颜色互换
+			String s = tempRight.color;
+			tempRight.color = point.parent.color;
+			point.parent.color = s;
+			//LL
+			rotateLeft(root, point.parent);
+			deleteBlackLeafwithBlackBrother(root, point);
+		}else{//待删除结点为右孩子
+			RedBlackTree tempRight = point.parent.left;
+			//颜色互换
+			String s = tempRight.color;
+			tempRight.color = point.parent.color;
+			point.parent.color = s;
+			//RR
+			rotateRight(root, point.parent);
+			deleteBlackLeafwithBlackBrother(root, point);
+		}
+		
+	}
+	//情况2.2：待删除节点D的兄弟节点S为黑色。
+	public void deleteBlackLeafwithBlackBrother(RedBlackTree root, RedBlackTree point){
+		if(root == null){
+			return ;
+		}
+	}
+	
+	//情况三：删除节点为黑色，子节点为红色(只有右子树或只有左子树的节点)
+	public void deleteOnlyleftorOnlyright(RedBlackTree root){
+		if(root == null){
+			return ;
+		}
+		if(root.left != null){
+			if(root.parent.left == root){
+				root.parent.left = root.left;
+			}else{
+				root.parent.right = root.left;
+			}
+			root.left.parent = root.parent;
+			root.left.color = root.color;
+		}else{
+			if(root.parent.right == root){
+				root.parent.right = root.right;
+			}else{
+				root.parent.left = root.right;
+			}
+			root.right.parent = root.parent;
+			root.right.color = root.color;
+		}
+	}
+
 	//清理
 	public void clear() {
 
