@@ -3,8 +3,6 @@ package math;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.junit.Test;
-
 /** 
  *@author liujun
  *@date£º 2019-8-2 ÉÏÎç10:30:01
@@ -30,9 +28,9 @@ public class Narcissistic {
 				}
 			}
 		}
-		/*for (int i : list) {
+		for (int i : list) {
 			System.out.println(i);
-		}*/
+		}
 	}
 	
 	public void narcissisticOptic() {
@@ -60,9 +58,9 @@ public class Narcissistic {
 				}
 			}
 		}
-		/*for (int i : list) {
+		for (int i : list) {
 			System.out.println(i);
-		}*/
+		}
 	}
 	
 	public static void main(String[] args) {
