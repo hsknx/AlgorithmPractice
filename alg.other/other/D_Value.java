@@ -130,7 +130,7 @@ public class D_Value {
 	public static void main(String[] args) {
 		int[] array = {15,7,-640,10,80,-2,33,25,41,-5,84,22};
 		int[] array1 = {15,7,-640,10,80,-2,33,25,41,-5,84,22};
-		int[] array2 = {15,7,-640,10,80,-2,33,25,41,-5,84,22};
+		//int[] array2 = {15,7,-640,10,80,-2,33,25,41,-5,84,22};
 		
 		//ÆÚÍûÊä³ö10 - 7 = 3
 		D_Value dv = new D_Value();

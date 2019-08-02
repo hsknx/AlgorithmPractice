@@ -10,7 +10,7 @@ package simple_sort;
 
 public class InsertionSort {
 
-	public int [] InsertionSort(int [] sort_num) {
+	public int [] insertionSort(int [] sort_num) {
 
 		int temp = 0;
 		

@@ -98,7 +98,7 @@ public class RangList extends SinglyLinkedList{
 	}
 	
 	//构造相交链表
-	public Map buildCrossLink(int[] array_a, int[] array_b) {
+	public Map<Integer, SinglyLinkedList> buildCrossLink(int[] array_a, int[] array_b) {
 		// TODO Auto-generated method stub
 
 		//思路：把a链表构造完，插入到b的一半，需要a链表的尾指针和b链表的一半指针

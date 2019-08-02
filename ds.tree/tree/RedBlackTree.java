@@ -1,7 +1,5 @@
 package tree;
 
-import org.omg.PortableServer.POA;
-
 /** 
  *@author liujun
  *@date： 2018-8-29 下午10:29:42
@@ -201,7 +199,7 @@ public class RedBlackTree {
 		}
 		
 		if(point.parent.left == point){
-			RedBlackTree tempRight = point.parent.right;
+			//RedBlackTree tempRight = point.parent.right;
 			//有一个侄子结点为红色
 			
 			//判断父亲结点颜色

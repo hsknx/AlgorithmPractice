@@ -50,7 +50,7 @@ public class LCS_test {
 		System.out.println("×Ö·û´®s2:"+ s2);
 		
 		//×Ö·û´®Æ¥Åä
-		LCS lcs = new LCS(s1, s2);
+		new LCS(s1, s2);
 		//System.out.println("======================");
 		new LCS_optimize(s1, s2);
 		

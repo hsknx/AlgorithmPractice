@@ -3,7 +3,6 @@ package redblack_tree_apply;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
-import java.util.TreeSet;
 
 import tree.RedBlackTree;
 
@@ -67,7 +66,7 @@ public class NoRepeatRandomNo {
 		//方式3、
 		System.out.println("方式三：");
 		Set<Map.Entry<Integer,Integer>> ms =Bucket.entrySet();
-		for (Map.Entry entry : ms) {
+		for (Map.Entry<Integer,Integer> entry : ms) {
 			System.out.print(entry.getKey()+"="+entry.getValue());
 		}
 	}

@@ -49,7 +49,7 @@ public static int count = 0;
 	}
 	
 	//找出全相连的点
-	private Map find(int[][] matrix) {
+	private Map<Integer, Integer> find(int[][] matrix) {
 		// TODO Auto-generated method stub
 
 		int flag = 1;

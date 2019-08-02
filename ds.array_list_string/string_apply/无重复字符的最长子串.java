@@ -1,8 +1,5 @@
 package string_apply;
 
-import java.util.HashMap;
-import java.util.Map;
-
 /** 
  *@author liujun
  *@date£º 2018-12-17 ÏÂÎç02:14:33

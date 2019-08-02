@@ -20,7 +20,7 @@ public class MinValueStack extends Stack<Integer>{
 		// TODO Auto-generated constructor stub
 	}
 	
-	private synchronized Integer minValue() {
+	public synchronized Integer minValue() {
 		// TODO Auto-generated method stub
 		return ministack.peek();
 	}
