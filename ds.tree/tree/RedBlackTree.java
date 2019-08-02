@@ -1,5 +1,7 @@
 package tree;
 
+import org.omg.PortableServer.POA;
+
 /** 
  *@author liujun
  *@date： 2018-8-29 下午10:29:42
@@ -197,30 +199,99 @@ public class RedBlackTree {
 		if(root == null){
 			return ;
 		}
+		
+		if(point.parent.left == point){
+			RedBlackTree tempRight = point.parent.right;
+			//有一个侄子结点为红色
+			
+			//判断父亲结点颜色
+			
+		}
+	}
+	
+	//情况2.2.1：且远侄子节点为红色
+	public void rightNephewisRed(RedBlackTree point){
+		
+	}
+	
+	//情况2.2.2：近侄子结点为红色且远侄子节点为黑色
+	public void leftNephewisRed(RedBlackTree point){
+		
+	}
+	
+	//情况2.2.3：父节点为红色(当前节点为黑色，兄弟节点为黑色)
+	public void fatherisRed(RedBlackTree point){
+		RedBlackTree temppoint;
+		if(point.parent.left == point){
+			temppoint = point.parent.right;
+			//删除结点
+			point.parent.left = null;
+		}else{
+			temppoint = point.parent.left;
+			point.parent.right = null;
+		}
+		String s = point.parent.color;
+		point.parent.color = temppoint.color;
+		point.color = s;
+		temppoint.color = s;
+	}
+
+	//情况2.2.4：父节点为黑色(当前节点为黑色，兄弟节点为黑色)
+	public void fatherisBlack(RedBlackTree point){
+	
+		if(point.parent.left == point){
+			point.right.color = "RED";
+			point.parent.left = null;
+		}else{
+			point.left.color = "RED";
+			point.parent.right = null;
+		}
+		fixcolor(point.parent);
+	}
+	
+	public void fixcolor(RedBlackTree point) {
+
+		//根节点
+		if(point.parent == null){
+			
+		}else{
+			if("RED".equals(point.parent.color)){
+				if(point.parent.left == point){
+					point.right.color = "RED";
+					point.parent.color = "BLACK";
+				}else{
+					point.left.color = "RED";
+					point.parent.color = "BLACK";
+				}
+			}else{
+				
+			}
+		}
 	}
 	
 	//情况三：删除节点为黑色，子节点为红色(只有右子树或只有左子树的节点)
-	public void deleteOnlyleftorOnlyright(RedBlackTree root){
-		if(root == null){
+	public void deleteOnlyleftorOnlyright(RedBlackTree point){
+		if(point == null){
 			return ;
 		}
-		if(root.left != null){
-			if(root.parent.left == root){
-				root.parent.left = root.left;
+		RedBlackTree pointTemp;
+		if(point.left != null){
+			pointTemp = point.left;
+			if(point.parent.left == point){
+				point.parent.left = pointTemp;
 			}else{
-				root.parent.right = root.left;
+				point.parent.right = pointTemp;
 			}
-			root.left.parent = root.parent;
-			root.left.color = root.color;
 		}else{
+			pointTemp = point.right;
 			if(root.parent.right == root){
-				root.parent.right = root.right;
+				root.parent.right = pointTemp;
 			}else{
-				root.parent.left = root.right;
+				root.parent.left = pointTemp;
 			}
-			root.right.parent = root.parent;
-			root.right.color = root.color;
 		}
+		pointTemp.parent = point.parent;
+		pointTemp.color = point.color;
 	}
 
 	//清理
