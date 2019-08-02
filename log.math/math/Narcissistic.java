@@ -28,9 +28,9 @@ public class Narcissistic {
 				}
 			}
 		}
-		for (int i : list) {
+		/*for (int i : list) {
 			System.out.println(i);
-		}
+		}*/
 	}
 	
 	public void narcissisticOptic() {
@@ -58,9 +58,9 @@ public class Narcissistic {
 				}
 			}
 		}
-		for (int i : list) {
+		/*for (int i : list) {
 			System.out.println(i);
-		}
+		}*/
 	}
 	
 	public static void main(String[] args) {
@@ -76,5 +76,6 @@ public class Narcissistic {
 			c.narcissisticOptic();
 		}
 		System.out.println(System.nanoTime() - time1);
+		
 	}
 }
