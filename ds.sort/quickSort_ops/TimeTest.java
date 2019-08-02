@@ -1,7 +1,5 @@
 package quickSort_ops;
 
-import java.util.Random;
-
 /** 
  *@author liujun
  *@date£º 2019-7-5 ÏÂÎç02:29:55
@@ -32,13 +30,13 @@ public class TimeTest {
 		for (int i = 0; i < 20; i++) {
 			
 			System.arraycopy(arr, 0, a, 0, arr.length);
-			qso.QuickSortOps(a);
+			qso.quickSortOps(a);
 			
 			System.arraycopy(arr, 0, a, 0, arr.length);
-			qs.QuickSortSimplex(a);
+			qs.quickSortSimplex(a);
 			
 			System.arraycopy(arr, 0, a, 0, arr.length);
-			qso.InsertionSort(a);
+			qso.insertionSort(a);
 		}
 	}
 }

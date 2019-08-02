@@ -1,7 +1,5 @@
 package quickSort_ops;
 
-import simple_sort.InsertionSort;
-
 /** 
  *@author liujun
  *@date： 2019-3-23 下午12:08:37
@@ -12,31 +10,31 @@ import simple_sort.InsertionSort;
  */
 public class QuickSortOps {
 
-	public int[] QuickSortOps(int [] sort_num) {
+	public int[] quickSortOps(int [] sort_num) {
 		long time1 = System.nanoTime();
 		// 默认k为8
-		QuicksortOps(sort_num, 8);
+		quicksortOps(sort_num, 8);
 		long time2 = System.nanoTime() - time1;
 		System.out.println("QuickSortOps用时："+time2);
 		return sort_num;
 	}
 	
-	public int[] QuicksortOps(int [] sort_num, int k) {
+	public int[] quicksortOps(int [] sort_num, int k) {
 		// TODO Auto-generated constructor stub
 		if(k > sort_num.length){
-			return Insertion_sort(sort_num, 0, sort_num.length - 1);
+			return insertion_sort(sort_num, 0, sort_num.length - 1);
 		}
-		QuicksortOpsSimplex(sort_num, 0, sort_num.length - 1, k);
+		quicksortOpsSimplex(sort_num, 0, sort_num.length - 1, k);
 		return sort_num;
 	}
 	
-	public int[] QuicksortOpsSimplex(int [] sort_num, int left, int right, int k) {
+	public int[] quicksortOpsSimplex(int [] sort_num, int left, int right, int k) {
 
 		//定位变量
 		int mid = left;
 		int temp = 0;
 		if(right - left + 1 <= k){
-			Insertion_sort(sort_num, left, right);
+			insertion_sort(sort_num, left, right);
 			return sort_num;
 		}
 		if(left < right){
@@ -55,22 +53,22 @@ public class QuickSortOps {
 			sort_num[left] = temp;
 			
 			//递归
-			QuicksortOpsSimplex(sort_num, left, mid - 1, k);
-			QuicksortOpsSimplex(sort_num, mid + 1, right, k);
+			quicksortOpsSimplex(sort_num, left, mid - 1, k);
+			quicksortOpsSimplex(sort_num, mid + 1, right, k);
 		}
 		return sort_num;
 	}
 	
-	public int [] InsertionSort(int [] sort_num) {
+	public int [] insertionSort(int [] sort_num) {
 		
 		long time1 = System.nanoTime();
-		Insertion_sort(sort_num, 0, sort_num.length - 1);
+		insertion_sort(sort_num, 0, sort_num.length - 1);
 		long time2 = System.nanoTime() - time1;
 		System.out.println("InsertionSort用时："+time2);
 		return sort_num;
 	}
 	//快速排序改进的插排
-	public int [] Insertion_sort(int [] sort_num, int left, int right) {
+	public int [] insertion_sort(int [] sort_num, int left, int right) {
 
 		int temp = 0;
 		

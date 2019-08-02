@@ -1,8 +1,5 @@
 package sort;
 
-import java.awt.image.Raster;
-import java.util.Arrays;
-
 /** 
  *@author liujun
  *@date： 2019-3-23 下午12:09:48
@@ -13,7 +10,7 @@ import java.util.Arrays;
  */
 public class RadixSort {
 
-	public int[] RadixSort(int[] array) {
+	public int[] radixSort(int[] array) {
 		//边界判空
 		if(array.equals(null) || array.length == 0){
 			return array;
@@ -29,11 +26,11 @@ public class RadixSort {
 		}
 		int d = String.valueOf(max).length();
 		//基数排序位数d
-		Radixsort(array, d);
+		radixsort(array, d);
 		return array;
 	}
 	
-	public int[] Radixsort(int[] array, int d) {
+	public int[] radixsort(int[] array, int d) {
 
 		//十进制位数
 		int radix = 1;
