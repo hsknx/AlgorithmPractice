@@ -1,29 +1,30 @@
+### Introduction
 本项目旨在不断总结和实现面试和实际场景中的数据结构和算法问题，
 项目仍然在不断完善中，欢迎您的加入。
 
-## 想了解更多，欢迎访问：
-+ 我的github:
+### what's more,welcome visit below website：
++ my github:
 ~~~
 https://github.com/ljfirst/Algorithm
 ~~~
-+ 我的CSDN博客：
++ my CSDN blog：
 ~~~
 https://blog.csdn.net/ljfirst
 ~~~
-+ 我的知识图谱:
++ my acknowledge brainmap:
 ~~~
 https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360
 ~~~
-#### 备注：
+#### note：
 + 您可以首先通过思维导图了解每部分大致内容，
 + 然后根据思维导图中的链接跳转到博客，查看具体笔记内容，
 + 最后通过博客前端链接访问我的github，查看具体代码实现。
 
-#### 说明：
-+ ds表示Data Structure 数据结构；
-+ alg表示Algorithm 算法。
-+ log表示一些逻辑推理题目的实现。
-+ 数据结构的分类包括：
+#### special：
++ ds means Data Structure;
++ alg means Algorithm ;
++ log means the logic subject.
++ ds contains：
   + 排序、线性表、对栈队列、串、矩阵、树、图、动态存储、查找、文件。
-+ 算法的分类包括：
++ alg contains：
   + 动态规划、回溯。
