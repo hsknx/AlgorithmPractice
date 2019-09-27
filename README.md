@@ -2,7 +2,7 @@
 本项目旨在不断总结和实现面试和实际场景中的数据结构和算法问题，
 项目仍然在不断完善中，欢迎您的加入。
 
-### what's more,welcome visit below website：
+### what's more：
 + my github:
 ~~~
 https://github.com/ljfirst/Algorithm
