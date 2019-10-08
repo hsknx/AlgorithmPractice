@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/ds.sort" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ds.array_list_string" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ds.stack_heap_queue" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ds.tree" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ds.graph" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/alg.greed" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/alg.dynamic" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/alg.recall" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/alg.branch_and_bound" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/log.regular" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/log.math" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/alg.other" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/log.game" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library">
+      <library name="junit4">
+        <CLASSES>
+          <root url="jar://$APPLICATION_HOME_DIR$/lib/junit-4.12.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+  </component>
+</module>
