@@ -28,7 +28,7 @@
     + 回溯
     + 贪心
     + 分支限界
-  + alg contains：
+  + logic contains：
     + 游戏
     + 数学
     + 正则
