@@ -36,6 +36,6 @@
 + my github:
 https://github.com/ljfirst/Algorithm
 + my CSDN blog：
-[https://blog.csdn.net/ljfirst]
+https://blog.csdn.net/ljfirst
 + my acknowledge brainmap:
-[https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360]()
+https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360
