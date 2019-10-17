@@ -1,4 +1,4 @@
-
+package list.linkList;
 
 /** 
  *@author liujun

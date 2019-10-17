@@ -8,16 +8,14 @@
       <sourceFolder url="file://$MODULE_DIR$/ds/6_graph" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/logic/game" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ds/1_sort" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ds/2_line/list/listApply" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ds/4_string" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ds/2_line/array/twoDimensionalArray/apply" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/logic/regular" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/logic/math" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ds/2_line/list/linkList" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/alg/recall" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/alg/dynamic" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ds/5_tree" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/alg/other" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ds/2_line" isTestSource="false" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="inheritedJdk" />
