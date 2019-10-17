@@ -1,5 +1,6 @@
-package lcs;
-/** 
+package stringApply.lcs;
+
+/**
  *@author 
  *@date£º 2018-7-19 ÉÏÎç10:52:22
  *@author¡ªEmail:@mail.ustc.edu.cn

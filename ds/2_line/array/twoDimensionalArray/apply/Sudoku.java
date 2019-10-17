@@ -1,8 +1,8 @@
-package array_apply;
 
 import java.util.Scanner;
+
+import balanceBinaryTree.redBlackTree.realize.RedBlackTree;
 import math.Bitcount;
-import tree.RedBlackTree;
 
 /** 
  *@author liujun
@@ -188,15 +188,5 @@ public class Sudoku {
 	public static void main(String[] args) {
 		
 		new Sudoku(3, 3);
-	}
-}
-
-class SudokuNode{
-	int value;
-	int tempValue;
-	
-	public SudokuNode() {
-		value = 0;
-		tempValue = 0;
 	}
 }

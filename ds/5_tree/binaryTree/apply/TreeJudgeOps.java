@@ -1,6 +1,8 @@
 package binaryTree.apply;
 
 import binaryTree.realize.BinaryTree;
+import stringApply.KMP;
+
 /**
  *@author liujun
  *@date£º 2019-7-8 ÏÂÎç03:48:46
@@ -42,14 +44,13 @@ public class TreeJudgeOps {
 	}
 	
 	//×ÓÊ÷×Ö·û´®Æ¥Åä
-/*	public boolean subTreeKmp(String source, String pattern) {
+	public boolean subTreeKmp(String source, String pattern) {
 
-		KMP kmp = new KMP();
-		return kmp.kmp(source, pattern);
-	}*/
+        KMP kmp = new KMP();
+        return kmp.kmp(source, pattern);
+    }
 
 	public static void main(String[] args) {
 		TreeJudge g = new TreeJudge();
-
 	}
 }

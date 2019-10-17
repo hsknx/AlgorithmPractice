@@ -1,8 +1,8 @@
-package lcs;
+package stringApply.lcs;
 
 import java.util.Random;
 
-public class LCS_test {
+public class LCSTest {
 
 	//生成一组包含大小写，数字的序列
 	public String random_sequence() {
@@ -43,7 +43,7 @@ public class LCS_test {
 	public static void main(String[] args) {
 		
 		//获取随机字符串
-		LCS_test lt = new LCS_test();
+		LCSTest lt = new LCSTest();
 		String s1 = lt.random_sequence();
 		String s2 = lt.random_sequence();
 		System.out.println("字符串s1:"+ s1);

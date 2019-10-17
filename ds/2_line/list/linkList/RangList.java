@@ -1,4 +1,3 @@
-package link_list;
 
 import java.util.HashMap;
 import java.util.Map;
