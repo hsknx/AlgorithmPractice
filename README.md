@@ -11,38 +11,31 @@
 + ds means Data Structure, alg means Algorithm, log means the logic subject.
 
 #### Project Structure:
-+ ##### framework 
-  + datastructure
-      + 排序
-      + 线性表
-      + 栈队列
-      + 串
-      + 矩阵
-      + 树
-      + 图
-      + 动态存储
-      + 查找
-      + 文件
-  + algorithm
-    + 动态规划
-    + 回溯
-    + 贪心
-    + 分支限界
-  + logic contains：
-    + 游戏
-    + 数学
-    + 正则
++ datastructure
+  + 排序
+  + 线性表
+  + 栈队列
+  + 串
+  + 矩阵
+  + 树
+  + 图
+  + 动态存储
+  + 查找
+  + 文件
++ algorithm
+  + 动态规划
+  + 回溯
+  + 贪心
+  + 分支限界
++ logic contains：
+  + 游戏
+  + 数学
+  + 正则
 
 ### what's more：
 + my github:
-~~~
-https://github.com/ljfirst/Algorithm
-~~~
+[https://github.com/ljfirst/Algorithm](github)
 + my CSDN blog：
-~~~
-https://blog.csdn.net/ljfirst
-~~~
+[https://blog.csdn.net/ljfirst](blog)
 + my acknowledge brainmap:
-~~~
-https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360
-~~~
+[https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360](brainmap)
