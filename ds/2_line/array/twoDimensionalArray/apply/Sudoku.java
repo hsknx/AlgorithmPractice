@@ -1,8 +1,7 @@
-
-import java.util.Scanner;
-
 import balanceBinaryTree.redBlackTree.realize.RedBlackTree;
 import math.Bitcount;
+
+import java.util.Scanner;
 
 /** 
  *@author liujun

@@ -10,7 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/ds/1_sort" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ds/2_line/list/listApply" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ds/4_string" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ds/2_line/array/TwoDimensionalArray/apply" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ds/2_line/array/twoDimensionalArray/apply" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/logic/regular" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/logic/math" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ds/2_line/list/linkList" isTestSource="false" />
