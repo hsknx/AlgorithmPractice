@@ -11,7 +11,7 @@
 + ds means Data Structure, alg means Algorithm, log means the logic subject.
 
 #### Project Structure:
-+ datastructure
++ ds
   + 排序
   + 线性表
   + 栈队列
@@ -22,12 +22,12 @@
   + 动态存储
   + 查找
   + 文件
-+ algorithm
++ alg
   + 动态规划
   + 回溯
   + 贪心
   + 分支限界
-+ logic contains：
++ logic
   + 游戏
   + 数学
   + 正则
