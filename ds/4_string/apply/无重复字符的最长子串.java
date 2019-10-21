@@ -1,4 +1,4 @@
-package stringApply;
+package apply;
 
 /** 
  *@author liujun
