@@ -35,7 +35,7 @@ public class KMP {
 		}
 	}
 	
-	//kmp匹配
+	//kmp 匹配过程
 	public boolean kmp(String source, String pattern) {
 
 		//源串指针和目的串指针
