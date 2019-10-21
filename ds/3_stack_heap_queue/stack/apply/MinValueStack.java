@@ -13,11 +13,9 @@ public class MinValueStack extends Stack<Integer>{
 
 	private static final long serialVersionUID = 1224463164541339165L;
 	
-	Stack<Integer> stack = new Stack<Integer>();
-	MinValueStack ministack = new MinValueStack();
-	
+    Stack<Integer> ministack = new Stack<Integer>();
+
 	public MinValueStack() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	public synchronized Integer minValue() {
@@ -27,11 +25,12 @@ public class MinValueStack extends Stack<Integer>{
 	
 	@Override
 	public Integer push(Integer item) {
-		// TODO Auto-generated method stub
-		if (item < ministack.peek()) {
-			return super.push(item);
+
+        super.push(item);
+		if (ministack.size() == 0 || item < ministack.peek()) {
+			return ministack.push(item);
 		}else {
-			return super.push(ministack.peek());
+			return ministack.push(ministack.peek());
 		}
 	}
 	
@@ -49,6 +48,10 @@ public class MinValueStack extends Stack<Integer>{
 		for (int i = 0; i < array.length; i++) {
 			ms.push(array[i]);
 		}
-		System.out.println(ms.peek());
+		System.out.println(ms.pop());
+        System.out.println(ms.peek());
+        System.out.println(ms.pop());
+        System.out.println(ms.peek());
+        System.out.println(ms.pop());
 	}
 }
