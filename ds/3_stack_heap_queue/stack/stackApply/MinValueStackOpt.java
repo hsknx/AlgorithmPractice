@@ -1,6 +1,6 @@
-package stack.apply;
+package stack.stackApply;
 
-import stack.realize.StackbyArraylist;
+import stack.stackRealize.StackbyArraylist;
 
 /**
  * @author liujun

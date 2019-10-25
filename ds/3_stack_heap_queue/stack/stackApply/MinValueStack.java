@@ -1,4 +1,4 @@
-package stack.apply;
+package stack.stackApply;
 
 import java.util.Stack;
 

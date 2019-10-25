@@ -1,4 +1,4 @@
-package apply.lcs;
+package stringApply.lcs;
 
 import java.util.Random;
 
@@ -14,7 +14,6 @@ public class LCSTest {
 		int n=ran.nextInt(20)+1;//Random.nextInt(int n),该值介于[0,n)的区间，包含0而不包含n。
 		//字符串序列
 		String  s="";
-		
 		//随机生成“大写字母”、“小写字母”、“数字”
 		int m=0;//m取值1，2，3，表示选择“大写字母”、“小写字母”、“数字”
 		while(n>0){

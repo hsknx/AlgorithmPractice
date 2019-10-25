@@ -1,4 +1,4 @@
-package apply.lcs;
+package stringApply.lcs;
 
 /**
  *@author 

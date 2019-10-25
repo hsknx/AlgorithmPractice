@@ -1,7 +1,7 @@
 package binaryTree.apply;
 
 import binaryTree.realize.BinaryTree;
-import apply.KMP;
+import stringApply.KMP;
 
 /**
  *@author liujun

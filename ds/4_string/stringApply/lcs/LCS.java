@@ -1,4 +1,4 @@
-package apply.lcs;
+package stringApply.lcs;
 
 import java.util.ArrayList;
 import java.util.List;
