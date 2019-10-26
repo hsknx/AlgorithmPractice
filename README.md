@@ -12,7 +12,7 @@
 alg means Algorithm,  
 log means the logic subject.
 
-## Project Structure:
+## Architecture:
 ### 数据结构及其应用（ds）
 #### 排序（sort）
   + 内部排序
