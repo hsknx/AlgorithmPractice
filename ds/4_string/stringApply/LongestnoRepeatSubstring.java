@@ -8,7 +8,7 @@ package stringApply;
  *@URL:https://leetcode-cn.com/explore/interview/card/bytedance/242/string/1012/
  *@version 1.0
  */
-public class 无重复字符的最长子串 {
+public class LongestnoRepeatSubstring {
 
 	public int lengthOfLongestSubstring(String s) {
 	    
@@ -24,13 +24,12 @@ public class 无重复字符的最长子串 {
 			//更新桶序号对应的子串起始位置
 			bottle[s.charAt(j)] = j + 1;
 		}
-		
 		return count;
     }
 	
 	//	test
 	public static void main(String[] args) {
-		无重复字符的最长子串 d = new 无重复字符的最长子串();
+		LongestnoRepeatSubstring d = new LongestnoRepeatSubstring();
 		System.out.println(d.lengthOfLongestSubstring("pwwkew"));
 	}
 }

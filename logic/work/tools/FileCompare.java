@@ -1,7 +1,7 @@
 package tools;
 
 import innerSort.innerSortApply.SelectionSortforFileCompare;
-import stringApply.lcs.LCSforcompare;
+import sequenceApplay.lcs.LCSforcompare;
 import utils.ReadTxt;
 import java.util.ArrayList;
 import java.util.HashMap;

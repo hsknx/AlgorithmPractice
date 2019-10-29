@@ -1,4 +1,4 @@
-package stringApply.lcs;
+package sequenceApplay.lcs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,31 +11,18 @@ import java.util.List;
  *@version 1.0
  */
 
-public class LCSforcompare {
+public class LCS {
 
-	//获取字符串长度,其中在矩阵中n1表示行数,n2表示列数
-	int n1;
-	int n2;
-	//数值矩阵 存放字符匹配数量的最大值
-	int [][] num_matrix;
-	//标记矩阵 存放字符匹配标记
-	char [][] char_matrix;
-	//找寻匹配上的字符串
-	List <Character> ComparedList = new ArrayList<Character>();
-
-	public LCSforcompare(){
-	}
-
-	public void Lcsforcompare(String s1, String s2) {
-
+	public LCS(String s1, String s2) {
+		// TODO Auto-generated constructor stub
 		//获取字符串长度,其中在矩阵中n1表示行数,n2表示列数
-		n1 = s1.length();
-		n2 = s2.length();
+		int n1 = s1.length();
+		int n2 = s2.length();
 		
 		//数值矩阵 存放字符匹配数量的最大值
-		num_matrix = new int [n1+1][n2+1];
+		int [][] num_matrix = new int [n1+1][n2+1];
 		//标记矩阵 存放字符匹配标记
-		char_matrix = new char[n1+1][n2+1];
+		char [][] char_matrix = new char[n1+1][n2+1];
 		
 		//数值矩阵初始化（若未初始化,数值矩阵显示为0,标记矩阵显示为口）
 		for (int i = 0; i < n1; i++) {
@@ -70,11 +57,29 @@ public class LCSforcompare {
 				}
 			}
 		}
-
+		
+		//打印数值记录矩阵（可选）
+		System.out.println("记录矩阵为：");
+		for(int i = 0; i<= n1; i++){
+			for(int j = 0;j <= n2; j++){
+				System.out.print(num_matrix[i][j]+" ");
+			}
+			System.out.println();
+		}
+		//打印标记矩阵 （可选）
+		System.out.println("标记矩阵为：");
+		for(int i = 0; i<= n1; i++){
+			for(int j = 0;j <= n2; j++){
+				System.out.print(char_matrix[i][j]+" ");
+			}
+			System.out.println();
+		}
+		
 		//找寻匹配上的字符串
+		List <Character> L = new ArrayList<Character>();
 		for(int i = n1,j = n2; i > 0&&j > 0;){
 			if(char_matrix[i][j] == '↖'){
-				ComparedList.add(s1.charAt(i-1));
+				L.add(s1.charAt(i-1));
 				i--;
 				j--;
 			}
@@ -86,28 +91,12 @@ public class LCSforcompare {
 			     }
 		}
 		
-	}
-
-	public int getCompareLength(){
-
-		//System.out.println("LCS's length:");
-		return num_matrix[n1][n2];
-	}
-
-	public String getCompareSequence(){
 		//打印匹配上的字符串（逆序打印）
-		//System.out.print("LCS:");
-		StringBuffer sb = new StringBuffer();
-		for(int as = ComparedList.size()-1; as >= 0; as--){
-			sb.append(ComparedList.get(as));
+		System.out.print("LCS:");
+		for(int as = L.size()-1; as >= 0; as--){
+			System.out.print(L.get(as));
 		}
-		return sb.toString();
-	}
-
-	public static void main(String[] args) {
-		LCSforcompare l = new LCSforcompare();
-		l.Lcsforcompare("个人客户数据分析应用","2017年度大数据挖掘建模分析");
-		System.out.println(l.getCompareLength());
-		System.out.println(l.getCompareSequence());
+		System.out.println();
+		System.out.println("LCS's length:" + num_matrix[n1][n2]);
 	}
 }

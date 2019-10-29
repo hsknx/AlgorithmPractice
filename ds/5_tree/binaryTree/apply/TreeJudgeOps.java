@@ -15,7 +15,7 @@ import stringApply.KMP;
  */
 public class TreeJudgeOps {
 
-	/*public boolean treeJudgeOps(BinaryTree tree1, BinaryTree tree2) {
+	public boolean treeJudgeOps(BinaryTree tree1, BinaryTree tree2) {
 
 		String s1PreOrder = subTreePreOrderSequence(tree1);
 		String s2PreOrder = subTreePreOrderSequence(tree2);
@@ -23,7 +23,7 @@ public class TreeJudgeOps {
 		String s2InOrder = subTreeInOrderSequence(tree2);
 		
 		return subTreeKmp(s1PreOrder, s2PreOrder) && subTreeKmp(s1InOrder, s2InOrder);
-	}*/
+	}
 	
 	//子树序列化(先序)
 	public String subTreePreOrderSequence(BinaryTree tree) {
