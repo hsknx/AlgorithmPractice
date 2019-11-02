@@ -23,8 +23,8 @@ public class RamdomUtil {
 
     //随机生成给定长度的字符串
     public String productRandomString(int num){
-        //在asc码中,'0'+17='A',“A”+32=“a”
-        //所以，‘0-9’=‘0’+[0,9],‘A-Z’=‘0’+[17,42],‘a-z’=‘0’+[49,75]
+        /*在asc码中,'0'+17='A',“A”+32=“a”
+        所以，‘0-9’=‘0’+[0,9],‘A-Z’=‘0’+[17,42],‘a-z’=‘0’+[49,75]*/
         char a = '0';
         int addNum;
         StringBuffer stringBuffer = new StringBuffer();
