@@ -1,4 +1,4 @@
-package innerSort.quickSort_ops;
+package DataStructure.sort.innerSort.quickSort;
 
 /** 
  *@author liujun
@@ -36,18 +36,13 @@ package innerSort.quickSort_ops;
 
 public class QuickSort {
 
-	public int[] quickSortSimplex(int [] sort_num) {
-		long time1 = System.nanoTime();
-		quicksortSimplex(sort_num, 0, sort_num.length - 1);
-		long time2 = System.nanoTime() - time1;
-		System.out.println("QuickSortSimplex用时："+time2);
-		
-		return sort_num;
-	}
-	
 	//单向快排：
-	public int[] quicksortSimplex(int [] sort_num, int left, int right) {
+	public int[] quickSortSimplex(int [] sortNum) {
+		quicksortSimplex(sortNum, 0, sortNum.length - 1);
+		return sortNum;
+	}
 
+	public int[] quicksortSimplex(int [] sortNum, int left, int right) {
 		//定位变量
 		int mid = left;
 		int temp = 0;
@@ -55,32 +50,31 @@ public class QuickSort {
 		if(left < right){
 			//从左到右寻找比标杆小的元素，依次与mid交换
 			for (int i = left + 1; i <= right; i++) {
-				if(sort_num[i] < sort_num[left]){
+				if(sortNum[i] < sortNum[left]){
 					mid++;
-					temp = sort_num[mid];
-					sort_num[mid] = sort_num[i];
-					sort_num[i] = temp;
+					temp = sortNum[mid];
+					sortNum[mid] = sortNum[i];
+					sortNum[i] = temp;
 				}
 			}
 			//最后一个比对元素跟标杆元素交换
-			temp = sort_num[mid];
-			sort_num[mid] = sort_num[left];
-			sort_num[left] = temp;
+			temp = sortNum[mid];
+			sortNum[mid] = sortNum[left];
+			sortNum[left] = temp;
 			//递归
-			quicksortSimplex(sort_num, left, mid - 1);
-			quicksortSimplex(sort_num, mid + 1, right);
+			quicksortSimplex(sortNum, left, mid - 1);
+			quicksortSimplex(sortNum, mid + 1, right);
 		}
-		return sort_num;
+		return sortNum;
 	}
 	
-	public int[] quickSortDuplexing(int [] sort_num) {
-		// TODO Auto-generated method stub
-		quicksortDuplexing(sort_num, 0, sort_num.length - 1);
-		return sort_num;
+	public int[] quickSortDuplexing(int [] sortNum) {
+		quicksortDuplexing(sortNum, 0, sortNum.length - 1);
+		return sortNum;
 	}
 	
 	//双向快排
-	public int[] quicksortDuplexing(int [] sort_num, int left, int right) {
+	public int[] quicksortDuplexing(int [] sortNum, int left, int right) {
 
 		int mid = left;
 		int temp = 0;
@@ -91,30 +85,29 @@ public class QuickSort {
 		if(left < right){
 			while(low < high){
 				//高指针从右往左找小于标杆的元素
-				while((low < high) && (sort_num[high] > sort_num[left])){
+				while((low < high) && (sortNum[high] > sortNum[left])){
 					high--;
 				}
 				//低指针从左往右找大于标杆的元素
-				while((low < high) && (sort_num[low] <= sort_num[left])){
+				while((low < high) && (sortNum[low] <= sortNum[left])){
 					low++;
 				}
 				//高低值，交换元素
 				if(low <= high){
-					temp = sort_num[high];
-					sort_num[high] = sort_num[low];
-					sort_num[low] = temp;
+					temp = sortNum[high];
+					sortNum[high] = sortNum[low];
+					sortNum[low] = temp;
 				}
 				mid = low;
 			}
 			//中位数与标杆，交换元素
-			temp = sort_num[mid];
-			sort_num[mid] = sort_num[left];
-			sort_num[left] = temp;
+			temp = sortNum[mid];
+			sortNum[mid] = sortNum[left];
+			sortNum[left] = temp;
 			//递归
-			quicksortDuplexing(sort_num, left, mid - 1);
-			quicksortDuplexing(sort_num, mid + 1, right);
+			quicksortDuplexing(sortNum, left, mid - 1);
+			quicksortDuplexing(sortNum, mid + 1, right);
 		}
-		return sort_num;
+		return sortNum;
 	}
-
 }

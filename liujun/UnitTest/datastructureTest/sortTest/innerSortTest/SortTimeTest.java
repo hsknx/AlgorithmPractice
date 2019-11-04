@@ -1,6 +1,8 @@
-package innerSort.quickSort_ops;
+package UnitTest.datastructureTest.sortTest.innerSortTest;
 
-/** 
+import DataStructure.sort.innerSort.quickSort.*;
+
+/**
  *@author liujun
  *@date： 2019-7-5 下午02:29:55
  *@author—Email:ljfirst@mail.ustc.edu.cn
@@ -8,7 +10,7 @@ package innerSort.quickSort_ops;
  *@URL:
  *@version 1.0
  */
-public class TimeTest {
+public class SortTimeTest {
 
 	public static void main(String[] args) {
 		int[] arr = new int[]{25, 78, 30, 21, 13, 41, 65, 26, 46, 74, 62, 82, 65, 16, 3, 84, 46, 27, 9, 9, 31, 12, 51, 80, 5, 75, 89, 9, 54, 67, 32, 76, 65, 12, 47, 25, 82, 14, 28, 46, 10, 21, 98, 17, 45, 4, 98, 46, 15, 91, 80, 79, 40, 42, 77, 26, 42, 80, 77, 2, 10, 2, 79, 82, 42, 69, 19, 26, 0, 3, 71, 34, 95, 80, 54, 59, 85, 100, 39, 55, 3, 89, 67, 15, 35, 56, 21, 85, 31, 19, 50, 78, 34, 37, 85, 82, 15, 20, 42, 41,
@@ -21,22 +23,16 @@ public class TimeTest {
 		25, 78, 30, 21, 13, 41, 65, 26, 46, 74, 62, 82, 65, 16, 3, 84, 46, 27, 9, 9, 31, 12, 51, 80, 5, 75, 89, 9, 54, 67, 32, 76, 65, 12, 47, 25, 82, 14, 28, 46, 10, 21, 98, 17, 45, 4, 98, 46, 15, 91, 80, 79, 40, 42, 77, 26, 42, 80, 77, 2, 10, 2, 79, 82, 42, 69, 19, 26, 0, 3, 71, 34, 95, 80, 54, 59, 85, 100, 39, 55, 3, 89, 67, 15, 35, 56, 21, 85, 31, 19, 50, 78, 34, 37, 85, 82, 15, 20, 42, 41,
 		25, 78, 30, 21, 13, 41, 65, 26, 46, 74, 62, 82, 65, 16, 3, 84, 46, 27, 9, 9, 31, 12, 51, 80, 5, 75, 89, 9, 54, 67, 32, 76, 65, 12, 47, 25, 82, 14, 28, 46, 10, 21, 98, 17, 45, 4, 98, 46, 15, 91, 80, 79, 40, 42, 77, 26, 42, 80, 77, 2, 10, 2, 79, 82, 42, 69, 19, 26, 0, 3, 71, 34, 95, 80, 54, 59, 85, 100, 39, 55, 3, 89, 67, 15, 35, 56, 21, 85, 31, 19, 50, 78, 34, 37, 85, 82, 15, 20, 42, 41,
 		25, 78, 30, 21, 13, 41, 65, 26, 46, 74, 62, 82, 65, 16, 3, 84, 46, 27, 9, 9, 31, 12, 51, 80, 5, 75, 89, 9, 54, 67, 32, 76, 65, 12, 47, 25, 82, 14, 28, 46, 10, 21, 98, 17, 45, 4, 98, 46, 15, 91, 80, 79, 40, 42, 77, 26, 42, 80, 77, 2, 10, 2, 79, 82, 42, 69, 19, 26, 0, 3, 71, 34, 95, 80, 54, 59, 85, 100, 39, 55, 3, 89, 67, 15, 35, 56, 21, 85, 31, 19, 50, 78, 34, 37, 85, 82, 15, 20, 42, 41};
-		
-		
-		QuickSortOps qso = new QuickSortOps();
-		QuickSort qs = new QuickSort();
-		int[] a = new int[arr.length];
-		
+
+
+		//获取开始时间
+		long beginTime = System.currentTimeMillis();
+		QuickSort quickSort = new QuickSort();
 		for (int i = 0; i < 20; i++) {
-			
-			System.arraycopy(arr, 0, a, 0, arr.length);
-			qso.quickSortOps(a);
-			
-			System.arraycopy(arr, 0, a, 0, arr.length);
-			qs.quickSortSimplex(a);
-			
-			System.arraycopy(arr, 0, a, 0, arr.length);
-			qso.insertionSort(a);
+
 		}
+		//获取结束时间
+		long endTime=System.currentTimeMillis();
+		System.out.println("quickSort..的执行时间是："+(endTime-beginTime));
 	}
 }
