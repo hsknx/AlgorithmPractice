@@ -11,7 +11,7 @@
 + all the project in liujun
 
 ## Architecture:
-### 数据结构及其应用（ds）
+### 数据结构及其应用（DataStructure）
 #### 排序（sort）
   + 内部排序
     + 简单排序：
@@ -32,7 +32,7 @@
 #### 串（string）
 #### 树（tree）		
 #### 图（graph）
-### 算法（alg）
+### 算法（Algorithm）
   + 动态规划
   + 回溯
   + 贪心
