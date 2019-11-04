@@ -1,4 +1,4 @@
-package recall;
+package Algorithm.recall.recall;
 
 /** 
  *@author liujun

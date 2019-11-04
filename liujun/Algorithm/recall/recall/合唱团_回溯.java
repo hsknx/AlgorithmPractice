@@ -1,5 +1,4 @@
-package recall;
-
+package Algorithm.recall.recall;
 
 import java.util.Scanner;
 

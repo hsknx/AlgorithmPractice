@@ -1,4 +1,4 @@
-package recall_apply;
+package Algorithm.recall.recall_apply;
 
 import java.util.Scanner;
 

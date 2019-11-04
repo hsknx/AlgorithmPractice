@@ -1,4 +1,4 @@
-package other;
+package Algorithm.other.other;
 /** 
  *@author liujun
  *@date£º 2018-7-20 ÏÂÎç02:08:03

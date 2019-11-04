@@ -1,4 +1,5 @@
-package backpack;
+package Algorithm.dynamic.backpack;
+
 /** 
  *@author liujun
  *@date£º 2018-7-19 ÉÏÎç11:56:07

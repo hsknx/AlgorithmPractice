@@ -1,4 +1,4 @@
-package dynamic_apply;
+package Algorithm.dynamic.dynamic_apply;
 /** 
  *@author liujun
  *@date£º 2018-8-19 ÉÏÎç01:34:47

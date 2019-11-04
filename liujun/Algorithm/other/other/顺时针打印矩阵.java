@@ -1,4 +1,4 @@
-package other;
+package Algorithm.other.other;
 
 /** 
  *@author liujun

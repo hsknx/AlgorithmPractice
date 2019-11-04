@@ -1,4 +1,4 @@
-package other;
+package Algorithm.other.other;
 
 import java.util.ArrayList;
 import java.util.List;

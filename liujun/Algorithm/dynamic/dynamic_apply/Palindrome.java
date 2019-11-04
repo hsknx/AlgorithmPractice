@@ -1,4 +1,4 @@
-package dynamic_apply;
+package Algorithm.dynamic.dynamic_apply;
 
 import java.util.Scanner;
 
