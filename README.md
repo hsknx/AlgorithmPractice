@@ -7,6 +7,9 @@
 + 然后根据思维导图中的链接跳转到[我的博客](https://blog.csdn.net/ljfirst)，查看具体笔记内容，
 + 最后通过博客前端链接访问我的[github](https://github.com/ljfirst/Algorithm)，查看具体代码实现。
 
+### special：
++ all the project in liujun
+
 ## Architecture:
 ### 数据结构及其应用（ds）
 #### 排序（sort）
