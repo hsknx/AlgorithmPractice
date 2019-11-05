@@ -1,4 +1,4 @@
-package stringApply;
+package DataStructure.string.stringApply;
 /** 
  *@author liujun
  *@date£º 2019-7-8 ÏÂÎç04:57:00
@@ -56,12 +56,5 @@ public class KMP {
 			return true;
 		}
 		return false;
-	}
-	
-	public static void main(String[] args) {
-		String s1 = "dthggvjffvyugbuiyufxewzqaszdxcvbpo";
-		String s2 = "ffvyut";
-		KMP d = new KMP();
-		System.out.println(d.kmp(s1, s2));;
 	}
 }

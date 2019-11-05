@@ -9,7 +9,8 @@ import java.util.Arrays;
  * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
  * @description:
  */
-public class LongestIncreasingSubsequence {
+//LongestIncreasingSubsequence
+public class LIS {
 
     public void longestIncreasingSubsequence(String sequence){
 
@@ -57,7 +58,7 @@ public class LongestIncreasingSubsequence {
     public static void main(String[] args) {
 
         String s = "1528334656789123456";//123456789
-        LongestIncreasingSubsequence lis = new LongestIncreasingSubsequence();
+        LIS lis = new LIS();
         lis.longestIncreasingSubsequence(s);
     }
 }

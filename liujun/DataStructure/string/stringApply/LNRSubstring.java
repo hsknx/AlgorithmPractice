@@ -1,4 +1,4 @@
-package stringApply;
+package DataStructure.string.stringApply;
 
 /** 
  *@author liujun
@@ -8,7 +8,8 @@ package stringApply;
  *@URL:https://leetcode-cn.com/explore/interview/card/bytedance/242/string/1012/
  *@version 1.0
  */
-public class LongestnoRepeatSubstring {
+//LongestnoRepeatSubstring
+public class LNRSubstring {
 
 	public int lengthOfLongestSubstring(String s) {
 	    
@@ -26,10 +27,4 @@ public class LongestnoRepeatSubstring {
 		}
 		return count;
     }
-	
-	//	test
-	public static void main(String[] args) {
-		LongestnoRepeatSubstring d = new LongestnoRepeatSubstring();
-		System.out.println(d.lengthOfLongestSubstring("pwwkew"));
-	}
 }

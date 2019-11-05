@@ -1,0 +1,39 @@
+package UnitTest.datastructureTest.stringTest.stringApplyTest;
+
+import DataStructure.string.stringApply.KMP;
+import org.junit.Test;
+
+/**
+ * @author liujun
+ * @version 1.0
+ * @date： 2019-11-06 00:04
+ * @author—Email:ljfirst@mail.ustc.edu.cn
+ * @description:
+ */
+public class KMPTest {
+
+    KMP kmp = new KMP();
+
+    //正案例01：测试用例01
+    String source01 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
+    String pattern01 = "==1vyugbuiy1==";
+
+    //正案例02：测试用例02
+    String source02 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
+    String pattern02 = "1vyugbuiy1";
+
+    //反案例03：测试用例03
+    String source03 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
+    String pattern03 = "=1=1vyugbuiy1==";
+    @Test
+    public void testKMP(){
+        boolean flag = kmp.kmp(source01, pattern01);
+        assert flag;
+
+        flag = kmp.kmp(source02, pattern02);
+        assert flag;
+
+        flag = kmp.kmp(source03, pattern03);
+        assert !flag;
+    }
+}

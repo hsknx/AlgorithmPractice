@@ -1,4 +1,4 @@
-package stringApply;
+package DataStructure.string.stringApply;
 /** 
  *@author liujun
  *@date： 2019-8-26 下午07:32:21
@@ -9,7 +9,7 @@ package stringApply;
  */
 public class Sunday {
 
-	public Sunday(String source, String pattern) {
+	public boolean SundaySolution(String source, String pattern) {
 		
 		int sourceIndex = 0;
 		int patternIndex = 0;
@@ -35,25 +35,6 @@ public class Sunday {
 				break;
 			}
 		}
-		if(flag == true){
-			System.out.println("right");
-		}else{
-			System.out.println("error");
-		}
-	}
-	
-	public static void main(String[] args) {
-		//正案例
-		new Sunday("12345ui6789", "ui");
-		new Sunday("12345uri67we89", "we");
-		new Sunday("123rt45uri6789", "rt");
-		new Sunday("12345uri67fghj89", "fghj");
-		new Sunday("1212sdr4345uri6789", "12sdr4");
-		//反案例
-		new Sunday("12uw3wi345uri6789", "uwwi");
-		new Sunday("12345uri6u4i789", "ui");
-		new Sunday("12u344i345uri6789", "u34i");
-		new Sunday("1234f5g365uri6789", "f5g6");
-		new Sunday("12345uri67f34g3b5n689", "f34gb5n6");
+		return flag;
 	}
 }

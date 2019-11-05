@@ -1,7 +1,7 @@
 package DataStructure.tree.binaryTree.apply;
 
+import DataStructure.string.stringApply.KMP;
 import DataStructure.tree.binaryTree.realize.BinaryTree;
-import stringApply.KMP;
 
 /**
  *@author liujun
