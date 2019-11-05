@@ -1,8 +1,6 @@
 package UnitTest.datastructureTest.sortTest.innerSortTest;
 
-import DataStructure.sort.innerSort.quickSort.QuickSort;
-import DataStructure.sort.innerSort.quickSort.QuickSortOps;
-import DataStructure.sort.innerSort.simpleSort.SimpleSort;
+import DataStructure.sort.innerSort.quickSort.QuickSortOpt;
 import org.junit.Test;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -29,7 +27,7 @@ public class SimpleSortTest {
 
         try {
             Class<?> demoClass = Class.forName(QuickSortOpsName);
-            QuickSortOps demo = (QuickSortOps) demoClass.newInstance();
+            QuickSortOpt demo = (QuickSortOpt) demoClass.getDeclaredConstructor().newInstance();
             Method[] methods = demoClass.getMethods();
 
             for (Method method : methods) {
@@ -457,6 +455,8 @@ public class SimpleSortTest {
             e.printStackTrace();
             System.err.println(arr.length);
             assert(false);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
         }
     }
 }

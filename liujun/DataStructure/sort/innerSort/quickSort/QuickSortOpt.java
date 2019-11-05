@@ -8,7 +8,7 @@ package DataStructure.sort.innerSort.quickSort;
  *@URL:
  *@version 1.0
  */
-public class QuickSortOps {
+public class QuickSortOpt {
 
 	public int[] quickSortOps(int [] sortNum) {
 		// Ä¬ÈÏkÎª3
