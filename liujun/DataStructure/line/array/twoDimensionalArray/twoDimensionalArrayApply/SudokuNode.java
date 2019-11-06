@@ -1,4 +1,4 @@
-package DataStructure.line.array.twoDimensionalArray.apply;
+package DataStructure.line.array.twoDimensionalArray.twoDimensionalArrayApply;
 
 /**
  * @author liujun

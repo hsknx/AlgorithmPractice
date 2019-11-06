@@ -15,7 +15,7 @@ public class SkipList {
 	//头尾指针(满足头指针值为最小值，尾指针为最大值)
 	SkipListNode head, tail;
 	//跳跃表层高
-	int SkipListlevel;
+	public int SkipListlevel;
 	//跳跃表总结点个数
 	int SkipListnum;
 	public static final int HEAD_KEY = Integer.MIN_VALUE;

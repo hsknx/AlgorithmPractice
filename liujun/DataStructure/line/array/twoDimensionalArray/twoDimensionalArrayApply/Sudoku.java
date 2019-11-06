@@ -1,4 +1,4 @@
-package DataStructure.line.array.twoDimensionalArray.apply;
+package DataStructure.line.array.twoDimensionalArray.twoDimensionalArrayApply;
 
 import DataStructure.tree.balanceBinaryTree.redBlackTree.realize.RedBlackTree;
 import Logic.math.Bitcount;

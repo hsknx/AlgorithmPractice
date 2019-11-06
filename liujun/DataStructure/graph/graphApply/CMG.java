@@ -14,15 +14,15 @@ import java.util.Scanner;
  *任意两个不同集合内的点之间有边相连，则称该图为完全多部图。现在你需要判断给定的图是否为完全多部图。
  *@version 1.0
  */
-public class CompleteMultipartiteGraph {
+//完全多部图:CompleteMultipartiteGraph
+public class CMG {
 
-public static int count = 0;
-	
+	public static int count = 0;
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String s = scan.nextLine().trim();
 		int zhu = Integer.parseInt(s);
-		CompleteMultipartiteGraph m = new CompleteMultipartiteGraph();
+		CMG m = new CMG();
 		
 		for (int i = 0; i < zhu; i++) {
 			
@@ -45,7 +45,6 @@ public static int count = 0;
 				System.out.println("No");
 			}
 		}
-		
 	}
 	
 	//找出全相连的点
@@ -77,7 +76,7 @@ public static int count = 0;
 	//判断剩下元素是否存在关联
 	private boolean judge(int[][] matrix) {
 
-		CompleteMultipartiteGraph m = new CompleteMultipartiteGraph();
+		CMG m = new CMG();
 		Map<Integer, Integer> map = new HashMap<Integer, Integer>();
 		map = m.find(matrix);
 		
@@ -92,7 +91,6 @@ public static int count = 0;
 				}
 			}
 		}
-		
 		return true;
 	}
 }

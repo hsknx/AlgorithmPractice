@@ -1,6 +1,6 @@
 package UnitTest.datastructureTest.lineTest.arrayTest.twoDimensionalArrayTest.applyTest;
 
-import DataStructure.line.array.twoDimensionalArray.apply.LargestSquare;
+import DataStructure.line.array.twoDimensionalArray.twoDimensionalArrayApply.LargestSquare;
 import org.junit.Test;
 
 /**
