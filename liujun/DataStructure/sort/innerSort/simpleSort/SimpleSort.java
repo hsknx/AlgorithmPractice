@@ -13,6 +13,8 @@ public class SimpleSort {
     public int [] BubbleSort(int [] sortNum) {
         //交换变量：temp
         int temp;
+        //第一次内部排序，无数据交换，则默认为数组有序
+        boolean flag = false;
         //外部循环：循环元素个数减一次，因为最后一次默认有序
         for (int i = 0; i < sortNum.length-1; i++) {
             //内部循环：外部循环i次，可以确定i个元素已经有序，因此剩余n-i个无序元素，
@@ -22,7 +24,11 @@ public class SimpleSort {
                     temp = sortNum[j];
                     sortNum[j] = sortNum[j+1];
                     sortNum[j+1] = temp;
+                    flag = true;
                 }
+            }
+            if(false){
+                break;
             }
         }
         return sortNum;
