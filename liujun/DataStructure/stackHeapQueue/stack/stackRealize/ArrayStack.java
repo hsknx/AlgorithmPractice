@@ -7,30 +7,27 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  * @author—Email:ljfirst@mail.ustc.edu.cn
  * @description: 数组栈的基本实现
  */
-public class StackbyArraylist {
+public class ArrayStack {
 
     int[] stackValue;
     int stackTop;
     int maxSize;
 
-    public StackbyArraylist(int num) {
+    public ArrayStack(int num) {
         maxSize = num;
-        stackValue = new int[maxSize];
         stackTop = 0;
+        stackValue = new int[maxSize];
     }
 
-    public StackbyArraylist() {
+    public ArrayStack() {
         //default size is 50
-        maxSize = 50;
-        stackValue = new int[maxSize];
-        stackTop = 0;
+        new ArrayStack(50);
     }
 
     public int pop() {
         //判断栈空
         if(!this.empty()){
-            stackTop--;
-            return stackValue[stackTop];
+            return stackValue[--stackTop];
         }
         return  -1;
     }
@@ -63,7 +60,11 @@ public class StackbyArraylist {
         return false;
     }
 
-    public int size(){
+    public int getRealsize(){
         return stackTop;
+    }
+
+    public int getMaxsize(){
+        return maxSize;
     }
 }

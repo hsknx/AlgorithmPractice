@@ -1,6 +1,6 @@
 package UnitTest.datastructureTest.stackHeapQueueTest.stackTest.stackRealizeTest;
 
-import DataStructure.stackHeapQueue.stack.stackRealize.StackbyArraylist;
+import DataStructure.stackHeapQueue.stack.stackRealize.ArrayStack;
 import org.junit.Test;
 
 /**
@@ -10,57 +10,56 @@ import org.junit.Test;
  * @author—Email:ljfirst@mail.ustc.edu.cn
  * @description:
  */
-public class StackbyArraylistTest {
+public class ArrayStackTest {
 
-
-    StackbyArraylist stackbyArraylist = new StackbyArraylist(10);
+    ArrayStack arrayStack = new ArrayStack(10);
 
     @Test
     public void methodTest(){
         //peek正反案例
-        int value = stackbyArraylist.peek();
+        int value = arrayStack.peek();
         assert value == -1;
-        value = stackbyArraylist.pop();
+        value = arrayStack.pop();
         assert value == -1;
         //empty正反案例
-        boolean flag = stackbyArraylist.empty();
+        boolean flag = arrayStack.empty();
         assert flag;
         //size正反案例
-        value = stackbyArraylist.size();
+        value = arrayStack.getRealsize();
         assert value == 0;
-        flag = stackbyArraylist.push(0);
+        flag = arrayStack.push(0);
         assert flag;
         //push正反案例
         for (int i = 1; i <= 9; i++) {
-            flag = stackbyArraylist.push(i);
+            flag = arrayStack.push(i);
         }
         assert flag;
-        flag = stackbyArraylist.empty();
+        flag = arrayStack.empty();
         assert !flag;
-        value = stackbyArraylist.size();
+        value = arrayStack.getRealsize();
         assert value == 10;
-        flag = stackbyArraylist.push(10);
+        flag = arrayStack.push(10);
         assert !flag;
-        value = stackbyArraylist.pop();
+        value = arrayStack.pop();
         assert value == 9;
-        value = stackbyArraylist.peek();
+        value = arrayStack.peek();
         assert value == 8;
         //search 正反案例
-        flag = stackbyArraylist.search(8);
+        flag = arrayStack.search(8);
         assert flag;
-        flag = stackbyArraylist.search(10);
+        flag = arrayStack.search(10);
         assert !flag;
         //pop正反案例
         for (int i = 1; i <= 9; i++) {
-            stackbyArraylist.pop();
+            arrayStack.pop();
         }
-        flag = stackbyArraylist.empty();
+        flag = arrayStack.empty();
         assert flag;
-        value = stackbyArraylist.pop();
+        value = arrayStack.pop();
         assert value == -1;
-        value = stackbyArraylist.peek();
+        value = arrayStack.peek();
         assert value == -1;
-        value = stackbyArraylist.size();
+        value = arrayStack.getRealsize();
         assert value == 0;
     }
 }

@@ -1,6 +1,6 @@
 package DataStructure.stackHeapQueue.stack.stackApply;
 
-import DataStructure.stackHeapQueue.stack.stackRealize.StackbyArraylist;
+import DataStructure.stackHeapQueue.stack.stackRealize.ArrayStack;
 
 /**
  * @author liujun
@@ -9,7 +9,7 @@ import DataStructure.stackHeapQueue.stack.stackRealize.StackbyArraylist;
  * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
  * @description:
  */
-public class MinValueStackOpt extends StackbyArraylist {
+public class MinValueStackOpt extends ArrayStack {
 
     int miniStackValue;
 

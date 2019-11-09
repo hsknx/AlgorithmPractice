@@ -7,29 +7,27 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  * @author—Email:ljfirst@mail.ustc.edu.cn
  * @description: 链表栈的基本实现
  */
-public class StackbyLinkedlist {
+public class LinkedStack {
 
     public Node stackTop;
-    public int stackSize;
+    public int stackRealSize;
     public int stackMaxSize;
 
-    public StackbyLinkedlist(int num){
-        stackSize = 0;
+    public LinkedStack(int num){
+        stackRealSize = 0;
         stackMaxSize = num;
         stackTop = null;
     }
 
-    public StackbyLinkedlist(){
-        stackSize = 0;
+    public LinkedStack(){
         //默认栈内容量50
-        stackMaxSize = 50;
-        stackTop = null;
+        new LinkedStack(50);
     }
 
-    private static class Node{
+    private class Node{
         int vlaue;
         Node next;
-        public Node(int value){
+        Node(int value){
             this.vlaue = value;
             this.next = null;
         }
@@ -38,7 +36,7 @@ public class StackbyLinkedlist {
     public int pop(){
         //出栈判空
         if(!this.empty()){
-            stackSize--;
+            stackRealSize--;
             int value = stackTop.vlaue;
             stackTop = stackTop.next;
             return value;
@@ -49,22 +47,22 @@ public class StackbyLinkedlist {
     public boolean push(int value){
         //入栈判满
         Node node = new Node(value);
-        if(stackSize == stackMaxSize){
+        if(stackRealSize == stackMaxSize){
             return false;
         }else{
             node.next = stackTop;
         }
         stackTop = node;
-        stackSize++;
+        stackRealSize++;
         return true;
     }
 
     public int peek(){
-        return (stackTop == null && stackSize ==0) ? -1 : stackTop.vlaue;
+        return (stackTop == null && stackRealSize ==0) ? -1 : stackTop.vlaue;
     }
 
     public boolean empty(){
-        return (stackTop == null && stackSize ==0) ? true : false;
+        return (stackTop == null && stackRealSize ==0) ? true : false;
     }
 
     public boolean search(int value){
@@ -78,8 +76,12 @@ public class StackbyLinkedlist {
         return false;
     }
 
-    public int size(){
-        return stackSize;
+    public int getRealsize(){
+        return stackRealSize;
+    }
+
+    public int getMaxsize(){
+        return stackMaxSize;
     }
 
 }
