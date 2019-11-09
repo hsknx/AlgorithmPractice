@@ -14,18 +14,18 @@ public class MinValueStackOpt extends StackbyArraylist {
     int miniStackValue;
 
     @Override
-    public boolean pop() {
-        if(!this.isEmpty()){
+    public int pop() {
+        if(!this.empty()){
             int stackPeekValue = super.peek();
             miniStackValue = stackPeekValue < 0 ? miniStackValue - stackPeekValue : miniStackValue;
             super.pop();
         }
-        return false;
+        return miniStackValue;
     }
 
     @Override
     public boolean push(int value) {
-        if(this.isEmpty()){
+        if(this.empty()){
             miniStackValue = value;
             super.push(0);
         }else {
@@ -38,7 +38,7 @@ public class MinValueStackOpt extends StackbyArraylist {
 
     @Override
     public int peek() {
-        if(!this.isEmpty()){
+        if(!this.empty()){
             int stackPeekValue = super.peek();
             return stackPeekValue < 0 ? miniStackValue : stackPeekValue + miniStackValue;
         }

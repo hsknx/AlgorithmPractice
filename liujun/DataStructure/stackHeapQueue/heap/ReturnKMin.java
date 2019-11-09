@@ -3,7 +3,7 @@ package DataStructure.stackHeapQueue.heap;
  *@author liujun
  *@date： 2018-8-25 下午04:58:29
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:返回数组中最小的k个数。
+ *@description: 返回数组中最小的k个数。
  *@method:
  *    方法一：使用堆
  *    方法二：使用快排

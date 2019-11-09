@@ -5,13 +5,24 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  * @version 1.0
  * @date： 2019-10-21 12:17
  * @author—Email:ljfirst@mail.ustc.edu.cn
- * @description:链表栈一共有5个方法：pop、push、peek、empty、search.
+ * @description: 链表栈的基本实现
  */
 public class StackbyLinkedlist {
 
     public Node stackTop;
+    public int stackSize;
+    public int stackMaxSize;
+
+    public StackbyLinkedlist(int num){
+        stackSize = 0;
+        stackMaxSize = num;
+        stackTop = null;
+    }
 
     public StackbyLinkedlist(){
+        stackSize = 0;
+        //默认栈内容量50
+        stackMaxSize = 50;
         stackTop = null;
     }
 
@@ -25,7 +36,9 @@ public class StackbyLinkedlist {
     }
 
     public int pop(){
-        if(stackTop != null){
+        //出栈判空
+        if(!this.empty()){
+            stackSize--;
             int value = stackTop.vlaue;
             stackTop = stackTop.next;
             return value;
@@ -33,23 +46,25 @@ public class StackbyLinkedlist {
         return -1;
     }
 
-    public void push(int value){
-
+    public boolean push(int value){
+        //入栈判满
         Node node = new Node(value);
-        if(stackTop == null){
-            stackTop = node;
+        if(stackSize == stackMaxSize){
+            return false;
         }else{
             node.next = stackTop;
-            stackTop = node;
         }
+        stackTop = node;
+        stackSize++;
+        return true;
     }
 
     public int peek(){
-        return stackTop != null ? stackTop.vlaue : -1;
+        return (stackTop == null && stackSize ==0) ? -1 : stackTop.vlaue;
     }
 
     public boolean empty(){
-        return stackTop == null ? true : false;
+        return (stackTop == null && stackSize ==0) ? true : false;
     }
 
     public boolean search(int value){
@@ -63,20 +78,8 @@ public class StackbyLinkedlist {
         return false;
     }
 
-    public static void main(String[] args) {
-        StackbyLinkedlist sa = new StackbyLinkedlist();
-        sa.push(12);
-        sa.push(11);
-        sa.push(10);
-        System.out.println(sa.peek());;
-        sa.pop();
-        sa.push(9);
-        System.out.println(sa.peek());;
-        sa.pop();
-        sa.pop();
-        System.out.println(sa.search(11));
-        System.out.println(sa.search(9));
-        System.out.println(sa.search(12));
-        System.out.println();
+    public int size(){
+        return stackSize;
     }
+
 }

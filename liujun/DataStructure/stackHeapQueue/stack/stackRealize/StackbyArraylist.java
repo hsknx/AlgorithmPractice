@@ -5,39 +5,39 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  * @version 1.0
  * @date： 2019-10-21 12:17
  * @author—Email:ljfirst@mail.ustc.edu.cn
- * @description:数组栈一共有5个方法：pop、push、peek、empty、search.
+ * @description: 数组栈的基本实现
  */
 public class StackbyArraylist {
 
     int[] stackValue;
     int stackTop;
+    int maxSize;
 
     public StackbyArraylist(int num) {
-        stackValue = new int[num];
+        maxSize = num;
+        stackValue = new int[maxSize];
         stackTop = 0;
     }
 
     public StackbyArraylist() {
         //default size is 50
-        stackValue = new int[50];
+        maxSize = 50;
+        stackValue = new int[maxSize];
         stackTop = 0;
     }
 
-    public boolean isEmpty() {
-        return this.stackTop == 0 ? true : false;
-    }
-
-    public boolean pop() {
-        if(!this.isEmpty()){
+    public int pop() {
+        //判断栈空
+        if(!this.empty()){
             stackTop--;
-            return true;
+            return stackValue[stackTop];
         }
-        return  false ;
+        return  -1;
     }
 
     public boolean push(int value) {
-
-        if(this.stackTop < stackValue.length){
+        //判断栈满
+        if(this.stackTop < maxSize){
             stackValue[stackTop++] = value;
             return true;
         }
@@ -45,11 +45,16 @@ public class StackbyArraylist {
     }
 
     public int peek() {
-        return this.isEmpty() ? -1 : stackValue[stackTop - 1];
+        return this.empty() ? -1 : stackValue[stackTop - 1];
+    }
+
+    public boolean empty() {
+        return this.stackTop == 0 ? true : false;
     }
 
     public boolean search(int value) {
-        //因为出栈的时候没有对栈内容清楚所以search的时候需要在限定范围内查询
+        //因为出栈的时候没有对栈内容清除
+        // 所以search的时候需要在限定范围内查询
         for (int i = 0; i < stackTop; i++){
             if (value == stackValue[i]){
                 return true;
@@ -58,20 +63,7 @@ public class StackbyArraylist {
         return false;
     }
 
-    public static void main(String[] args) {
-        StackbyArraylist sa = new StackbyArraylist();
-        sa.push(12);
-        sa.push(11);
-        sa.push(10);
-        System.out.println(sa.peek());;
-        sa.pop();
-        sa.push(9);
-        System.out.println(sa.peek());;
-        sa.pop();
-        sa.pop();
-        System.out.println(sa.search(11));
-        System.out.println(sa.search(9));
-        System.out.println(sa.search(12));
-        System.out.println();
+    public int size(){
+        return stackTop;
     }
 }
