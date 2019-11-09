@@ -12,8 +12,6 @@ import org.junit.Test;
  */
 public class StackbyLinkedlistTest {
 
-
-
     StackbyLinkedlist StackbyLinkedlist = new StackbyLinkedlist(10);
 
     @Test

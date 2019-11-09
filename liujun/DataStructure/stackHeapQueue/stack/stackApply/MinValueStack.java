@@ -6,7 +6,7 @@ import java.util.Stack;
  *@author liujun
  *@date： 2018-8-25 下午03:47:41
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:定义一个栈，除了常规操作，还可以随时查找栈中最小值。
+ *@description: 定义一个栈，除了常规操作，还可以随时查找栈中最小值。
  *@version 1.0
  */
 public class MinValueStack extends Stack<Integer>{
@@ -18,7 +18,7 @@ public class MinValueStack extends Stack<Integer>{
 	public MinValueStack() {
 	}
 	
-	public synchronized Integer minValue() {
+	public synchronized Integer getMinValue() {
 		// TODO Auto-generated method stub
 		return ministack.peek();
 	}

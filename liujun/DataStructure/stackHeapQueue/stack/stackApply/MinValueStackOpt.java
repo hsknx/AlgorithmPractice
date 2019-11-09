@@ -16,11 +16,11 @@ public class MinValueStackOpt extends StackbyArraylist {
     @Override
     public int pop() {
         if(!this.empty()){
-            int stackPeekValue = super.peek();
-            miniStackValue = stackPeekValue < 0 ? miniStackValue - stackPeekValue : miniStackValue;
-            super.pop();
+            int peekValue = super.peek();
+            miniStackValue = peekValue < 0 ? miniStackValue - peekValue : miniStackValue;
+            return super.pop();
         }
-        return miniStackValue;
+        return -1;
     }
 
     @Override
@@ -29,9 +29,9 @@ public class MinValueStackOpt extends StackbyArraylist {
             miniStackValue = value;
             super.push(0);
         }else {
-            int subValue = value - miniStackValue;
-            super.push(subValue);
-            miniStackValue = subValue < 0 ? value : miniStackValue;
+            int pushValue = value - miniStackValue;
+            super.push(pushValue);
+            miniStackValue = pushValue < 0 ? value : miniStackValue;
         }
         return false;
     }
@@ -46,25 +46,9 @@ public class MinValueStackOpt extends StackbyArraylist {
     }
 
     public int getMinValue(){
-        return miniStackValue;
-    }
-
-    public static void main(String[] args) {
-        MinValueStackOpt sa = new MinValueStackOpt();
-        sa.push(5);
-        sa.push(12);
-        sa.push(3);
-        System.out.println(sa.getMinValue());
-        sa.push(10);
-        System.out.println(sa.peek());;
-        sa.pop();
-        sa.push(1);
-        System.out.println(sa.peek());;
-        sa.pop();
-        sa.pop();
-        System.out.println(sa.getMinValue());
-        System.out.println(sa.search(9));
-        System.out.println(sa.search(12));
-        System.out.println();
+        if(!this.empty()){
+            return miniStackValue;
+        }
+        return -1;
     }
 }
