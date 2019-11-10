@@ -17,7 +17,10 @@ public class 查找单词个数 {
 		//输入一个字符串
 		String string = scan.nextLine();
 		//输入一个单词
+		
 		String s = scan.next();
 		System.out.println(string.toLowerCase().split(s).length-1);
+		
+		
 	}
 }
