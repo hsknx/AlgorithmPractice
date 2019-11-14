@@ -9,9 +9,9 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  */
 public class ArrayStack {
 
-    int[] stackValue;
-    int stackTop;
-    int maxSize;
+    public int[] stackValue;
+    public int stackTop;
+    public int maxSize;
 
     public ArrayStack(int num) {
         maxSize = num;
@@ -21,7 +21,10 @@ public class ArrayStack {
 
     public ArrayStack() {
         //default size is 50
-        new ArrayStack(50);
+        //new ArrayStack(50);这种写法是错误的，赋值会随着方法的退出而消失
+        maxSize = 50;
+        stackTop = 0;
+        stackValue = new int[maxSize];
     }
 
     public int pop() {

@@ -17,6 +17,4 @@ public class FindPalindromeOps {
         String targetString = "";
         return targetString;
     }
-
-
 }

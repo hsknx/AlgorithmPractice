@@ -1,7 +1,6 @@
 package UnitTest.algorithmTest.combineTest.PalindromeTest;
 
 import Algorithm.combine.palindrome.FindPalindromeOps;
-import org.junit.Test;
 
 /**
  * @author liujun
@@ -14,8 +13,7 @@ public class FindPalindromeOpsTest {
 
     FindPalindromeOps findPalindromeOps = new FindPalindromeOps();
 
-    @Test
-    public void findStringTest(String source){
+    public void findStringTest(){
 
         String target = findPalindromeOps.findString(TestString01);
         assert target == null;

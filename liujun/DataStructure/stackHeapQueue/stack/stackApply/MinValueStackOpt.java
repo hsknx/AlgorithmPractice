@@ -25,15 +25,18 @@ public class MinValueStackOpt extends ArrayStack {
 
     @Override
     public boolean push(int value) {
+        boolean flag = false;
+        //Õ»Îª¿Õ
         if(this.empty()){
             miniStackValue = value;
-            super.push(0);
+            flag = super.push(0);
         }else {
+            //Õ»Î´Âú
             int pushValue = value - miniStackValue;
-            super.push(pushValue);
+            flag = super.push(pushValue);
             miniStackValue = pushValue < 0 ? value : miniStackValue;
         }
-        return false;
+        return flag;
     }
 
     @Override

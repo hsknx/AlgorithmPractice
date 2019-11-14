@@ -1,18 +1,20 @@
-package innerSort.normalSort;
+package DataStructure.sort.innerSort.innerSortRealize.normalSort;
 
-/** 
+import DataStructure.sort.innerSort.SortInterface;
+
+/**
  *@author liujun
  *@date： 2019-3-23 下午12:09:48
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:基数排序
+ *@description: 基数排序
  *@URL:
  *@version 1.0
  */
-public class RadixSort {
+public class RadixSort implements SortInterface {
 
-	public int[] radixSort(int[] array) {
+	public int[] sortMethod(int[] array) {
 		//边界判空
-		if(array.equals(null) || array.length == 0){
+		if(array.length == 0 || array == null){
 			return array;
 		}
 		//找出最大位数

@@ -1,5 +1,8 @@
-package innerSort.normalSort;
-/** 
+package DataStructure.sort.innerSort.innerSortRealize.normalSort;
+
+import DataStructure.sort.innerSort.SortInterface;
+
+/**
  *@author liujun
  *@date£º 2019-3-23 ÏÂÎç12:09:20
  *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
@@ -10,9 +13,12 @@ package innerSort.normalSort;
  *@URL:
  *@version 1.0
  */
-public class MergeSort {
+public class MergeSort implements SortInterface {
 
-	public int[] mergeSort(int[] array) {
+	public int[] sortMethod(int[] array) {
+		if(array.length == 0 || array == null){
+			return array;
+		}
 		int[] temp = new int[array.length];
 		return mergesort(array, 0, array.length-1, temp);
 	}

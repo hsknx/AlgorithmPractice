@@ -5,10 +5,11 @@ package Algorithm.combine.palindrome;
  * @version 1.0
  * @date： 2019-11-07 22:42
  * @author—Email:ljfirst@mail.ustc.edu.cn
- * @description:
+ * @description:发现回文：默认单个字符不够成回文
  */
 public class FindPalindrome {
 
+    //暴力法发现回文
     public String findStringViolence(String source){
 
         CreatePalindromebyAdd createPalindromebyAdd = new CreatePalindromebyAdd();
@@ -34,6 +35,7 @@ public class FindPalindrome {
         return target.length() > 0 ?  target : null;
     }
 
+    //采用中间开花法查找回文
     public String findString(String source){
 
         if(source == null || source.length() == 0){
@@ -47,15 +49,21 @@ public class FindPalindrome {
         if(preString != null){
             for (int i = 0; i < preString.length(); i++) {
                 preStringTempLength = getPointBound(preString, i);
-                PalindromeLength = PalindromeLength > preStringTempLength ? PalindromeLength : preStringTempLength;
-                PalindromeBegin = (i - PalindromeLength)/2;
+                if(PalindromeLength < preStringTempLength){
+                    PalindromeLength = preStringTempLength;
+                    PalindromeBegin = (i - PalindromeLength)/2;
+                }
             }
+        }
+        //长度为1，即未匹配上，返回为空
+        if(PalindromeLength == 1){
+            return null;
         }
         String targetString = source.substring(PalindromeBegin, PalindromeBegin + PalindromeLength);
         return targetString;
     }
 
-    //字符串预处理，所有位置加#
+    //字符串预处理，所有间隔位置加#
     public String preDealString(String source, char divideChar){
         //检查字符串是否含有分隔符
         if(source.indexOf(divideChar) != -1){
@@ -67,7 +75,7 @@ public class FindPalindrome {
             stringBuffer.append(divideChar);
             stringBuffer.append(SPchar[i]);
         }
-        stringBuffer.append(SPchar);
+        stringBuffer.append(divideChar);
         return stringBuffer.toString();
     }
 
@@ -80,7 +88,7 @@ public class FindPalindrome {
         int boundlength = 0;
         while(leftbound >= 0 && rightbound <= length && pattern.charAt(leftbound) == pattern.charAt(rightbound)){
             boundlength++;
-            leftbound --;
+            leftbound--;
             rightbound++;
         }
         return boundlength;

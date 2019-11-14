@@ -1,6 +1,8 @@
-package DataStructure.sort.innerSort.quickSort;
+package DataStructure.sort.innerSort.innerSortRealize.quickSort;
 
-/** 
+import DataStructure.sort.innerSort.SortInterface;
+
+/**
  *@author liujun
  *@date£º 2019-3-23 ÏÂÎç12:08:37
  *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
@@ -8,12 +10,12 @@ package DataStructure.sort.innerSort.quickSort;
  *@URL:
  *@version 1.0
  */
-public class QuickSortOpt {
+public class QuickSortOpt implements SortInterface {
 
-	public int[] quickSortOps(int [] sortNum) {
+	public int[] sortMethod(int [] array) {
 		// Ä¬ÈÏkÎª3
-		quicksortOps(sortNum, 8);
-		return sortNum;
+		quicksortOps(array, 8);
+		return array;
 	}
 	
 	public int[] quicksortOps(int [] sortNum, int k) {

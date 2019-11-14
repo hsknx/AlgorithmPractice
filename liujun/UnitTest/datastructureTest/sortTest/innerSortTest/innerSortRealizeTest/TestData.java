@@ -1,36 +1,34 @@
-package innerSort.normalSort;
+package UnitTest.datastructureTest.sortTest.innerSortTest.innerSortRealizeTest;
+
+import DataStructure.sort.innerSort.innerSortRealize.quickSort.QuickSortOpt;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
-import org.junit.Test;
 
-/** 
- *@author liujun
- *@date£º 2019-6-26 ÏÂÎç03:41:57
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
- *@description:
- *@URL:
- *@version 1.0
+/**
+ * @author liujun
+ * @version 1.0
+ * @date£º 2019-11-14 23:00
+ * @author¡ªEmail: liujunfirst@outlook.com
+ * @description:
+ * @blogURL:
  */
-public class PowerfulTest {
+public class TestData {
 
-	@Test
-	public void test_allSort(){
-		int[] arr = new int[]{};
-		int[] expected = new int[]{};
-		try {
-			
-			String packagename = "sort.";
-			String classname = "RadixSort";
-			String s = packagename + classname;
-			Class<?> demoClass = Class.forName(s);
-			
-			RadixSort demo = (RadixSort) demoClass.newInstance();
-			Method[] methods = demoClass.getMethods();			
-			
-			for (Method method : methods) {
-				if (method.getName().contains("Sort")) {
+    public void data(){
+        int[] arr = new int[]{};
+        int[] expected = new int[]{};
+        String s = "DataStructure.sort.innerSort.innerSortRealize.quickSort.QuickSortOpt";
+
+        try {
+            Class<?> demoClass = Class.forName(s);
+            QuickSortOpt demo = (QuickSortOpt) demoClass.getDeclaredConstructor().newInstance();
+            Method[] methods = demoClass.getMethods();
+
+            for (Method method : methods) {
+                System.out.println("method name:"+method);
+                if (method.getName().contains("Sort")) {
                     arr = new int[]{};
                     expected = new int[]{};
                     method.invoke(demo, arr);
@@ -435,24 +433,26 @@ public class PowerfulTest {
                     expected = new int[]{0, 2, 2, 3, 3, 3, 4, 5, 9, 9, 9, 10, 10, 12, 12, 13, 14, 15, 15, 15, 16, 17, 19, 19, 20, 21, 21, 21, 25, 25, 26, 26, 26, 27, 28, 30, 31, 31, 32, 34, 34, 35, 37, 39, 40, 41, 41, 42, 42, 42, 42, 45, 46, 46, 46, 46, 47, 50, 51, 54, 54, 55, 56, 59, 62, 65, 65, 65, 67, 67, 69, 71, 74, 75, 76, 77, 77, 78, 78, 79, 79, 80, 80, 80, 80, 82, 82, 82, 82, 84, 85, 85, 85, 89, 89, 91, 95, 98, 98, 100};
                     method.invoke(demo, arr);
                     assert(Arrays.equals(arr, expected));
-				}
-			}
-		} catch (ClassNotFoundException e) {			
-			e.printStackTrace();
-			assert(false);
-		} catch (InstantiationException e) {
-			e.printStackTrace();
-			assert(false);
-		} catch (IllegalAccessException e) {
-			e.printStackTrace();
-			assert(false);
-		} catch (IllegalArgumentException e) {
-			e.printStackTrace();
-			assert(false);
-		} catch (InvocationTargetException e) {
-			e.printStackTrace();
-			System.err.println(arr.length);
-			assert(false);
-		}
-	}
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            assert(false);
+        } catch (InstantiationException e) {
+            e.printStackTrace();
+            assert(false);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+            assert(false);
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+            assert(false);
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+            System.err.println(arr.length);
+            assert(false);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        }
+    }
 }

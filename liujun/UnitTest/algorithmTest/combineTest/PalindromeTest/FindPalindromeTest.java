@@ -45,17 +45,18 @@ public class FindPalindromeTest {
         target = findPalindrome.findString(TestString03);
         assert target == "abcddcba";
         target = findPalindrome.findString(TestString04);
-        assert target == "abcddcba";
+        assert target == "abcdcba";
         target = findPalindrome.findString(TestString05);
-        assert target == "abcdcba";
+        //字符串的比较尽量使用equals
+        assert target.equals("abcdcba");
         target = findPalindrome.findString(TestString06);
-        assert target == "abcdcba";
+        assert target.equals("abcdcba");
         target = findPalindrome.findString(TestString07);
-        assert target == "abcdcba";
+        assert target.equals("abcdcba");
         target = findPalindrome.findString(TestString08);
         assert target == null;
         target = findPalindrome.findString(TestString09);
-        assert target.equals("a");
+        assert target == null;
     }
 
     //测试用例01:空
