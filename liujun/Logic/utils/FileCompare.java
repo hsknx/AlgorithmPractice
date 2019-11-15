@@ -1,6 +1,6 @@
 package Logic.utils;
 
-import Algorithm.dynamic.lcs.LCSforcompare;
+import Algorithm.dynamic.dynamicPrimary.lcs.LCSforcompare;
 import DataStructure.sort.innerSort.innerSortApply.SelectionSortforFileCompare;
 import java.util.ArrayList;
 import java.util.HashMap;

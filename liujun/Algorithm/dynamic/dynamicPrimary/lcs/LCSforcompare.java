@@ -1,4 +1,4 @@
-package Algorithm.dynamic.lcs;
+package Algorithm.dynamic.dynamicPrimary.lcs;
 
 import java.util.ArrayList;
 import java.util.List;

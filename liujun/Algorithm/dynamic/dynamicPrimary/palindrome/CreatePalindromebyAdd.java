@@ -1,4 +1,4 @@
-package Algorithm.combine.palindrome;
+package Algorithm.dynamic.dynamicPrimary.palindrome;
 /** 
  *@author liujun
  *@date£º 2018-8-19 ÉÏÎç01:34:47

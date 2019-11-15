@@ -1,6 +1,6 @@
 package UnitTest.algorithmTest.combineTest.PalindromeTest;
 
-import Algorithm.combine.palindrome.CreatePalindromebyDelete;
+import Algorithm.dynamic.dynamicPrimary.palindrome.CreatePalindromebyDelete;
 import org.junit.Test;
 
 /**

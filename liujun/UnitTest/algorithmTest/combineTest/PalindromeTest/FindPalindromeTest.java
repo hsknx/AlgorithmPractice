@@ -1,6 +1,6 @@
 package UnitTest.algorithmTest.combineTest.PalindromeTest;
 
-import Algorithm.combine.palindrome.FindPalindrome;
+import Algorithm.dynamic.dynamicPrimary.palindrome.FindPalindrome;
 import org.junit.Test;
 
 /**

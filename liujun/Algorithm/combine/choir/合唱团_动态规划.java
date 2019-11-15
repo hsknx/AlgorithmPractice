@@ -1,4 +1,4 @@
-package Algorithm.dynamic.dynamic_apply;
+package Algorithm.combine.choir;
 
 import java.util.Scanner;
 

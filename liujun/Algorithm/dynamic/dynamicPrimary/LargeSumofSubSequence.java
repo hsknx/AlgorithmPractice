@@ -1,4 +1,4 @@
-package Algorithm.other.other;
+package Algorithm.dynamic.dynamicPrimary;
 /** 
  *@author liujun
  *@date£º 2018-7-20 ÏÂÎç02:08:03
