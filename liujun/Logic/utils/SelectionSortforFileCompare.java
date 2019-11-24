@@ -1,4 +1,4 @@
-package DataStructure.sort.innerSort.innerSortApply;
+package Logic.utils;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -7,10 +7,10 @@ import java.util.Iterator;
  *@author liujun
  *@date： 2018-7-19 上午11:55:48
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:选择排序
+ *@description: 选择排序
  *@version 1.0
  */
-
+//对list内的元素排序
 public class SelectionSortforFileCompare {
 
 	public String[] selectionSort(ArrayList<String> list) {
