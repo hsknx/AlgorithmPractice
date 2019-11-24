@@ -24,7 +24,7 @@ public class DecompressTest {
         depressString = decompress.decompression(demo03);
         assert depressString.equals("");
         depressString = decompress.decompression(demo04);
-        assert depressString.equals("benuddoozzvvvv");
+        assert depressString.equals("benddoouzzvvvv");
         depressString = decompress.decompression(demo05);
         assert depressString.equals("bbddddeaaacc");
         depressString = decompress.decompression(demo06);
@@ -37,7 +37,7 @@ public class DecompressTest {
     //测试用例03
     public String demo03 = "a1b2cc3d4f56";//不是标准输入
     //测试用例04
-    public String demo04 = "u1e1b1o2z2n1d2v4";//benuddoozzvvvv
+    public String demo04 = "u1e1b1o2z2n1d2v4";//benddoouzzvvvv
     //测试用例05
     public String demo05 = "c2d4e1a3b2";//输出bbddddeaaacc
     //测试用例06

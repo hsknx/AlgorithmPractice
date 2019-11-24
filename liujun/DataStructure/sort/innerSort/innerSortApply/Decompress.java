@@ -1,7 +1,5 @@
 package DataStructure.sort.innerSort.innerSortApply;
 
-import java.util.Arrays;
-
 /**
  * @author liujun
  * @version 1.0
@@ -37,24 +35,19 @@ public class Decompress {
 
         //num是为了后续排序，numreally是排序不影响跟alpha一对一
         int[] numberfront = new int[number.length - 1];
-        int[] numberfollow = new int[number.length - 1];
         int count = 0;
         //string转int
         for (int i = 0; i < number.length; i++) {
-            if (number[i].matches("[0-9]+")) {
-                numberfront[count] = Integer.parseInt(number[i]);
-                numberfollow[count] = Integer.parseInt(number[i]);
-                count++;
+            if(number[i].matches("[0-9]+")){
+                numberfront[count++] = Integer.parseInt(number[i]);
             }
         }
-        //排序，从小到大
-        Arrays.sort(numberfront);
         StringBuffer sb = new StringBuffer();
         //选择排序，按照字母顺序排列相同数量的字母
         for (int i = 0; i < numberfront.length - 1; i++) {
-            for (int j = i; j < numberfollow.length; j++) {
+            for (int j = i + 1; j < numberfront.length; j++) {
                 //相同出现数量的按照asc码排序
-                if ((numberfollow[j] == numberfront[i]) && (alpha[i].charAt(0) - alpha[j].charAt(0) > 0)) {
+                if ((numberfront[j] == numberfront[i]) && (alpha[i].charAt(0) - alpha[j].charAt(0) > 0)) {
                     String sd = alpha[i];
                     alpha[i] = alpha[j];
                     alpha[j] = sd;
@@ -62,8 +55,8 @@ public class Decompress {
             }
         }
         //生成字符串
-        for (int i = 0; i < numberfollow.length; i++) {
-            for (int j = 0; j < numberfollow[i]; j++) {
+        for (int i = 0; i < numberfront.length; i++) {
+            for (int j = 0; j < numberfront[i]; j++) {
                 sb.append(alpha[i]);
             }
         }
