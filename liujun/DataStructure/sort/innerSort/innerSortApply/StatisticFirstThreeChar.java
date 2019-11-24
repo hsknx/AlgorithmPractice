@@ -61,7 +61,7 @@ public class StatisticFirstThreeChar {
 			//注意此区间有几个字符不属于字母
 			if((c1-'A'>=0 && c1-'Z'<=0) || (c1-'a'>=0 && c1-'z'<=0)){
 				bucket[c1-'A']++;
-				if(bucket[c1-'A']>3){
+				if(bucket[c1-'A'] == 3){
 					return c1;
 				}
 			}
