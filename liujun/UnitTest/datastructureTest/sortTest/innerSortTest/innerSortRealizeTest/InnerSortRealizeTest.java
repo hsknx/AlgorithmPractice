@@ -57,8 +57,8 @@ public class InnerSortRealizeTest {
             try {
                 Class<?> demoClass = Class.forName(s);
                 SortInterface demo = (SortInterface) demoClass.getDeclaredConstructor().newInstance();
-
                 System.out.println("method name:" + demo.getClass().getName());
+
                 arr = new int[]{};
                 expected = new int[]{};
                 demo.sortMethod(arr);

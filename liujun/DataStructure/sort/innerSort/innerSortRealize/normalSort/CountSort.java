@@ -6,7 +6,8 @@ import DataStructure.sort.innerSort.SortInterface;
  *@author liujun
  *@date： 2019-3-23 下午12:10:15
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:1、统计原始数组的频率(用最小值优化)
+ *@description: 计数排序
+ *1、统计原始数组的频率(用最小值优化)
  *2、输出统计后的数组。
  *@URL:
  *@version 1.0

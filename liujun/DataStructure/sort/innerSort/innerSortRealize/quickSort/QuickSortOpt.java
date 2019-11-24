@@ -14,17 +14,8 @@ public class QuickSortOpt implements SortInterface {
 
 	public int[] sortMethod(int [] array) {
 		// 默认k为3
-		quicksortOps(array, 8);
+		quicksortOpsSimplex(array, 0, array.length - 1, 8);
 		return array;
-	}
-	
-	public int[] quicksortOps(int [] sortNum, int k) {
-		// TODO Auto-generated constructor stub
-		if(k > sortNum.length){
-			return insertionsort(sortNum, 0, sortNum.length - 1);
-		}
-		quicksortOpsSimplex(sortNum, 0, sortNum.length - 1, k);
-		return sortNum;
 	}
 	
 	public int[] quicksortOpsSimplex(int [] sortNum, int left, int right, int k) {
@@ -57,14 +48,9 @@ public class QuickSortOpt implements SortInterface {
 		}
 		return sortNum;
 	}
-	
-	public int [] insertionSort(int [] sortNum) {
-		insertionsort(sortNum, 0, sortNum.length - 1);
-		return sortNum;
-	}
+
 	//插入排序
 	public int [] insertionsort(int [] sortNum, int left, int right) {
-
 		int temp = 0;
 		//外部循环从1开始，直到最后
 		for (int i = left + 1; i <= right; i++) {

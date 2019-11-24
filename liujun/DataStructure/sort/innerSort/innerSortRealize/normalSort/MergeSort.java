@@ -6,7 +6,7 @@ import DataStructure.sort.innerSort.SortInterface;
  *@author liujun
  *@date： 2019-3-23 下午12:09:20
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:
+ *@description: 归并排序
  *1、数组分成两段，每段去排序
  *2、排序时判断这两段是否越界，越界停止返回
  *3、实行归并
@@ -41,7 +41,7 @@ public class MergeSort implements SortInterface {
 		int r = mid + 1;
 		int j = left;
 		while(l <= mid && r <= right){
-			if(array[l] < array[r]){
+			if(array[l] > array[r]){
 				temp[j++] = array[r++];
 			}else{
 				temp[j++] = array[l++];
