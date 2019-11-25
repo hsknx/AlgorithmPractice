@@ -1,5 +1,6 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
+import Algorithm.dynamic.dynamicPrimary.DungeonGame;
 import org.junit.Test;
 
 /**
@@ -11,8 +12,12 @@ import org.junit.Test;
  * @blogURL:
  */
 public class DungeonGameTest {
+
+    DungeonGame dungeonGame = new DungeonGame();
     @Test
     public void Testmethod(){
 
     }
+
+    //≤‚ ‘”√¿˝
 }

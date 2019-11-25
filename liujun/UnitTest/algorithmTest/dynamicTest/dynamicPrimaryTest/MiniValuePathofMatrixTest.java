@@ -1,5 +1,6 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
+import Algorithm.dynamic.dynamicPrimary.MiniValuePathofMatrix;
 import org.junit.Test;
 
 /**
@@ -11,8 +12,12 @@ import org.junit.Test;
  * @blogURL:
  */
 public class MiniValuePathofMatrixTest {
+
+    MiniValuePathofMatrix miniValuePathofMatrix = new MiniValuePathofMatrix();
     @Test
     public void Testmethod(){
 
     }
+
+    //≤‚ ‘”√¿˝
 }

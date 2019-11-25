@@ -10,7 +10,8 @@ package Algorithm.dynamic.dynamicPrimary;
  */
 public class SpacerExtract {
 
-    public void method(){
+    public int method(int[] values){
 
+        return 0;
     }
 }

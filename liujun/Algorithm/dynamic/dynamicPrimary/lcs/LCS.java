@@ -13,7 +13,7 @@ import java.util.List;
 
 public class LCS {
 
-	public LCS(String s1, String s2) {
+	public String method(String s1, String s2) {
 		// TODO Auto-generated constructor stub
 		//获取字符串长度,其中在矩阵中n1表示行数,n2表示列数
 		int n1 = s1.length();
@@ -98,5 +98,7 @@ public class LCS {
 		}
 		System.out.println();
 		System.out.println("LCS's length:" + num_matrix[n1][n2]);
+
+		return "";
 	}
 }

@@ -1,5 +1,6 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
+import Algorithm.dynamic.dynamicPrimary.SpacerExtract;
 import org.junit.Test;
 
 /**
@@ -12,8 +13,24 @@ import org.junit.Test;
  */
 public class SpacerExtractTest {
 
+    SpacerExtract spacerExtract = new SpacerExtract();
     @Test
     public void Testmethod(){
 
+        int result = spacerExtract.method(demo01);
+        assert result == 18;
+        result = spacerExtract.method(demo02);
+        assert result == 0;
+        result = spacerExtract.method(demo03);
+        assert result == 0;
+        result = spacerExtract.method(demo04);
+        assert result == 352;
     }
+
+    //测试用例
+    int[] demo01 = {5,2,6,3,1,7};//选择5，6，7,result = 18
+    int[] demo02 = {};//result = 0
+    int[] demo03 = null;//result = 0
+    //所有9结尾的，result = 352
+    int[] demo04 = {9,1,19,5,2,29,3,3,39,4,1,49,5,59,36,6,69,56,7,79};
 }

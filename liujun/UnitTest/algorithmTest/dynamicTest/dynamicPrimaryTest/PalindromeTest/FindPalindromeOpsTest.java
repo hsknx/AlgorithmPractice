@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.combineTest.PalindromeTest;
+package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest.PalindromeTest;
 
 import Algorithm.dynamic.dynamicPrimary.palindrome.FindPalindromeOps;
 

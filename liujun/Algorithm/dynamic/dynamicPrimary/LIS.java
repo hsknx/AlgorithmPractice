@@ -7,12 +7,12 @@ import java.util.Arrays;
  * @version 1.0
  * @date： 2019-10-27 22:04
  * @author—Email:ljfirst@mail.ustc.edu.cn
- * @description:
+ * @description: 最长递增子序列
  */
 //LongestIncreasingSubsequence
 public class LIS {
 
-    public void longestIncreasingSubsequence(String sequence){
+    public String longestIncreasingSubsequence(String sequence){
 
         System.out.println("sequence:"+sequence);
         int length = sequence.length();
@@ -53,12 +53,7 @@ public class LIS {
         System.out.println("longest num:"+best);
         System.out.println("longest数组："+Arrays.toString(longest));
         System.out.println("LongestIncreasingSubsequence:"+sb.reverse().toString());
-    }
 
-    public static void main(String[] args) {
-
-        String s = "1528334656789123456";//123456789
-        LIS lis = new LIS();
-        lis.longestIncreasingSubsequence(s);
+        return "";
     }
 }

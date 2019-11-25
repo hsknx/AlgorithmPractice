@@ -1,5 +1,6 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
+import Algorithm.dynamic.dynamicPrimary.MiniValuePathofTriangle;
 import org.junit.Test;
 
 /**
@@ -11,8 +12,12 @@ import org.junit.Test;
  * @blogURL:
  */
 public class MiniValuePathofTriangleTest {
+
+    MiniValuePathofTriangle miniValuePathofTriangle = new MiniValuePathofTriangle();
     @Test
     public void Testmethod(){
 
     }
+
+    //≤‚ ‘”√¿˝
 }

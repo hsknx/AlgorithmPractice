@@ -10,7 +10,8 @@ package Algorithm.dynamic.dynamicPrimary;
  */
 public class ChangeMoney {
 
-    public void method(){
+    public int method(int[] coins ,int target){
 
+        return 0;
     }
 }

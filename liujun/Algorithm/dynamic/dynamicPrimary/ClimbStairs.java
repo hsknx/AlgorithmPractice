@@ -10,7 +10,8 @@ package Algorithm.dynamic.dynamicPrimary;
  */
 public class ClimbStairs {
 
-    public void method(){
+    public int method(int value){
 
+        return 0;
     }
 }

@@ -11,7 +11,7 @@ package Algorithm.dynamic.dynamicPrimary.lss;
 public class LSS {
 
 	//输入序列数组，输出最大子段和、起始地址、结束地址
-	public LSS(int [] Sequence){
+	public int LargestSumofSubSequence(int [] Sequence){
 		
 		int begin = 0;      //最大字段和的起始地址
 		int temp_begin = 0; //假设的最大值
@@ -33,14 +33,6 @@ public class LSS {
 		}
 		System.out.println("子序列最大值："+sum+" \n"+"子序列起始位置："
 				+(begin+1)+" \n"+"子序列结束位置："+(end+1));
-	}
-	
-	public static void main(String[] args) {
-		
-		/*int A[]={27,-49,1,3,-6,8,12,-5,-6,78,2,-6,-2,15,47,
-				1,5,-69,52,5,51,-48,1,56,-19,-8,48,15};*/
-		int B[]={-1,-2,-3,4,5,6,7,8,9,-10,-11,-12};
-		
-		new LSS(B);
+		return sum;
 	}
 }
