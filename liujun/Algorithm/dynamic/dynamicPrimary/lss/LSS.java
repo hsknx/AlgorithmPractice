@@ -1,16 +1,17 @@
-package Algorithm.dynamic.dynamicPrimary;
+package Algorithm.dynamic.dynamicPrimary.lss;
 /** 
  *@author liujun
  *@date： 2018-7-20 下午02:08:03
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:已知数组A[1..n]中存放着一些实数，有正有负，
+ *@description: 已知数组A[1..n]中存放着一些实数，有正有负，
  *请写程序找出其最大求和子区间
  *@version 1.0
  */
-public class LargeSumofSubSequence {
+//最大子段和:LargestSumofSubSequence
+public class LSS {
 
 	//输入序列数组，输出最大子段和、起始地址、结束地址
-	public LargeSumofSubSequence(int [] Sequence){
+	public LSS(int [] Sequence){
 		
 		int begin = 0;      //最大字段和的起始地址
 		int temp_begin = 0; //假设的最大值
@@ -40,6 +41,6 @@ public class LargeSumofSubSequence {
 				1,5,-69,52,5,51,-48,1,56,-19,-8,48,15};*/
 		int B[]={-1,-2,-3,4,5,6,7,8,9,-10,-11,-12};
 		
-		new LargeSumofSubSequence(B);
+		new LSS(B);
 	}
 }

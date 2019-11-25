@@ -1,4 +1,4 @@
-package DataStructure.string.sequenceApplay;
+package Algorithm.dynamic.dynamicPrimary;
 
 import java.util.Arrays;
 

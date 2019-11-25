@@ -3,7 +3,7 @@ package DataStructure.sort.innerSort.innerSortApply;
  *@author liujun
  *@date： 2018-8-25 下午04:58:29
  *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description:返回数组中最小的k个数。
+ *@description: 返回数组中最小的k个数。
  *@method:
  *    方法一：使用堆
  *    方法二：使用快排
@@ -12,10 +12,10 @@ package DataStructure.sort.innerSort.innerSortApply;
 public class ReturnKMin {
 
 	//方法一：使用堆
-	public void kMinHeap(int[] array ,int k) {
+	public int[] kMinHeap(int[] array ,int k) {
 		//输入检查
 		if (k > array.length) {  
-            return;  
+            return null;
         }
 		//整堆
 		for (int i = (array.length - 1)/2; i <= k; i++) {
@@ -35,6 +35,7 @@ public class ReturnKMin {
 			array[i] = array[array.length - 1 - i];
 			array[array.length - 1 - i] = temp;
 		}
+		return new int[]{1};
 	}
 	
 	//整堆函数——小顶堆
@@ -61,7 +62,12 @@ public class ReturnKMin {
 	}
 	
 	//方法二：使用快排
-	public void kMinQuickSort(int[] array, int k, int begin, int end) {
+	public int[] kMinQuickSort(int[] array, int k){
+		kMinQuickSortExe(array, k, 0,array.length - 1);
+		return new int[]{1};
+	}
+
+	public void kMinQuickSortExe(int[] array, int k, int begin, int end) {
 		// TODO Auto-generated method stub
 		if (k > array.length) {
 			System.out.println("k大于数组长度");
@@ -96,9 +102,9 @@ public class ReturnKMin {
 				return ; 
 			}
 			if(low < k){
-				kMinQuickSort(array, k, low + 1, end);
+				kMinQuickSortExe(array, k, low + 1, end);
 			}else {
-				kMinQuickSort(array, k, begin, low - 1);
+				kMinQuickSortExe(array, k, begin, low - 1);
 			}
 		}
 	}
