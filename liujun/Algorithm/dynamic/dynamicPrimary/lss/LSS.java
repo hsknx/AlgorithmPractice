@@ -1,38 +1,32 @@
 package Algorithm.dynamic.dynamicPrimary.lss;
-/** 
- *@author liujun
- *@date： 2018-7-20 下午02:08:03
- *@author—Email:ljfirst@mail.ustc.edu.cn
- *@description: 已知数组A[1..n]中存放着一些实数，有正有负，
- *请写程序找出其最大求和子区间
- *@version 1.0
+
+/**
+ * @author liujun
+ * @version 1.0
+ * @date： 2019-11-25 16:36
+ * @author—Email: liujunfirst@outlook.com
+ * @description: 给定一个数组，求这个数组的连续子数组中，最大的那一段的和
+ * @blogURL:
  */
-//最大子段和:LargestSumofSubSequence
 public class LSS {
 
-	//输入序列数组，输出最大子段和、起始地址、结束地址
-	public int LargestSumofSubSequence(int [] Sequence){
-		
-		int begin = 0;      //最大字段和的起始地址
-		int temp_begin = 0; //假设的最大值
-		int end = 0;        //最大字段和的结束地址
-		int temp_sum = 0;  //暂时的最大值
-		int sum = 0;       //记录最大值
-
-		for(int i = 0; i < Sequence.length; i++){
-			temp_sum += Sequence[i];
-			if(sum < temp_sum){
-				sum = temp_sum;   //记录最大值
-				begin = temp_begin; //假定的起始地址赋值给起始地址
-				end = i;
-			}
-			if(temp_sum <= 0){
-				temp_sum = 0;      //sum清空
-				temp_begin = i+1;   //假定的起始位置
-			}
-		}
-		System.out.println("子序列最大值："+sum+" \n"+"子序列起始位置："
-				+(begin+1)+" \n"+"子序列结束位置："+(end+1));
-		return sum;
-	}
+    public int LargestSumofSubSequence(int [] Sequence){
+        int sum = 0;
+        if(Sequence == null || Sequence.length == 0){
+            return 0;
+        }
+        int length = Sequence.length;
+        int[] LargestSum = new int[length];
+        sum = LargestSum[0] = Sequence[0];
+        if(length == 1){
+            return sum;
+        }
+        for (int i = 1; i < length; i++) {
+            LargestSum[i] = Math.max(LargestSum[i-1] + Sequence[i], Sequence[i]);
+            if(LargestSum[i] > sum){
+                sum = LargestSum[i];
+            }
+        }
+        return sum;
+    }
 }
