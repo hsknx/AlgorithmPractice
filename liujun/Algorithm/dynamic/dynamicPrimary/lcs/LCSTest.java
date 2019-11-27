@@ -38,20 +38,4 @@ public class LCSTest {
 		//Êä³öËæ»ú×Ö·û´®
 		return s;
 	}
-	
-	public static void main(String[] args) {
-		
-		//»ñÈ¡Ëæ»ú×Ö·û´®
-		LCSTest lt = new LCSTest();
-		String s1 = lt.random_sequence();
-		String s2 = lt.random_sequence();
-		System.out.println("×Ö·û´®s1:"+ s1);
-		System.out.println("×Ö·û´®s2:"+ s2);
-		
-		//×Ö·û´®Æ¥Åä
-		new LCS(s1, s2);
-		//System.out.println("======================");
-		new LCS_optimize(s1, s2);
-		
-	}
 }
