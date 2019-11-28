@@ -1,23 +1,23 @@
 package Algorithm.dynamic.dynamicPrimary.lss;
 /** 
  *@author liujun
- *@date£º 2018-7-20 ÏÂÎç02:08:03
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
- *@description: ÒÑÖªÊı×éA[1..n]ÖĞ´æ·Å×ÅÒ»Ğ©ÊµÊı£¬ÓĞÕıÓĞ¸º£¬
- *ÇëĞ´³ÌĞòÕÒ³öÆä×î´óÇóºÍ×ÓÇø¼ä
+ *@dateï¼š 2018-7-20 ä¸‹åˆ02:08:03
+ *@authorâ€”Email:ljfirst@mail.ustc.edu.cn
+ *@description: å·²çŸ¥æ•°ç»„A[1..n]ä¸­å­˜æ”¾ç€ä¸€äº›å®æ•°ï¼Œæœ‰æ­£æœ‰è´Ÿï¼Œ
+ *è¯·å†™ç¨‹åºæ‰¾å‡ºå…¶æœ€å¤§æ±‚å’Œå­åŒºé—´
  *@version 1.0
  */
-//×î´ó×Ó¶ÎºÍ:LargestSumofSubSequence
+//æœ€å¤§å­æ®µå’Œ:LargestSumofSubSequence
 public class LSSopt {
 
-	//ÊäÈëĞòÁĞÊı×é£¬Êä³ö×î´ó×Ó¶ÎºÍ¡¢ÆğÊ¼µØÖ·¡¢½áÊøµØÖ·
+	//è¾“å…¥åºåˆ—æ•°ç»„ï¼Œè¾“å‡ºæœ€å¤§å­æ®µå’Œã€èµ·å§‹åœ°å€ã€ç»“æŸåœ°å€
 	public int LargestSumofSubSequence(int [] Sequence){
 		
-		int begin = 0;      //×î´ó×Ö¶ÎºÍµÄÆğÊ¼µØÖ·
-		int begin_temp = 0; //¼ÙÉèµÄ×î´óÖµ
-		int end = 0;        //×î´ó×Ö¶ÎºÍµÄ½áÊøµØÖ·
-		int sum_temp = 0;   //ÔİÊ±µÄ×î´óÖµ
-		int sum = 0;        //¼ÇÂ¼×î´óÖµ
+		int begin = 0;      //æœ€å¤§å­—æ®µå’Œçš„èµ·å§‹åœ°å€
+		int begin_temp = 0; //å‡è®¾çš„æœ€å¤§å€¼
+		int end = 0;        //æœ€å¤§å­—æ®µå’Œçš„ç»“æŸåœ°å€
+		int sum_temp = Intergr.min;   //æš‚æ—¶çš„æœ€å¤§å€¼
+		int sum = 0;        //è®°å½•æœ€å¤§å€¼
 
         if(Sequence == null || Sequence.length == 0){
             return 0;
@@ -26,17 +26,17 @@ public class LSSopt {
 		for(int i = 0; i < Sequence.length; i++){
 			sum_temp += Sequence[i];
 			if(sum < sum_temp){
-				sum = sum_temp;   //¼ÇÂ¼×î´óÖµ
-				begin = begin_temp; //¼Ù¶¨µÄÆğÊ¼µØÖ·¸³Öµ¸øÆğÊ¼µØÖ·
-				end = i; //½áÊøµØÖ·°üÀ¨ i
+				sum = sum_temp;   //è®°å½•æœ€å¤§å€¼
+				begin = begin_temp; //å‡å®šçš„èµ·å§‹åœ°å€èµ‹å€¼ç»™èµ·å§‹åœ°å€
+				end = i; //ç»“æŸåœ°å€åŒ…æ‹¬ i
 			}
 			if(sum_temp <= Sequence[i]){
-				sum_temp = 0;      //sumÇå¿Õ
-				begin_temp = i+1;   //¼Ù¶¨µÄÆğÊ¼Î»ÖÃ
+				sum_temp = Sequence[i];      //sumæ¸…ç©º
+				begin_temp = i+1;   //å‡å®šçš„èµ·å§‹ä½ç½®
 			}
 		}
-		System.out.println("×ÓĞòÁĞ×î´óÖµ£º"+sum+" \n"+"×ÓĞòÁĞÆğÊ¼Î»ÖÃ£º"
-				+(begin+1)+" \n"+"×ÓĞòÁĞ½áÊøÎ»ÖÃ£º"+(end+1));
+		System.out.println("å­åºåˆ—æœ€å¤§å€¼ï¼š"+sum+" \n"+"å­åºåˆ—èµ·å§‹ä½ç½®ï¼š"
+				+(begin+1)+" \n"+"å­åºåˆ—ç»“æŸä½ç½®ï¼š"+(end+1));
 		return sum;
 	}
 }
