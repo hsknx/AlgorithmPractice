@@ -26,19 +26,14 @@ public class LSSopt {
 
 		for(int i = 1; i < Sequence.length; i++){
 			sum_temp += Sequence[i];
-			if(sum < sum_temp){
-				sum = sum_temp;     //记录最大值
-				begin = begin_temp; //假定的起始地址赋值给起始地址
-				end = i;            //结束地址包括 i
-			}
-			if(sum_temp <= Sequence[i]){
-				sum_temp = Sequence[i];     //sum清空
-				if(sum < sum_temp){
-					sum = sum_temp;
-					begin = begin_temp; //假定的起始地址赋值给起始地址
-					end = i;            //结束地址包括 i
-				}
+			if(sum_temp <= Sequence[i]){  //新开始
+				sum_temp = Sequence[i];   //sum清空
 				begin_temp = i;           //假定的起始位置
+			}
+			if(sum < sum_temp){
+				sum = sum_temp;           //记录最大值
+				begin = begin_temp;       //假定的起始地址赋值给起始地址
+				end = i;                  //结束地址包括 i
 			}
 		}
 		System.out.println("maxValue:"+sum);
