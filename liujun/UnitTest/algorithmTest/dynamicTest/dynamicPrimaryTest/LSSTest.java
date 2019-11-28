@@ -9,7 +9,7 @@ import org.junit.Test;
  * @version 1.0
  * @date： 2019-11-25 16:39
  * @author—Email: liujunfirst@outlook.com
- * @description:
+ * @description: 最大子段和
  * @blogURL:
  */
 public class LSSTest {
@@ -29,10 +29,14 @@ public class LSSTest {
         assert sum == 0;
         sum = lsSopt.LargestSumofSubSequence(demo05);
         assert sum == -1;
-        sum = lss.LargestSumofSubSequence(demo06);
+        sum = lsSopt.LargestSumofSubSequence(demo06);
         assert sum == 36;
-        sum = lss.LargestSumofSubSequence(demo07);
+        sum = lsSopt.LargestSumofSubSequence(demo07);
         assert sum == 22;
+        sum = lsSopt.LargestSumofSubSequence(demo08);
+        assert sum == -1;
+        sum = lsSopt.LargestSumofSubSequence(demo09);
+        assert sum == 1;
     }
 
     @Test
@@ -51,6 +55,10 @@ public class LSSTest {
         assert sum == 36;
         sum = lss.LargestSumofSubSequence(demo07);
         assert sum == 22;
+        sum = lss.LargestSumofSubSequence(demo08);
+        assert sum == -1;
+        sum = lss.LargestSumofSubSequence(demo09);
+        assert sum == 1;
     }
     //测试用例
     int[] demo01 = {-1,-2,-3,4,5,6,7,8,9,-10,-11,-12};//39
@@ -61,4 +69,7 @@ public class LSSTest {
     int[] demo05 = {-1,-2,-3,-4};//-1
     int[] demo06 = {-1,-2,1,2,3,4,5,6,-3,-4,2,2,3,4,5,6};//36
     int[] demo07 = {-1,-2,1,2,3,4,5,6,-3,-4,-50,2,2,3,4,5,6};//22
+    int[] demo08 = {-8,-2,-3,-1,-4};//-1
+    int[] demo09 = {-8,-2,1,-3,-1,-4};//1
+
 }

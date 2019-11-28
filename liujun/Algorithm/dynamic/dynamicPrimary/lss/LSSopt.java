@@ -16,27 +16,33 @@ public class LSSopt {
 		int begin = 0;      //最大字段和的起始地址
 		int begin_temp = 0; //假设的最大值
 		int end = 0;        //最大字段和的结束地址
-		int sum_temp = Intergr.min;   //暂时的最大值
+		int sum_temp = 0;   //暂时的最大值
 		int sum = 0;        //记录最大值
 
         if(Sequence == null || Sequence.length == 0){
             return 0;
         }
+        sum = sum_temp = Sequence[0];
 
-		for(int i = 0; i < Sequence.length; i++){
+		for(int i = 1; i < Sequence.length; i++){
 			sum_temp += Sequence[i];
 			if(sum < sum_temp){
-				sum = sum_temp;   //记录最大值
+				sum = sum_temp;     //记录最大值
 				begin = begin_temp; //假定的起始地址赋值给起始地址
-				end = i; //结束地址包括 i
+				end = i;            //结束地址包括 i
 			}
 			if(sum_temp <= Sequence[i]){
-				sum_temp = Sequence[i];      //sum清空
-				begin_temp = i+1;   //假定的起始位置
+				sum_temp = Sequence[i];     //sum清空
+				if(sum < sum_temp){
+					sum = sum_temp;
+					begin = begin_temp; //假定的起始地址赋值给起始地址
+					end = i;            //结束地址包括 i
+				}
+				begin_temp = i;           //假定的起始位置
 			}
 		}
-		System.out.println("子序列最大值："+sum+" \n"+"子序列起始位置："
-				+(begin+1)+" \n"+"子序列结束位置："+(end+1));
+		System.out.println("maxValue:"+sum);
+		System.out.println("start position:"+(begin+1)+"  end position:"+(end+1));
 		return sum;
 	}
 }
