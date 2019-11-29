@@ -1,6 +1,7 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
 import Algorithm.dynamic.dynamicPrimary.lss.LSS;
+import Algorithm.dynamic.dynamicPrimary.lss.LSS_divide;
 import Algorithm.dynamic.dynamicPrimary.lss.LSSopt;
 import org.junit.Test;
 
@@ -16,7 +17,29 @@ public class LSSTest {
 
     LSSopt lsSopt = new LSSopt();
     LSS lss = new LSS();
+    LSS_divide lss_divide = new LSS_divide();
 
+    @Test
+    public void Testmethodlss(){
+        int sum = lss.LargestSumofSubSequence(demo01);
+        assert sum == 39;
+        sum = lss.LargestSumofSubSequence(demo02);
+        assert sum == 233;
+        sum = lss.LargestSumofSubSequence(demo03);
+        assert sum == 0;
+        sum = lss.LargestSumofSubSequence(demo04);
+        assert sum == 0;
+        sum = lss.LargestSumofSubSequence(demo05);
+        assert sum == -1;
+        sum = lss.LargestSumofSubSequence(demo06);
+        assert sum == 36;
+        sum = lss.LargestSumofSubSequence(demo07);
+        assert sum == 22;
+        sum = lss.LargestSumofSubSequence(demo08);
+        assert sum == -1;
+        sum = lss.LargestSumofSubSequence(demo09);
+        assert sum == 1;
+    }
     @Test
     public void TestmethodlsSopt(){
         int sum = lsSopt.LargestSumofSubSequence(demo01);
@@ -40,26 +63,27 @@ public class LSSTest {
     }
 
     @Test
-    public void Testmethodlss(){
-        int sum = lss.LargestSumofSubSequence(demo01);
+    public void Testmethodlss_divide(){
+        int sum = lss_divide.LargestSumofSubSequence(demo01);
         assert sum == 39;
-        sum = lss.LargestSumofSubSequence(demo02);
+        sum = lss_divide.LargestSumofSubSequence(demo02);
         assert sum == 233;
-        sum = lss.LargestSumofSubSequence(demo03);
+        sum = lss_divide.LargestSumofSubSequence(demo03);
         assert sum == 0;
-        sum = lss.LargestSumofSubSequence(demo04);
+        sum = lss_divide.LargestSumofSubSequence(demo04);
         assert sum == 0;
-        sum = lss.LargestSumofSubSequence(demo05);
+        sum = lss_divide.LargestSumofSubSequence(demo05);
         assert sum == -1;
-        sum = lss.LargestSumofSubSequence(demo06);
+        sum = lss_divide.LargestSumofSubSequence(demo06);
         assert sum == 36;
-        sum = lss.LargestSumofSubSequence(demo07);
+        sum = lss_divide.LargestSumofSubSequence(demo07);
         assert sum == 22;
-        sum = lss.LargestSumofSubSequence(demo08);
+        sum = lss_divide.LargestSumofSubSequence(demo08);
         assert sum == -1;
-        sum = lss.LargestSumofSubSequence(demo09);
+        sum = lss_divide.LargestSumofSubSequence(demo09);
         assert sum == 1;
     }
+
     //≤‚ ‘”√¿˝
     int[] demo01 = {-1,-2,-3,4,5,6,7,8,9,-10,-11,-12};//39
     int[] demo02 = {27,-49,1,3,-6,8,12,-5,-6,78,2,-6,-2,15,47,
