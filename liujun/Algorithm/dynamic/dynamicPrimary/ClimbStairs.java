@@ -3,10 +3,10 @@ package Algorithm.dynamic.dynamicPrimary;
 /**
  * @author liujun
  * @version 1.0
- * @date£º 2019-11-25 16:39
- * @author¡ªEmail: liujunfirst@outlook.com
- * @description: ÅÀÂ¥Ìİ,ì³²»À­Ğ¨ÊıÁĞ
- * ÔÚÅÀÂ¥ÌİÊ±£¬Ã¿´Î¿ÉÏòÉÏ×ß1½×Ì¨½×»ò2½×Ì¨½×£¬ÎÊÓĞn½×Â¥ ÌİÓĞ¶àÉÙÖÖÉÏÂ¥µÄ·½Ê½
+ * @dateï¼š 2019-11-25 16:39
+ * @authorâ€”Email: liujunfirst@outlook.com
+ * @description: çˆ¬æ¥¼æ¢¯,æ–ä¸æ‹‰æ¥”æ•°åˆ—
+ * åœ¨çˆ¬æ¥¼æ¢¯æ—¶ï¼Œæ¯æ¬¡å¯å‘ä¸Šèµ°1é˜¶å°é˜¶æˆ–2é˜¶å°é˜¶ï¼Œé—®æœ‰né˜¶æ¥¼ æ¢¯æœ‰å¤šå°‘ç§ä¸Šæ¥¼çš„æ–¹å¼
  * @blogURL:
  */
 public class ClimbStairs {
@@ -33,11 +33,9 @@ public class ClimbStairs {
         int[] statusNum1 = new int[value];
         for (int i = 0; i < capacity; i++) {
             statusNum1[i] = statusNum[i];
-            System.out.println(statusNum1[i]);
         }
         for (int i = capacity; i < value; i++) {
             statusNum1[i] = statusNum1[i-1] + statusNum1[i-2];
-            System.out.println(statusNum1[i]);
         }
         capacity = value;
         statusNum = statusNum1;
