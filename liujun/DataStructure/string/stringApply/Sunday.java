@@ -2,7 +2,7 @@ package DataStructure.string.stringApply;
 /** 
  *@author liujun
  *@date： 2019-8-26 下午07:32:21
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@CSDN Blog URL:
  *@description:Sunday算法是一种比KMP算法更快捷的算法。
  *@version 1.0

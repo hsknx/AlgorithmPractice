@@ -8,7 +8,7 @@ import java.util.List;
 /** 
  *@author liujun
  *@date： 2018-8-25 下午02:36:07
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:求二叉树中最大子路径和。
  *@version 1.0
  */

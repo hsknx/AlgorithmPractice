@@ -9,7 +9,7 @@ import java.util.Stack;
  * @author liujun
  * @version 1.0
  * @date： 2019-11-04 17:00
- * @author—Email:ljfirst@mail.ustc.edu.cn
+ * @author—Email:liujunfirst@outlook.com
  * @description:
  */
 public class 二叉树中和为某一值的路径_非递归 {

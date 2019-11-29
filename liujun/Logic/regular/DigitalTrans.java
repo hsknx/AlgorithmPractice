@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  *@author liujun
  *@date£º 2018-5-13 Time£ºÏÂÎç10:31:25
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:trans digital trans to capital
  *method:
  * 1.È¥¿Õ¸ñ.

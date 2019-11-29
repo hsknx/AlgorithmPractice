@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  *@author liujun
  *@date： 2018-5-2 Time：下午11:00:55
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:有 n 个学生站成一排，每个学生有一个能力值，牛牛想从这 n个学生中
  *按照顺序选取 k名学生，要求相邻两个学生的位置编号的差不超过 d，
  *使得这 k个学生的能力值的乘积最大，你能返回最大的乘积吗？

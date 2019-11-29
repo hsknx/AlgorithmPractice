@@ -5,7 +5,7 @@ import DataStructure.sort.innerSort.SortInterface;
 /**
  *@author liujun
  *@date： 2018-8-22 下午05:03:35
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 桶排序
  *数据结构 采用 数组加链表
  *@version 1.0

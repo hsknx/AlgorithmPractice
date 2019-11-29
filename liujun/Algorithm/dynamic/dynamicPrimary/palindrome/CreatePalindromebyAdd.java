@@ -2,7 +2,7 @@ package Algorithm.dynamic.dynamicPrimary.palindrome;
 /** 
  *@author liujun
  *@date： 2018-8-19 上午01:34:47
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 给定一个字符串s，你可以从中 添加 一个 字符，使得剩下的串是一个回文串，
  * 如果通过添加一个字符得到回文，则返回删除元素的位置(起始地址：1)，否则返回 -1，
  * 如果本身是回文，返回中间的位置；

@@ -6,7 +6,7 @@ import java.util.Arrays;
  * @author liujun
  * @version 1.0
  * @date： 2019-10-27 22:04
- * @author—Email:ljfirst@mail.ustc.edu.cn
+ * @author—Email:liujunfirst@outlook.com
  * @description: 最长递增子序列
  */
 //LongestIncreasingSubsequence

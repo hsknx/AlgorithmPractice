@@ -7,7 +7,7 @@ import java.util.Scanner;
 /**
  *@author liujun
  *@date£º 2018-9-3 ÏÂÎç08:19:20
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:
  *@version 1.0
  */

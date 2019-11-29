@@ -5,7 +5,7 @@ import DataStructure.sort.innerSort.SortInterface;
 /**
  *@author liujun
  *@date£º 2019-3-23 ÏÂÎç12:09:48
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description: »ùÊıÅÅĞò
  *@URL:
  *@version 1.0

@@ -2,7 +2,7 @@ package DataStructure.tree.huffman;
 /** 
  *@author liujun
  *@date： 2018-8-27 下午09:37:31
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:将数组转化为赫夫曼树。
  *@version 1.0
  */

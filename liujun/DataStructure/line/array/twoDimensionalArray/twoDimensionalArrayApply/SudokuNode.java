@@ -4,7 +4,7 @@ package DataStructure.line.array.twoDimensionalArray.twoDimensionalArrayApply;
  * @author liujun
  * @version 1.0
  * @date£º 2019-10-18 02:35
- * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ * @author¡ªEmail:liujunfirst@outlook.com
  * @description:
  */
 public class SudokuNode {

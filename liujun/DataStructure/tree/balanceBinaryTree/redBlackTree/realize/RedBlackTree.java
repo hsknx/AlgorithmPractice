@@ -3,7 +3,7 @@ package DataStructure.tree.balanceBinaryTree.redBlackTree.realize;
 /** 
  *@author liujun
  *@date： 2018-8-29 下午10:29:42
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:红黑树
  *包括方法：containsKey(), get(), put(), remove()。
  *本文只处理int类型值的红黑树。

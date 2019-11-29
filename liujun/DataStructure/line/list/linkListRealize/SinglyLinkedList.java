@@ -3,7 +3,7 @@ package DataStructure.line.list.linkListRealize;
 /** 
  *@author liujun
  *@date： 2018-8-18 上午01:08:11
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 单链表
  *1. 单链表的头插法和尾插法
  *2. 单链表逆置

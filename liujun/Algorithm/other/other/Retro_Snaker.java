@@ -5,7 +5,7 @@ import java.util.Scanner;
 /** 
  *@author liujun
  *@date： 2018-7-29 上午11:55:36
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:初始状态：贪吃蛇的蛇头在坐标(0,0)处，蛇身长度为10，
  *蛇尾在(-10,0)处，呈一字型，输入一行字符，L表示蛇向左行走一格，R表示蛇向右行走一格，
  *U表示蛇向上行走一格，D表示蛇向下行走一格，判断输入的操作方式会不会导致蛇在自身上发生碰撞，

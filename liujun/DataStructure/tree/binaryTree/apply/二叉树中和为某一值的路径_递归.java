@@ -6,7 +6,7 @@ import java.util.ArrayList;
 /** 
  *@author liujun
  *@date： 2018-7-24 下午11:25:27
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:输入一颗二叉树的跟节点和一个整数，打印出二叉树中结点值的和为输
  *入整数的所有路径。路径定义为从树的根结点开始往下一直到叶结点所经过的结点形成一条路径。
  *(注意: 在返回值的list中，数组长度大的数组靠前)

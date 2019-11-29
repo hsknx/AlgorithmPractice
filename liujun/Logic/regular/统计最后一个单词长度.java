@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  *@author liujun
  *@date： 2018-5-2 Time：下午09:34:09
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:计算字符串最后一个单词的长度，单词以空格隔开。
  *@version 1.0
  */

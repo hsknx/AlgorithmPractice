@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  *@author liujun
  *@date£º 2018-5-13 Time£ºÏÂÎç10:29:49
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:Calculate
  *1)The word "RMB" should be marked before the amount of capital in Chinese. 
  *The amount of Chinese capital amount used to fill in the words of 

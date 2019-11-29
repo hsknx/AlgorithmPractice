@@ -5,7 +5,7 @@ import java.util.Scanner;
 /** 
  *@author liujun
  *@date： 2018-8-8 下午07:03:55
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:将输入字符串的大小写互换，输出时小写字母按序排在前，大写在后。
  *@version 1.0
  */

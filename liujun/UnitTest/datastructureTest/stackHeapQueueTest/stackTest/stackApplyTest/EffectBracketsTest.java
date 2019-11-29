@@ -39,24 +39,42 @@ public class EffectBracketsTest {
     }
 
     @Test
-    public void TestLongestEffectBracketsNum(){
+    public void TestLongestEffectBracketsNum_violence(){
 
-        int num = effectBrackets.LongestEffectBracketsNum(Demo01);
+        int num = effectBrackets.LongestEffectBracketsNum_violence(Demo01);
         assert num == 0;
-        num = effectBrackets.LongestEffectBracketsNum(Demo02);
+        num = effectBrackets.LongestEffectBracketsNum_violence(Demo02);
         assert num == 0;
-        num = effectBrackets.LongestEffectBracketsNum(Demo03);
+        num = effectBrackets.LongestEffectBracketsNum_violence(Demo03);
         assert num == 2;
-        num = effectBrackets.LongestEffectBracketsNum(Demo04);
+        num = effectBrackets.LongestEffectBracketsNum_violence(Demo04);
         assert num == 4;
-        num = effectBrackets.LongestEffectBracketsNum(Demo05);
+        num = effectBrackets.LongestEffectBracketsNum_violence(Demo05);
         assert num == 14;
-        num = effectBrackets.LongestEffectBracketsNum(Demo06);
+        num = effectBrackets.LongestEffectBracketsNum_violence(Demo06);
         assert num == 14;
-        num = effectBrackets.LongestEffectBracketsNum(Demo07);
+        num = effectBrackets.LongestEffectBracketsNum_violence(Demo07);
         assert num == 10;
     }
 
+    @Test
+    public void TestLongestEffectBracketsNum_(){
+
+        int num = effectBrackets.LongestEffectBracketsNum_(Demo01);
+        assert num == 0;
+        num = effectBrackets.LongestEffectBracketsNum_(Demo02);
+        assert num == 0;
+        num = effectBrackets.LongestEffectBracketsNum_(Demo03);
+        assert num == 2;
+        num = effectBrackets.LongestEffectBracketsNum_(Demo04);
+        assert num == 4;
+        num = effectBrackets.LongestEffectBracketsNum_(Demo05);
+        assert num == 14;
+        num = effectBrackets.LongestEffectBracketsNum_(Demo06);
+        assert num == 14;
+        num = effectBrackets.LongestEffectBracketsNum_(Demo07);
+        assert num == 10;
+    }
     //≤‚ ‘”√¿˝
     String Demo01 = "";
     String Demo02 = null;

@@ -2,7 +2,7 @@ package Logic.math;
 /** 
  *@author liujun
  *@date： 2018-9-3 下午06:59:34
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:
  *  1)获取二进制正数中1位的数量
  *  2)获取二进制补码中1位的数量

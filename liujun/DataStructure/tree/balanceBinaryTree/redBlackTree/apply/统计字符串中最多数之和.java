@@ -6,7 +6,7 @@ import java.util.Scanner;
 /**
  *@author liujun
  *@date： 2018-4-24 Time：上午12:01:35
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:写段代码，定义一个字符串常量，字符串中只有大小写字母和整数，输出字符串中的出现
  *最多的数字的和？例如 ” 9fil3dj11P0jAsf11j ” 中出现最多的是11两次，输出22.
  *@version 1.0

@@ -7,7 +7,7 @@ import java.util.Stack;
 /** 
  *@author liujun
  *@date： 2018-7-21 下午01:13:08
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:树、二叉树、二叉树的三种遍历赋值
  *其中二叉树包含：二叉树的数据结构、
  *           二叉树的三种遍历赋值（先序、中序、后序）、

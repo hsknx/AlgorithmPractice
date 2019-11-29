@@ -2,7 +2,7 @@ package DataStructure.sort.innerSort.innerSortApply;
 /** 
  *@author liujun
  *@date： 2018-8-25 下午04:58:29
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 返回数组中最小的k个数。
  *@method:
  *    方法一：使用堆

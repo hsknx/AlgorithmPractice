@@ -5,7 +5,7 @@ import DataStructure.sort.innerSort.SortInterface;
 /**
  *@author liujun
  *@date： 2019-3-23 下午12:08:37
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:采用插入法来优化快速排序
  *@URL:
  *@version 1.0

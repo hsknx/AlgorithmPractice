@@ -3,7 +3,7 @@ package Algorithm.recall.recall_apply;
 /** 
  *@author liujun
  *@date： 2018-8-23 上午09:56:39
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:将输入字符串按照全排列的方式打印输出
  *@version 1.0
  *@attation:1.Java字符数组如何输出:2种方式。

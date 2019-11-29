@@ -3,7 +3,7 @@ package DataStructure.tree.binaryTree.realize;
 /**
  *@author liujun
  *@date£º 2018-8-2 ÏÂÎç04:44:26
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:
  *@version 1.0
  */

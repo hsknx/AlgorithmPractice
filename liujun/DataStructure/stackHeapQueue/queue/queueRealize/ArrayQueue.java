@@ -4,7 +4,7 @@ package DataStructure.stackHeapQueue.queue.queueRealize;
  * @author liujun
  * @version 1.0
  * @date£º 2019-11-09 22:56
- * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ * @author¡ªEmail:liujunfirst@outlook.com
  * @description:
  */
 public class ArrayQueue {

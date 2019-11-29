@@ -5,7 +5,7 @@ import java.util.Arrays;
 /** 
  *@author liujun
  *@date： 2018-8-23 下午10:54:34
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:有一个整数数组，请求出两两之差绝对值最小的值,记住，
  *只要得出最小值即可，不需要求出是哪两个数。
  * 解题思路：

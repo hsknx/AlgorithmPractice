@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author liujun
  * @version 1.0
  * @date£º 2019-10-28 09:03
- * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ * @author¡ªEmail:liujunfirst@outlook.com
  * @description:
  */
 public class SubstringCompare {

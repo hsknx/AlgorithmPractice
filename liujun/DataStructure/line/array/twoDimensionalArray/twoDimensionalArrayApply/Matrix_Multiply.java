@@ -3,7 +3,7 @@ package DataStructure.line.array.twoDimensionalArray.twoDimensionalArrayApply;
 /**
  *@author liujun
  *@date£º 2018-7-19 ÏÂÎç03:07:41
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:¾ØÕóÏà³Ë¡£
  *@version 1.0
  */

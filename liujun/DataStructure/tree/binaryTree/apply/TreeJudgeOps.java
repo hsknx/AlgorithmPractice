@@ -6,7 +6,7 @@ import DataStructure.tree.binaryTree.realize.BinaryTree;
 /**
  *@author liujun
  *@date： 2019-7-8 下午03:48:46
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:
  *子树匹配优化；1）子树序列化(采用先序+中序)
  *          2）子树字符串匹配

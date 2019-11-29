@@ -7,7 +7,7 @@ import java.util.TreeMap;
 /** 
  *@author liujun
  *@date£º 2019-3-7 ÏÂÎç01:45:09
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:
  *@URL:
  *@version 1.0

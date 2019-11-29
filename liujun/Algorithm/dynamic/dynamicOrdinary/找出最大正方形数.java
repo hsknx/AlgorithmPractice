@@ -2,7 +2,7 @@ package Algorithm.dynamic.dynamicOrdinary;
 /** 
  *@author liujun
  *@date： 2018-12-18 下午07:03:04
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
  *@URL:在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
  *@version 1.0

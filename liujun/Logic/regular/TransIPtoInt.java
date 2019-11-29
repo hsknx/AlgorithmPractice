@@ -5,7 +5,7 @@ import java.util.Scanner;
 /** 
  *@author liujun
  *@date： 2018-8-28 下午02:14:14
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:将string类型的IP地址转化成int
  *@attention:考虑到int类型的最大长度为32位，在计算的时候会出现问题，因此乘积选用long类型来存储。
  *@version 1.0

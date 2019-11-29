@@ -3,7 +3,7 @@ package Algorithm.combine.backpack;
 /** 
  *@author liujun
  *@date： 2018-7-19 上午11:55:33
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:
  *1.状态转换方程
  *2.如何找出所选物品

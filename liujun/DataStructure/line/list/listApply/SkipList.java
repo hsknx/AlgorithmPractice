@@ -5,7 +5,7 @@ import java.util.Random;
 /** 
  *@author liujun
  *@date£º 2019-7-25 ÉÏÎç11:59:31
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@CSDN Blog URL:
  *@description:
  *@version 1.0

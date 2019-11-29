@@ -6,7 +6,7 @@ import java.util.List;
 /** 
  *@author liujun
  *@date： 2019-8-2 下午01:18:35
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@CSDN Blog URL:https://blog.csdn.net/ljfirst/article/details/98177653
  *@description:吸血鬼数字的实现
  *@version 1.0

@@ -9,7 +9,7 @@ import java.util.ArrayList;
  * @author liujun
  * @version 1.0
  * @date£º 2019-10-22 16:03
- * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ * @author¡ªEmail:liujunfirst@outlook.com
  * @description:read txt to list
  */
 public class ReadTxt {

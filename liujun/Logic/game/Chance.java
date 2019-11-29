@@ -2,7 +2,7 @@ package Logic.game;
 /** 
  *@author liujun
  *@date£º 2019-3-7 ÏÂÎç05:23:40
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:
  *@URL:
  *@version 1.0

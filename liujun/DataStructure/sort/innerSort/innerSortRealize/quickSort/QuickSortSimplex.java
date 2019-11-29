@@ -5,7 +5,7 @@ import DataStructure.sort.innerSort.SortInterface;
 /**
  *@author liujun
  *@date： 2018-7-19 上午11:55:48
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 快速排序包括单向快排和双向快排，关于快速排序的改进见快排及其优化
  *单向快排：
  *1.同时设两个指针，一个指针代表中间定位mid,另一个指针i从左到右寻找比标杆小的元素(隐藏在for循环中)，

@@ -8,7 +8,7 @@ import java.util.List;
 /** 
  *@author liujun
  *@date£º 2018-7-21 ÏÂÎç01:13:08
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:¶ş²æÊ÷test
  *@version 1.0
  */

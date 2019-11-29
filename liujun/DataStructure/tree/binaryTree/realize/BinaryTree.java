@@ -7,7 +7,7 @@ import java.util.Queue;
  * @author liujun
  * @version 1.0
  * @date： 2019-10-18 01:38
- * @author—Email:ljfirst@mail.ustc.edu.cn
+ * @author—Email:liujunfirst@outlook.com
  * @description:
  */
 //二叉树的数据结构

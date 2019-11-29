@@ -10,7 +10,7 @@ import java.util.Set;
  * @author liujun
  * @version 1.0
  * @date£º 2019-10-22 16:32
- * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ * @author¡ªEmail:liujunfirst@outlook.com
  * @description:
  */
 public class FileCompare {

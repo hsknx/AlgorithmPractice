@@ -4,7 +4,7 @@ package Algorithm.dynamic.dynamicPrimary.palindrome;
  * @author liujun
  * @version 1.0
  * @date： 2019-11-07 22:42
- * @author—Email:ljfirst@mail.ustc.edu.cn
+ * @author—Email:liujunfirst@outlook.com
  * @description:发现回文：默认单个字符不够成回文
  */
 public class FindPalindrome {

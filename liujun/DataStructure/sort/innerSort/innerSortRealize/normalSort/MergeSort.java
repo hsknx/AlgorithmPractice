@@ -5,7 +5,7 @@ import DataStructure.sort.innerSort.SortInterface;
 /**
  *@author liujun
  *@date： 2019-3-23 下午12:09:20
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 归并排序
  *1、数组分成两段，每段去排序
  *2、排序时判断这两段是否越界，越界停止返回

@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
 /** 
  *@author liujun
  *@date： 2018-7-30 下午05:13:23
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 给定一个英文字符串,
  *请写一段代码找出这个字符串中首先出现三次的那个英文字符(需要区分大小写)。
  *解题思路：

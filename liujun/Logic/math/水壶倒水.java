@@ -5,7 +5,7 @@ import java.util.Scanner;
 /** 
  *@author liujun
  *@date£º 2019-8-29 ÉÏÎç10:33:59
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@CSDN Blog URL:
  *@description:
  *@version 1.0

@@ -6,7 +6,7 @@ import java.util.Random;
  * @author liujun
  * @version 1.0
  * @date£º 2019-11-02 23:30
- * @author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ * @author¡ªEmail:liujunfirst@outlook.com
  * @description:
  */
 public class RamdomUtil {

@@ -6,7 +6,7 @@ import DataStructure.tree.binaryTree.realize.BinaryTree;
 /**
  *@author liujun
  *@date： 2018-7-21 上午10:46:09
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description:操作给定的二叉树，将其变换为源二叉树的镜像（反转二叉树）。
  *@version 1.0
  */

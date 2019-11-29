@@ -4,7 +4,7 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  * @author liujun
  * @version 1.0
  * @date： 2019-10-21 12:17
- * @author—Email:ljfirst@mail.ustc.edu.cn
+ * @author—Email:liujunfirst@outlook.com
  * @description: 链表栈的基本实现
  */
 public class LinkedStack {

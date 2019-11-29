@@ -5,7 +5,7 @@ import DataStructure.tree.binaryTree.realize.BinaryTreeTraversal;
 /**
  *@author liujun
  *@date£º 2019-3-23 ÏÂÎç02:54:10
- *@author¡ªEmail:ljfirst@mail.ustc.edu.cn
+ *@author¡ªEmail:liujunfirst@outlook.com
  *@description:
  *@URL:
  *@version 1.0

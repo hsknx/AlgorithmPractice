@@ -6,7 +6,7 @@ import java.util.Map;
 /** 
  *@author liujun
  *@date： 2018-8-22 下午02:06:33
- *@author—Email:ljfirst@mail.ustc.edu.cn
+ *@author—Email:liujunfirst@outlook.com
  *@description: 环链表
  *1. 判断单聊表是否有环
  *2. 找出带环单链表的入口
