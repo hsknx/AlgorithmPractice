@@ -7,7 +7,7 @@ import java.util.Stack;
  * @version 1.0
  * @date： 2019-11-30 01:13
  * @author—Email: liujunfirst@outlook.com
- * @description: 有效的括号匹配
+ * @description: 判断给定字符串是否为有效的括号匹配
  * @blogURL:
  */
 public class EffectBrackets {
@@ -52,31 +52,5 @@ public class EffectBrackets {
             }
         }
         return TotalNum == 0;
-    }
-
-    //序列中最长有效括号——暴力法
-    public int LongestEffectBracketsNum_violence(String pattern){
-        if(pattern == null || pattern.length() == 0){
-            return 0;
-        }
-        int sum = 0;
-        for (int i = 0; i < pattern.length() - 1; i++) {
-            for (int j = i + 1; j < pattern.length(); j++) {
-                if(EffectBracketsbyTotalNum(pattern.substring(i, j + 1))) {
-                    sum = j - i + 1 > sum ? j - i + 1 : sum;
-                }
-            }
-        }
-        return sum;
-    }
-
-    //序列中最长有效括号
-    public int LongestEffectBracketsNum_(String pattern){
-        if(pattern == null || pattern.length() == 0){
-            return 0;
-        }
-        int sum = 0;
-
-        return sum;
     }
 }
