@@ -7,7 +7,8 @@ package Algorithm.dynamic.dynamicOrdinary;
  *@URL:在一个由 0 和 1 组成的二维矩阵内，找到只包含 1 的最大正方形，并返回其面积。
  *@version 1.0
  */
-public class 找出最大正方形数 {
+//找出最大正方形数
+public class LargestSquare {
 
 	//非递归写法
 	public int maximalSquare(char[][] matrix) {
@@ -61,7 +62,7 @@ public class 找出最大正方形数 {
 						   {'1','1','1','1','1'},
 						   {'1','0','1','0','0'},
 						   {'1','0','0','1','0'}};
-		找出最大正方形数 h = new 找出最大正方形数();
+		LargestSquare h = new LargestSquare();
 		System.out.println(h.maximalSquare(matrix));;
 	}
 }

@@ -17,7 +17,8 @@ import java.util.Scanner;
  *3)动态规划：
  *4)分支限界：
  */
-public class 送货最短路径 {
+//送货最短路径
+public class ShortestDeliveryPath {
 
 	//计算最短距离：prim思路
 	public int shortPath_greedy(int [] position_row, int [] position_column) {
@@ -106,7 +107,7 @@ public class 送货最短路径 {
 		}
 		
 		//计算最短路程
-		送货最短路径 route = new 送货最短路径();
+		ShortestDeliveryPath route = new ShortestDeliveryPath();
 		int sum = route.shortPath_greedy(position_row, position_column);
 		System.out.println(sum);
 	}
