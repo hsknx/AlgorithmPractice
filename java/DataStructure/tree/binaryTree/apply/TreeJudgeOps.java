@@ -1,6 +1,6 @@
 package DataStructure.tree.binaryTree.apply;
 
-import DataStructure.string.stringApply.KMP;
+import DataStructure.string.stringCompare.KMP;
 import DataStructure.tree.binaryTree.realize.BinaryTree;
 
 /**

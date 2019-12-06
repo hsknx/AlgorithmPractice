@@ -1,6 +1,6 @@
 package UnitTest.datastructureTest.stringTest.stringApplyTest;
 
-import DataStructure.string.stringApply.KMP;
+import DataStructure.string.stringCompare.KMP;
 import org.junit.Test;
 
 /**

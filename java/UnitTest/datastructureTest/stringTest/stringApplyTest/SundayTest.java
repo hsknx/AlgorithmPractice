@@ -1,6 +1,6 @@
 package UnitTest.datastructureTest.stringTest.stringApplyTest;
 
-import DataStructure.string.stringApply.Sunday;
+import DataStructure.string.stringCompare.Sunday;
 import org.junit.Test;
 
 /**

@@ -1,4 +1,4 @@
-package DataStructure.string.sequenceApplay;
+package DataStructure.string.stringCompare;
 
 import java.util.ArrayList;
 
@@ -6,10 +6,31 @@ import java.util.ArrayList;
  * @author liujun
  * @version 1.0
  * @date： 2019-10-28 09:03
- * @author—Email:liujunfirst@outlook.com
- * @description:
+ * @author—Email: liujunfirst@outlook.com
+ * @description: 子串匹配
  */
 public class SubstringCompare {
+
+    //子串匹配
+    public boolean specialStringCompare(String substring, String string){
+
+        ArrayList<Integer>[] targetList =stringPreDeal(string);
+        return StringCompareComponent(targetList, substring);
+    }
+
+    //子串匹配
+    public boolean normalStringCompare(String substring, String string){
+
+        int substringlength = 0;
+        int stringlength = 0;
+        while (stringlength < string.length() && substringlength < substring.length()){
+            if(substring.charAt(substringlength) == string.charAt(stringlength)){
+                substringlength++;
+            }
+            stringlength++;
+        }
+        return substringlength == substring.length();
+    }
 
     public static void main(String[] args) {
         SubstringCompare sc = new SubstringCompare();
@@ -33,11 +54,7 @@ public class SubstringCompare {
         return true;
     }
 
-    public boolean specialStringCompare(String substring, String string){
 
-        ArrayList<Integer>[] targetList =stringPreDeal(string);
-        return StringCompareComponent(targetList, substring);
-    }
 
     public boolean StringCompareComponent(ArrayList<Integer>[] targetList, String substring){
 
@@ -56,18 +73,7 @@ public class SubstringCompare {
         return true;
     }
 
-    public boolean normalStringCompare(String substring, String string){
 
-        int substringlength = 0;
-        int stringlength = 0;
-        while (stringlength < string.length() && substringlength < substring.length()){
-            if(substring.charAt(substringlength) == string.charAt(stringlength)){
-                substringlength++;
-            }
-            stringlength++;
-        }
-        return substringlength == substring.length();
-    }
 
     //目标串预处理
     public ArrayList[] stringPreDeal(String pattern){

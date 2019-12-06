@@ -1,14 +1,15 @@
-package DataStructure.string.stringApply;
+package DataStructure.string.stringCompare;
 /** 
  *@author liujun
  *@date： 2019-8-26 下午07:32:21
  *@author—Email:liujunfirst@outlook.com
  *@CSDN Blog URL:
- *@description:Sunday算法是一种比KMP算法更快捷的算法。
+ *@description: Sunday算法是一种比KMP算法更快捷的算法。
  *@version 1.0
  */
 public class Sunday {
 
+	//字符串匹配串匹配
 	public boolean SundaySolution(String source, String pattern) {
 		
 		int sourceIndex = 0;

@@ -9,6 +9,7 @@ package DataStructure.string.stringApply;
  *@version 1.0
  */
 //LongestnoRepeatSubstring
+//含有重复字符的 最长子串 的长度
 public class LNRSubstring {
 
 	public int lengthOfLongestSubstring(String s) {
