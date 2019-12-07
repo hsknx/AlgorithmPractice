@@ -42,6 +42,4 @@ public class DecompressTest {
     public String demo05 = "c2d4e1a3b2";//Êä³öbbddddeaaacc
     //²âÊÔÓÃÀı06
     public String demo06 = "g1t2y3h3b5v5f5";//Êä³ögtthhhyyybbbbbfffffvvvvv
-
-
 }

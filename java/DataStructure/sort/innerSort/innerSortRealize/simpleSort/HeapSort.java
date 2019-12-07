@@ -29,24 +29,47 @@ public class HeapSort implements SortInterface {
         }
         //初试化建堆
         for (int i = (heap.length - 1) / 2; i >= 0 ; i--) {
-            heapify(heap, i, heap.length - 1);
+            heapify_big(heap, i, heap.length - 1);
         }
         //交换堆顶和数组末尾元素，循环整堆,注意边界值
         for (int i = heap.length - 1; i > 0; i--) {
             temp = heap[0];
             heap[0] = heap[i];
             heap[i] = temp;
-            heapify(heap, 0, i-1);
+            heapify_big(heap, 0, i-1);
         }
         return heap;
     }
 
-    //整堆函数
-    public void heapify(int[] heap, int parent, int border){
+    //整堆函数——小顶堆
+    public void heapify_small(int[] heap, int parent, int border){
 
         //左孩子，最大值标记
         int flag = parent * 2 + 1;
-        //越界判断
+        //越界判断：如果左孩子存在
+        if(flag > border){
+            return ;
+        }
+        //如果右孩子存在
+        if(flag + 1 <= border){
+            //左右孩子对比，找最大值
+            flag = heap[flag] > heap[flag + 1] ? flag + 1 : flag;
+        }
+        //对比父节点和孩子结点，找最大值,发生交换,并递归其最大值孩子结点
+        if(heap[flag] < heap[parent]){
+            int temp = heap[flag];
+            heap[flag] = heap[parent];
+            heap[parent] = temp;
+            heapify_small(heap, flag, border);
+        }
+    }
+
+    //整堆函数——大顶堆
+    public void heapify_big(int[] heap, int parent, int border){
+
+        //左孩子，最大值标记
+        int flag = parent * 2 + 1;
+        //越界判断：如果左孩子存在
         if(flag > border){
             return ;
         }
@@ -60,7 +83,7 @@ public class HeapSort implements SortInterface {
             int temp = heap[flag];
             heap[flag] = heap[parent];
             heap[parent] = temp;
-            heapify(heap, flag, border);
+            heapify_big(heap, flag, border);
         }
     }
 }
