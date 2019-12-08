@@ -15,43 +15,40 @@ package DataStructure.line.list.linkListRealize;
  */
 public class SinglyLinkedList {
 
-	int value;
-	SinglyLinkedList next = null;
+	int size;
+	SinglyLinkedNode next = null;
 	
 	public SinglyLinkedList() {
 		// TODO Auto-generated constructor stub
-		this.value = 0;
+		this.size = 0;
 	}
 	
-	public SinglyLinkedList(int value) {
-		// TODO Auto-generated constructor stub
-		this.value = value;
-	}
-	
-	//单链表——头插法
-	public SinglyLinkedList insertHead(int[] list) {
-		// TODO Auto-generated method stub
+	//单链表,数组转链表——头插法
+	public SinglyLinkedNode insertHead(int[] list) {
 		//单链表表首结点-头插法,赋值
-		System.out.println("单链表——头插法");
-		SinglyLinkedList first = null;
+		//System.out.println("单链表——头插法");
+		SinglyLinkedNode first = null;
+		if(list == null || list.length == 0){
+			return first;
+		}
 		for (int i = 0; i < list.length; i++) {
-			SinglyLinkedList link = new SinglyLinkedList(list[i]);
+			SinglyLinkedNode link = new SinglyLinkedNode(list[i]);
 			link.next = first;
 			first = link;
 		}
 		return first;
 	}
 	
-	//单链表——尾插法
-	public SinglyLinkedList insertTail(int[] list) {
+	//单链表,数组转链表——尾插法
+	public SinglyLinkedNode insertTail(int[] list) {
 		System.out.println("单链表——尾插法");
 		// TODO Auto-generated method stub
-		SinglyLinkedList point = null;
-		SinglyLinkedList first = point;
+		SinglyLinkedNode point = null;
+		SinglyLinkedNode first = point;
 		//循环赋值
 		for (int i = 0; i < list.length; i++) {
 			//尾插法
-			SinglyLinkedList link = new SinglyLinkedList(list[i]);
+			SinglyLinkedNode link = new SinglyLinkedNode(list[i]);
 			//首次判断
 			if (first == null) {
 				first = point = link;
@@ -63,7 +60,7 @@ public class SinglyLinkedList {
 	}
 	 //2. 单链表逆置
 	 //  2.1 数组存放，倒序输出
-	/*public void arrayReverse(SinglyLinkedList first) {
+	/*public void arrayReverse(SinglyLinkedNode first) {
 		// TODO Auto-generated method stub
 		System.out.println("数组存放，倒序输出");
 		int[] array = new int[16];
@@ -83,7 +80,7 @@ public class SinglyLinkedList {
 	}*/
 	
 	 //  2.2 利用栈倒叙输出(递归)
-	public void stackReverse(SinglyLinkedList first) {
+	public void stackReverse(SinglyLinkedNode first) {
 		// TODO Auto-generated method stub
 		//System.out.println("利用栈倒叙输出(递归)");
 		if(first.next != null){
@@ -93,11 +90,11 @@ public class SinglyLinkedList {
 	}
 	
 	 //  2.3 反置链表，然后输出(非递归)
-	public SinglyLinkedList listReverse(SinglyLinkedList first) {
+	public SinglyLinkedNode listReverse(SinglyLinkedNode first) {
 		// TODO Auto-generated method stub
 		System.out.println("反置链表，然后输出(非递归)");
-		SinglyLinkedList head = null;
-		SinglyLinkedList p = null;
+		SinglyLinkedNode head = null;
+		SinglyLinkedNode p = null;
 		while (first != null) {
 			p = first;
 			first = first.next;
@@ -109,19 +106,19 @@ public class SinglyLinkedList {
 	
 	
 	 //  2.4 反置链表，然后输出(递归)
-	public SinglyLinkedList listReverseRecursion(SinglyLinkedList first) {
+	public SinglyLinkedNode listReverseRecursion(SinglyLinkedNode first) {
 		// TODO Auto-generated method stub
 		if(first == null || first.next == null){
 			return first;
 		}
-		SinglyLinkedList newhead = listReverseRecursion(first.next);
+		SinglyLinkedNode newhead = listReverseRecursion(first.next);
 		first.next.next = first;
 		first.next = null;
 		return newhead;
 	}
 	
 	//输出链表
-	public void printLink(SinglyLinkedList first) {
+	public void printLink(SinglyLinkedNode first) {
 		// TODO Auto-generated method stub
 		while (first != null) {
 			System.out.print(first.value + " ");
@@ -130,15 +127,15 @@ public class SinglyLinkedList {
 	}
 	
 	//主方法测试
-	public static void main(String[] args) {
+	/*public static void main(String[] args) {
 //		Map  s = new HashMap<Integer, Integer>(12);
 		//first是表头结点(含值0，后续被替换)
-		SinglyLinkedList first = new SinglyLinkedList(0);
+		SinglyLinkedNode first = new SinglyLinkedNode(0);
 		int[] array = {1,2,3,4,5,6,7,8,9,10};
 		first = first.insertTail(array);
 		first.printLink(first);
 		System.out.println();
 		first = first.listReverseRecursion(first);
 		first.printLink(first);
-	}
+	}*/
 }

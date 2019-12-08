@@ -1,6 +1,7 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
-import Algorithm.dynamic.dynamicPrimary.LIS;
+import Algorithm.dynamic.dynamicPrimary.lis.LIS;
+import Algorithm.dynamic.dynamicPrimary.lis.LIS_divide;
 import org.junit.Test;
 
 /**
@@ -13,16 +14,28 @@ import org.junit.Test;
  */
 public class LISTest {
     LIS lis = new LIS();
+    LIS_divide lis_divide = new LIS_divide();
 
     @Test
-    public void Testmethod(){
+    public void TestLis(){
 
         String result = lis.longestIncreasingSubsequence(demo01);
         assert result.equals("123456789");
         result = lis.longestIncreasingSubsequence(demo02);
         assert result.equals("");
         result = lis.longestIncreasingSubsequence(demo03);
-        assert result.equals(null);
+        assert result == null;
+    }
+
+    @Test
+    public void TestLis_divide(){
+
+        String result = lis_divide.longestIncreasingSubsequence(demo01);
+        assert result.equals("123456789");
+        result = lis_divide.longestIncreasingSubsequence(demo02);
+        assert result.equals("");
+        result = lis_divide.longestIncreasingSubsequence(demo03);
+        assert result == null;
     }
 
     //≤‚ ‘”√¿˝

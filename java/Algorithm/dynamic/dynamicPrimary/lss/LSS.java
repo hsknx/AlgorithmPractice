@@ -5,9 +5,11 @@ package Algorithm.dynamic.dynamicPrimary.lss;
  * @version 1.0
  * @date： 2019-11-25 16:36
  * @author—Email: liujunfirst@outlook.com
- * @description: 给定一个数组，求这个数组的连续子数组中，最大的那一段的和
+ * @description: 最大子段和
+ * 给定一个数组，求这个数组的连续子数组中，最大的那一段的和
  * @blogURL:
  */
+//LargestSumofSubSequence by dynamic
 public class LSS {
 
     public int LargestSumofSubSequence(int [] Sequence){

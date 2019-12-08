@@ -7,7 +7,7 @@ package Algorithm.dynamic.dynamicPrimary.lss;
  *请写程序找出其最大求和子区间
  *@version 1.0
  */
-//最大子段和:LargestSumofSubSequence
+//最大子段和:LargestSumofSubSequence by dynamic
 public class LSSopt {
 
 	//输入序列数组，输出最大子段和、起始地址、结束地址

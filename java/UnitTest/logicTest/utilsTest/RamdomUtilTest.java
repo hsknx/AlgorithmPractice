@@ -22,11 +22,16 @@ public class RamdomUtilTest {
           3、验证字符串是否由字符等概率组成*/
         int testnum = 5;
         String testString;
+        String testStringandNum;
         String patternString = "[0-9a-zA-Z]+";
         for (int i = 0; i < 20; i++) {
             testString = ramdomUtil.productRandomString(5);
+            testStringandNum = ramdomUtil.productRandomNumandString(5);
             assert testString.length() == testnum;
+            assert testStringandNum.length() == testnum;
+
             assert Pattern.matches(patternString,testString);
+            assert Pattern.matches(patternString,testStringandNum);
             //assert testString.matches(patternString);
         }
     }

@@ -17,7 +17,22 @@ public class MiniValuePathofMatrixTest {
     @Test
     public void Testmethod(){
 
+        int value = miniValuePathofMatrix.method(Demo01);
+        assert value == 7;
+        value = miniValuePathofMatrix.method(Demo02);
+        assert value == -1;
     }
 
     //≤‚ ‘”√¿˝
+    int[][] Demo01= {
+            {1,3,1},
+            {1,5,1},
+            {4,2,1},
+    };
+    int[][] Demo02= {
+            {2},
+            {3,4},
+            {6,5,7},
+            {4,1,8,3}
+    };
 }

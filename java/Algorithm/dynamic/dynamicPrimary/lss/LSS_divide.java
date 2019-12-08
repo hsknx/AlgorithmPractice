@@ -9,6 +9,7 @@ package Algorithm.dynamic.dynamicPrimary.lss;
  * °æ∑÷÷Œ∑®°ø
  * @blogURL:
  */
+//LargestSumofSubSequence by divide
 public class LSS_divide {
 
     public int LargestSumofSubSequence(int[] Sequence) {

@@ -11,7 +11,7 @@ package Algorithm.dynamic.dynamicPrimary;
  * 最多可获取多少财宝？例如 [5，2，6，3，1，7]，则选择5，6，7
  * @blogURL:
  */
-public class SpacerExtract {
+public class ThiefSteal {
 
     public int method(int[] values){
 

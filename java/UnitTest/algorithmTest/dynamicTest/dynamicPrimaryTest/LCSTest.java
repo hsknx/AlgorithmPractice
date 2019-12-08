@@ -8,7 +8,7 @@ import org.junit.Test;
  * @version 1.0
  * @date： 2019-11-25 16:38
  * @author—Email: liujunfirst@outlook.com
- * @description:
+ * @description: 最长公共子序列
  * @blogURL:
  */
 public class LCSTest {

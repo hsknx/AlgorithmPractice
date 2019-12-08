@@ -7,7 +7,7 @@ import java.util.List;
  *@author 
  *@date： 2018-7-19 Time：上午10:15:35
  *@author—Email:@mail.ustc.edu.cn
- *@description:LCS算法，找出两个字符串最大匹配子串。
+ *@description: LCS算法，找出两个字符串最大匹配子串。
  *@version 1.0
  */
 

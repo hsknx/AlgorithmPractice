@@ -8,31 +8,32 @@ import java.util.Map;
  *@date： 2018-8-22 下午02:06:33
  *@author—Email:liujunfirst@outlook.com
  *@description: 环链表
- *1. 判断单聊表是否有环
- *2. 找出带环单链表的入口
- *3. 判断两个链表是否相交
- *4. 找出两个链表的交点
+ *1. 尾插法改写为构造有环链表
+ *2. 判断单聊表是否有环
+ *3. 找出带环单链表的入口
+ *4. 构造相交链表
+ *5. 判断两个链表是否相交
+ *6. 找出两个链表的交点
  *@version 1.0
  */
 
 public class RangList extends SinglyLinkedList{
 
 	public RangList(int value) {
-		super(value);
-		// TODO Auto-generated constructor stub
+		//super(value);
 	}
 	
 	@Override
 	//尾插法改写为构造有环链表
-	public SinglyLinkedList insertTail(int[] list) {
+	public SinglyLinkedNode insertTail(int[] list) {
 		System.out.println("尾插法改写为构造有环链表");
-		SinglyLinkedList point = null;
-		SinglyLinkedList first = point;
+		SinglyLinkedNode point = null;
+		SinglyLinkedNode first = point;
 		//环入口结点
-		SinglyLinkedList temp = new SinglyLinkedList();
+		SinglyLinkedNode temp = new SinglyLinkedNode();
 		//尾插法，循环赋值
 		for (int i = 0; i < list.length; i++) {
-			SinglyLinkedList link = new SinglyLinkedList(list[i]);
+			SinglyLinkedNode link = new SinglyLinkedNode(list[i]);
 			//首次判断
 			if (first == null) {
 				first = point = link;
@@ -51,10 +52,10 @@ public class RangList extends SinglyLinkedList{
 	}
              
 	//判断单链表是否有环
-	public boolean FindListTail(SinglyLinkedList first) {
+	public boolean FindListTail(SinglyLinkedNode first) {
 		// TODO Auto-generated method stub
-		SinglyLinkedList slow = first;
-		SinglyLinkedList fast = first;
+		SinglyLinkedNode slow = first;
+		SinglyLinkedNode fast = first;
 		
 		while (fast.next != null && fast != null) {
 			fast = fast.next.next;
@@ -67,10 +68,10 @@ public class RangList extends SinglyLinkedList{
 	}
 	
 	//返回单链表环的相遇点
-	public SinglyLinkedList ListMeet(SinglyLinkedList first) {
+	public SinglyLinkedNode ListMeet(SinglyLinkedNode first) {
 		
-		SinglyLinkedList slow = first;
-		SinglyLinkedList fast = first;
+		SinglyLinkedNode slow = first;
+		SinglyLinkedNode fast = first;
 		
 		while (fast != null && fast.next != null) {
 			fast = fast.next.next;
@@ -83,10 +84,10 @@ public class RangList extends SinglyLinkedList{
 	}
 	
 	//找出带环单链表的入口
-	public SinglyLinkedList findLoopPort(SinglyLinkedList first) {
+	public SinglyLinkedNode findLoopPort(SinglyLinkedNode first) {
 		// TODO Auto-generated method stub
 
-		SinglyLinkedList point_meet = ListMeet(first);
+		SinglyLinkedNode point_meet = ListMeet(first);
 		while(first != null && point_meet != null){
 			if(first == point_meet){
 				return point_meet;
@@ -98,15 +99,15 @@ public class RangList extends SinglyLinkedList{
 	}
 	
 	//构造相交链表
-	public Map<Integer, SinglyLinkedList> buildCrossLink(int[] array_a, int[] array_b) {
+	public Map<Integer, SinglyLinkedNode> buildCrossLink(int[] array_a, int[] array_b) {
 		// TODO Auto-generated method stub
 
 		//思路：把a链表构造完，插入到b的一半，需要a链表的尾指针和b链表的一半指针
 		//构造a链表——尾插法
-		SinglyLinkedList tail = null;
-		SinglyLinkedList first_a = tail;
+		SinglyLinkedNode tail = null;
+		SinglyLinkedNode first_a = tail;
 		for (int i = 0; i < array_a.length; i++) {
-			SinglyLinkedList link_a = new SinglyLinkedList(array_a[i]);
+			SinglyLinkedNode link_a = new SinglyLinkedNode(array_a[i]);
 			//首次判断
 			if (first_a == null) {
 				first_a = tail = link_a;
@@ -115,9 +116,9 @@ public class RangList extends SinglyLinkedList{
 			tail = tail.next;
 		}
 		//构造b链表——头插法
-		SinglyLinkedList first_b = null;
+		SinglyLinkedNode first_b = null;
 		for (int i = 0; i < array_b.length; i++) {
-			SinglyLinkedList link_b = new SinglyLinkedList(array_b[i]);
+			SinglyLinkedNode link_b = new SinglyLinkedNode(array_b[i]);
 			if(i == array_b.length/2){
 				tail.next = link_b;
 				System.out.println("交点值是： "+array_b[i]);
@@ -125,14 +126,14 @@ public class RangList extends SinglyLinkedList{
 			link_b.next = first_b;
 			first_b = link_b;
 		}
-		Map<Integer, SinglyLinkedList> map = new HashMap<Integer, SinglyLinkedList>();
+		Map<Integer, SinglyLinkedNode> map = new HashMap<Integer, SinglyLinkedNode>();
 		map.put(1, first_a);
 		map.put(2, first_b);
 		return map;
 	}
 	
 	//判断两个链表是否相交
-	public boolean judgeCrossLink(SinglyLinkedList first, SinglyLinkedList second) {
+	public boolean judgeCrossLink(SinglyLinkedNode first, SinglyLinkedNode second) {
 		// TODO Auto-generated method stub
 		//判断尾指针是否相同
 		while (first.next != null) {
@@ -148,11 +149,11 @@ public class RangList extends SinglyLinkedList{
 	}
 	
 	//找出两个链表的交点
-	public int getCrossPoint(SinglyLinkedList first, SinglyLinkedList second) {
+	public int getCrossPoint(SinglyLinkedNode first, SinglyLinkedNode second) {
 		// TODO Auto-generated method stub
 
-		SinglyLinkedList p1 = first;
-		SinglyLinkedList p2 = second;
+		SinglyLinkedNode p1 = first;
+		SinglyLinkedNode p2 = second;
 		int count1 = 0;
 		int count2 = 0;
 		int way = 0;
@@ -193,7 +194,7 @@ public class RangList extends SinglyLinkedList{
 		int[] array2 = {11,12,13,14,15,16,17,18,19,20};
 		RangList rl = new RangList(0);
 		System.out.println("构造有环单链表");
-		SinglyLinkedList first= rl.insertTail(array1);
+		SinglyLinkedNode first= rl.insertTail(array1);
 		
 		//测试单链表是否有环
 		System.out.println("单链表是否有环");
@@ -202,7 +203,7 @@ public class RangList extends SinglyLinkedList{
 		System.out.println(rl.ListMeet(first).value);
 	
 		//构造两个单链表相交
-		Map<Integer, SinglyLinkedList> map = rl.buildCrossLink(array1, array2);
+		Map<Integer, SinglyLinkedNode> map = rl.buildCrossLink(array1, array2);
 		System.out.println("两个单链表是否相交");
 		System.out.println(rl.judgeCrossLink(map.get(1), map.get(2)));
 		System.out.println("两个单链表相交结点：");

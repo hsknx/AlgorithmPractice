@@ -1,6 +1,6 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
-import Algorithm.dynamic.dynamicPrimary.SpacerExtract;
+import Algorithm.dynamic.dynamicPrimary.ThiefSteal;
 import org.junit.Test;
 
 /**
@@ -11,19 +11,19 @@ import org.junit.Test;
  * @description:
  * @blogURL:
  */
-public class SpacerExtractTest {
+public class ThiefStealTest {
 
-    SpacerExtract spacerExtract = new SpacerExtract();
+    ThiefSteal thiefSteal = new ThiefSteal();
     @Test
     public void Testmethod(){
 
-        int result = spacerExtract.method(demo01);
+        int result = thiefSteal.method(demo01);
         assert result == 18;
-        result = spacerExtract.method(demo02);
+        result = thiefSteal.method(demo02);
         assert result == 0;
-        result = spacerExtract.method(demo03);
+        result = thiefSteal.method(demo03);
         assert result == 0;
-        result = spacerExtract.method(demo04);
+        result = thiefSteal.method(demo04);
         assert result == 352;
     }
 
