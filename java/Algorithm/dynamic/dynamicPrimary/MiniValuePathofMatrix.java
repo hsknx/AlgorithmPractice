@@ -13,11 +13,11 @@ package Algorithm.dynamic.dynamicPrimary;
 public class MiniValuePathofMatrix {
 
     public int method(int[][] matrix){
-        int matrixLength = matrix.length;
         //检查数组是否为null
-        if(matrix == null || matrixLength == 0){
+        if(matrix == null || matrix.length == 0){
             return -1;
         }
+        int matrixLength = matrix.length;
         //检查数组是否为矩形
         for (int i = 0; i < matrixLength; i++) {
             if(matrix[i].length != matrixLength){

@@ -118,8 +118,9 @@ public class ReturnKMin {
 			array[begin] = array[low];
 			array[low] = temp;
 			//k位判断，及时停止递归。
-			if(k == low || k == low - 1){
-				return ; 
+			//if(k == low || k  == low- 1){这种也可以，慎用
+			if(k == low){
+				return ;
 			}
 			if(low < k){
 				kMinQuickSortExe(array, k, low + 1, end);
