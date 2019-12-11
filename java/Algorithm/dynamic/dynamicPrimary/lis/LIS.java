@@ -12,17 +12,17 @@ import java.util.Arrays;
 //LongestIncreasingSubsequence
 public class LIS {
 
-    public String longestIncreasingSubsequence(String sequence){
+    public int longestIncreasingSubsequence(String sequence) {
 
-        if(sequence == null || sequence.length() == 0){
-            return sequence;
+        if (sequence == null || sequence.length() == 0) {
+            return 0;
         }
         int length = sequence.length();
         char[] c = sequence.toCharArray();
         //原始无序值的数组
         int[] intArray = new int[length];
         int count = 0;
-        for (char c1:c) {
+        for (char c1 : c) {
             int i = Integer.parseInt(String.valueOf(c1));
             intArray[count++] = i;
         }
@@ -31,23 +31,23 @@ public class LIS {
         int best = 0;
         //point用于记录值
         int point = 0;
-        Arrays.fill(longest,1);
+        Arrays.fill(longest, 1);
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < i; j++) {
-                if((intArray[j] < intArray[i])){
+                if ((intArray[j] < intArray[i])) {
                     longest[i] = (longest[j] + 1) > longest[i] ? (longest[j] + 1) : longest[i];
                 }
             }
-            if(longest[i] > best){
-               best = longest[i];
-               point = i;
+            if (longest[i] > best) {
+                best = longest[i];
+                point = i;
             }
         }
         //寻找值
         StringBuffer sb = new StringBuffer();
         sb.append(intArray[point]);
         for (int i = point - 1; i >= 0; i--) {
-            if(longest[i] == longest[point] - 1){
+            if (longest[i] == longest[point] - 1) {
                 sb.append(intArray[i]);
                 point = i;
             }
@@ -55,6 +55,7 @@ public class LIS {
         //System.out.println("longest num:"+best);
         //System.out.println("longest数组："+Arrays.toString(longest));
         //System.out.println("LongestIncreasingSubsequence:"+sb.reverse().toString());
-        return sb.reverse().toString();
+        //return sb.reverse().toString();
+        return best;
     }
 }

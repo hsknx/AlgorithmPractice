@@ -8,6 +8,6 @@ package UnitTest.logicTest.utilsTest;
  * @description:
  */
 public class UnifiedSpecialCharTest {
-  public static void main(string[] args){
+  public static void main(String[] args){
   }
 }
