@@ -1,4 +1,4 @@
-package DataStructure.graph;
+package DataStructure.graph.graphConnection.unionFind;
 
 /**
  * @author liujun

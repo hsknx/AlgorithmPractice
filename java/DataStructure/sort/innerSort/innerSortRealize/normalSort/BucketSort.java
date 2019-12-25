@@ -1,5 +1,6 @@
 package DataStructure.sort.innerSort.innerSortRealize.normalSort;
 
+import DataStructure.line.hashTable.hashTableRealize.HashTableNode;
 import DataStructure.sort.innerSort.SortInterface;
 
 /**
@@ -12,22 +13,6 @@ import DataStructure.sort.innerSort.SortInterface;
  */
 
 public class BucketSort implements SortInterface {
-	//散列表
-	class HashtableNode{
-		int value;
-		HashtableNode next;
-		
-		public HashtableNode() {
-			// TODO Auto-generated constructor stub
-			this.value = Integer.MIN_VALUE;
-			next = null;
-		}
-		public HashtableNode(int value) {
-			// TODO Auto-generated constructor stub
-			this.value = value;
-			next = null;
-		}
-	}
 
 	public int[] sortMethod(int[] array) {
 		//默认桶大小，即链表长度
@@ -41,9 +26,9 @@ public class BucketSort implements SortInterface {
 			return array;
 		}
 		//创建桶
-		HashtableNode[] HashtableNode = new HashtableNode[bucketsize];
-		for (int i = 0; i < HashtableNode.length; i++) {
-			HashtableNode[i] = new HashtableNode();
+		HashTableNode[] hashTableNodes = new HashTableNode[bucketsize];
+		for (int i = 0; i < bucketsize; i++) {
+			hashTableNodes[i] = new HashTableNode();
 		}
 		//找出最大最小值(设置array[0]存数组最大值，array[1]存最小值)，并确定桶的间距
 		int max = Integer.MIN_VALUE;
@@ -60,21 +45,21 @@ public class BucketSort implements SortInterface {
 			int head = (i - min) / bucketgap;
 			//桶内插入排序
 				//新建节点
-			HashtableNode point = new HashtableNode(i);
+			HashTableNode point = new HashTableNode(i);
 				//插入链表
-			if(Integer.MIN_VALUE == HashtableNode[head].value){
-				HashtableNode[head] = point;
+			if(Integer.MIN_VALUE == hashTableNodes[head].value){
+				hashTableNodes[head] = point;
 			}else{
 				//链表的插入排序
-				HashtableNode pro = HashtableNode[head];
-				HashtableNode p = pro;
+				HashTableNode pro = hashTableNodes[head];
+				HashTableNode p = pro;
 				while (p != null && p.value < point.value) {
 					pro = p;
 					p = p.next;
 				}
-				if(HashtableNode[head] == pro && point.value < pro.value){
+				if(hashTableNodes[head] == pro && point.value < pro.value){
 					point.next = pro;
-					HashtableNode[head] = point;
+					hashTableNodes[head] = point;
 				}else{
 					point.next = pro.next;
 					pro.next = point;
@@ -83,8 +68,8 @@ public class BucketSort implements SortInterface {
 		}
 	    //整理为数组并返回
 		int count = 0;
-		for (int i = 0; i < HashtableNode.length; i++) {
-			HashtableNode p = HashtableNode[i];
+		for (int i = 0; i < bucketsize; i++) {
+			HashTableNode p = hashTableNodes[i];
 			while (p != null && p.value != Integer.MIN_VALUE) {
 				array[count] = p.value;
 				p = p.next;

@@ -1,4 +1,4 @@
-package DataStructure.graph.ShortestPath;
+package DataStructure.graph.shortestPath.singleSourceShortestPath;
 
 /**
  * @author liujun
@@ -7,5 +7,6 @@ package DataStructure.graph.ShortestPath;
  * @author¡ªEmail:liujunfirst@outlook.com
  * @description:
  */
+
 public class Dijkstra {
 }

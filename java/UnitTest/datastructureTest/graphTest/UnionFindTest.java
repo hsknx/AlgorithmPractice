@@ -1,6 +1,6 @@
 package UnitTest.datastructureTest.graphTest;
 
-import DataStructure.graph.UnionFind;
+import DataStructure.graph.graphConnection.unionFind.UnionFind;
 import org.junit.Test;
 
 /**
