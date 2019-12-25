@@ -1,5 +1,7 @@
 package Algorithm.dynamic.dynamicPrimary;
 
+import Logic.check.MatrixCheck;
+
 /**
  * @author liujun
  * @version 1.0
@@ -13,16 +15,11 @@ package Algorithm.dynamic.dynamicPrimary;
 public class MiniValuePathofTriangle {
 
     public int method(int[][] matrix){
-        //检查数组是否为null
-        if(matrix == null || matrix.length == 0){
+        //检查数组是否为null,是否为三角形
+        if(!MatrixCheck.judgeisTriangle(matrix)){
             return -1;
         }
-        //检查数组是否为三角形
-        for (int i = 0; i < matrix.length; i++) {
-            if(matrix[i].length != i + 1){
-                return -1;
-            }
-        }
+
         //检查是否仅含有一个数组
         if(matrix.length == 1 && matrix[0].length == 1){
             return matrix[0][0];
