@@ -1,5 +1,8 @@
 package DataStructure.string.stringCompare;
-/** 
+
+import org.springframework.stereotype.Repository;
+
+/**
  *@author liujun
  *@date： 2019-7-8 下午04:57:00
  *@author—Email:liujunfirst@outlook.com
@@ -7,6 +10,7 @@ package DataStructure.string.stringCompare;
  *@description: 设计并实现KMP算法
  *@version 1.0
  */
+@Repository("kmp")
 public class KMP {
 
 	//kmp 匹配过程

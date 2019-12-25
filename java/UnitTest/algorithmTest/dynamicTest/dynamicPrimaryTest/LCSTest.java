@@ -1,7 +1,6 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
 import Algorithm.dynamic.dynamicPrimary.lcs.LCS;
-import org.junit.Test;
 
 /**
  * @author liujun
@@ -14,7 +13,7 @@ import org.junit.Test;
 public class LCSTest {
 
     LCS lcs = new LCS();
-    @Test
+    //@Test
     public void Testmethod(){
         String result = lcs.method(demo01,demo01_comp);
         assert result.equals("");

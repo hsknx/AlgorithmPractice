@@ -2,6 +2,11 @@ package UnitTest.datastructureTest.stringTest.stringApplyTest;
 
 import DataStructure.string.stringCompare.KMP;
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import javax.annotation.Resource;
 
 /**
  * @author liujun
@@ -10,9 +15,12 @@ import org.junit.Test;
  * @author¡ªEmail:liujunfirst@outlook.com
  * @description:
  */
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations = {"classpath:JavaContext.xml"})
 public class KMPTest {
 
-    KMP kmp = new KMP();
+    @Resource
+    KMP kmp ;
 
     //Õý°¸Àý01£º²âÊÔÓÃÀý01
     String source01 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
@@ -26,7 +34,7 @@ public class KMPTest {
     String source03 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
     String pattern03 = "=1=1vyugbuiy1==";
     @Test
-    public void testKMP(){
+    public void testkmp(){
         boolean flag = kmp.kmp(source01, pattern01);
         assert flag;
 

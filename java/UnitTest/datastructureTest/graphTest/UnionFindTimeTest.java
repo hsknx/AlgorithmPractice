@@ -13,24 +13,12 @@ import org.junit.Test;
  * @blogURL:
  */
 public class UnionFindTimeTest {
-
-    UnionFind unionFind;
-    UnionFindOpt unionFindOpt;
+    int num = 1000000;
+    UnionFind unionFind = new UnionFind(num);
+    UnionFindOpt unionFindOpt = new UnionFindOpt(num);
 
     @Test
-    public void dd(){
-        for (int i = 0; i < 10; i++) {
-            TestTimeUnionFind();
-            System.out.println();
-        }
-        assert true;
-    }
-
     public void TestTimeUnionFind(){
-        int num = 1000000;
-        unionFind = new UnionFind(num);
-        unionFindOpt = new UnionFindOpt(num);
-
         long timeBegin = System.nanoTime();
         for (int i = 0; i <= num - 3; i++) {
             unionFind.union(i, i + 2);
@@ -43,7 +31,12 @@ public class UnionFindTimeTest {
         assert unionFind.connected(num/2+1, num/2+3);
         assert !unionFind.connected(num/2, num/2+1);
         long timecount = System.nanoTime() - timeBegin;
+        System.out.println("unionFind:   "+timecount);
+    }
 
+    @Test
+    public void TestTimeUnionFindOpt(){
+        long timeBegin = System.nanoTime();
         num = 1000000;
         timeBegin = System.nanoTime();
         for (int i = 0; i <= num - 3; i++) {
@@ -57,9 +50,6 @@ public class UnionFindTimeTest {
         assert unionFindOpt.connected(num/2+1, num/2+3);
         assert !unionFindOpt.connected(num/2, num/2+1);
         long timecount1 = System.nanoTime() - timeBegin;
-
-        System.out.println("unionFind:   "+timecount);
         System.out.println("unionFindOpt:"+timecount1);
-        System.out.println(timecount1 < timecount);
     }
 }

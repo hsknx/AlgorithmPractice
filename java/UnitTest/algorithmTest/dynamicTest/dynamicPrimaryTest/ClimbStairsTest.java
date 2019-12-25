@@ -39,5 +39,5 @@ public class ClimbStairsTest {
     int demo04 = 2;//2
     int demo05 = 3;//3
     int demo06 = 10;//89
-    int demo07 = 10946;//89
+    int demo07 = 20;//10946
 }

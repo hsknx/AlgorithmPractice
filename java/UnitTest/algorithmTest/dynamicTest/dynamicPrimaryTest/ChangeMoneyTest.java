@@ -1,7 +1,6 @@
 package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
 
 import Algorithm.dynamic.dynamicPrimary.ChangeMoney;
-import org.junit.Test;
 
 /**
  * @author liujun
@@ -14,7 +13,7 @@ import org.junit.Test;
 public class ChangeMoneyTest {
 
     ChangeMoney changeMoney = new ChangeMoney();
-    @Test
+    //@Test
     public void Testmethod(){
         int result = changeMoney.method(demo01, demo01_comp);
         assert result == 3;

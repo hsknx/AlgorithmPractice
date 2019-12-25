@@ -33,7 +33,7 @@ public class LongestEffectBracketsTest {
         assert num == 10;
     }
 
-    @Test
+    //@Test
     public void TestLongestEffectBracketsNum_(){
 
         int num = longestEffectBrackets.LongestEffectBracketsNum_(Demo01);
