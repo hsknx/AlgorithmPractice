@@ -1,6 +1,6 @@
 ## Introduction
 本项目旨在不断总结和实现面试和实际场景中的数据结构和算法问题，
-项目仍然在不断完善中，欢迎 您的加入。
+项目仍然在不断完善中，欢迎您的加入。
 
 ### notice：
 + 您可以首先通过我的[思维导图](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360)了解每部分大致内容，
@@ -8,37 +8,129 @@
 + 最后通过博客前端链接访问我的[github](https://github.com/ljfirst/Algorithm)，查看具体代码实现。
 
 ### special：
-+ all the project in liujun
++ all the project in java
 
 ## Architecture:
 ### 数据结构及其应用（DataStructure）
-#### 排序（sort）
-  + 内部排序
-    + 简单排序：
-      + 冒泡排序、堆排序、插入排序、选择排序及测试类
-    + 普通排序：
-      + 桶排序、计数排序、归并排序、基数排序
-    + 快排优化：
-      + 快排
-      + 快排及插入法改进的快排。
-    + 内部排序的应用：
-      + 将一段压缩后的字符串解压缩，并且排序输出。
-      + 返回数组中最小的k个数。
-      + 给定一个英文字符串,请写一段代码找出这个字符串中首先出现三次的那个英文字符(需要区分大小写)。
-      + 数组中有一个数字出现的次数超过数组长度的一半，请找出这个数字。
-  + 外部排序
-#### 线性表（line）
-#### 堆栈队列（stack_heap_queue）
-#### 串（string）
-#### 树（tree）		
-#### 图（graph）
-### 算法（Algorithm）
-  + 动态规划
-  + 回溯
-  + 贪心
-  + 分支限界
-### 逻辑及面试题（logic）
-  + 游戏
-  + 数学
-  + 正则
+|-- Algorithm
+|   |-- combine
+|   |   |-- backpack
+|   |   `-- choir
+|   |-- dynamic
+|   |   |-- dynamicOrdinary
+|   |   `-- dynamicPrimary
+|   |       |-- lcs
+|   |       |-- lis
+|   |       |-- lss
+|   |       `-- palindrome
+|   |-- other
+|   |   `-- other
+|   `-- recall
+|       |-- recall
+|       `-- recall_apply
+|-- DataStructure
+|   |-- graph
+|   |   |-- graphApply
+|   |   |-- graphConnection
+|   |   |   `-- unionFind
+|   |   |-- mst
+|   |   `-- shortestPath
+|   |       |-- multiSourceShortestPath
+|   |       `-- singleSourceShortestPath
+|   |-- line
+|   |   |-- array
+|   |   |   |-- oneDimensionalArray
+|   |   |   `-- twoDimensionalArray
+|   |   |       |-- twoDimensionalArrayApply
+|   |   |       `-- twoDimensionalArrayRealize
+|   |   |-- hashTable
+|   |   |   |-- hashTableApply
+|   |   |   `-- hashTableRealize
+|   |   `-- list
+|   |       |-- linkListRealize
+|   |       `-- listApply
+|   |-- sort
+|   |   |-- exterSort
+|   |   `-- innerSort
+|   |       |-- innerSortApply
+|   |       `-- innerSortRealize
+|   |           |-- normalSort
+|   |           |-- quickSort
+|   |           `-- simpleSort
+|   |-- stackHeapQueue
+|   |   |-- heap
+|   |   |-- queue
+|   |   |   |-- queueApply
+|   |   |   `-- queueRealize
+|   |   `-- stack
+|   |       |-- stackApply
+|   |       `-- stackRealize
+|   |-- string
+|   |   |-- stringApply
+|   |   `-- stringCompare
+|   `-- tree
+|       |-- bTree_bplusTree
+|       |-- balanceBinaryTree
+|       |   |-- avlTree
+|       |   `-- redBlackTree
+|       |       |-- apply
+|       |       `-- realize
+|       |-- binaryTree
+|       |   |-- apply
+|       |   `-- realize
+|       |-- huffman
+|       |-- intervalTree
+|       `-- two_three_tree
+|-- Logic
+|   |-- check
+|   |-- game
+|   |-- math
+|   |-- regular
+|   `-- utils
+`-- UnitTest
+    |-- algorithmTest
+    |   |-- combineTest
+    |   |   |-- backpackTest
+    |   |   `-- choirTest
+    |   |-- dynamicTest
+    |   |   |-- dynamicOrdinaryTest
+    |   |   `-- dynamicPrimaryTest
+    |   |       `-- PalindromeTest
+    |   `-- recallTest
+    |-- datastructureTest
+    |   |-- graphTest
+    |   |   `-- mstTest
+    |   |-- lineTest
+    |   |   |-- arrayTest
+    |   |   |   |-- oneDimensionalArrayTest
+    |   |   |   `-- twoDimensionalArrayTest
+    |   |   |       |-- applyTest
+    |   |   |       `-- realizeTest
+    |   |   `-- listTest
+    |   |       |-- linkListRealizeTest
+    |   |       `-- listApplyTest
+    |   |-- sortTest
+    |   |   |-- exterSortTest
+    |   |   `-- innerSortTest
+    |   |       |-- innerSortApplyTest
+    |   |       `-- innerSortRealizeTest
+    |   |-- stackHeapQueueTest
+    |   |   |-- heapTest
+    |   |   |-- queueTest
+    |   |   |   |-- queueApplyTest
+    |   |   |   `-- queueRealizeTest
+    |   |   `-- stackTest
+    |   |       |-- stackApplyTest
+    |   |       `-- stackRealizeTest
+    |   |-- stringTest
+    |   |   |-- sequenceApplayTest
+    |   |   |-- stringApplyTest
+    |   |   `-- stringCompareTest
+    |   `-- treeTest
+    `-- logicTest
+        |-- gametest
+        |-- mathtest
+        |-- regulartest
+        `-- utilsTest
+
 
