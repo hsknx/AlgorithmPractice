@@ -11,126 +11,69 @@
 + all the project in java
 
 ## Architecture:
-### 数据结构及其应用（DataStructure）
-|-- Algorithm
-|   |-- combine
-|   |   |-- backpack
-|   |   `-- choir
-|   |-- dynamic
-|   |   |-- dynamicOrdinary
-|   |   `-- dynamicPrimary
-|   |       |-- lcs
-|   |       |-- lis
-|   |       |-- lss
-|   |       `-- palindrome
-|   |-- other
-|   |   `-- other
-|   `-- recall
-|       |-- recall
-|       `-- recall_apply
-|-- DataStructure
-|   |-- graph
-|   |   |-- graphApply
-|   |   |-- graphConnection
-|   |   |   `-- unionFind
-|   |   |-- mst
-|   |   `-- shortestPath
-|   |       |-- multiSourceShortestPath
-|   |       `-- singleSourceShortestPath
-|   |-- line
-|   |   |-- array
-|   |   |   |-- oneDimensionalArray
-|   |   |   `-- twoDimensionalArray
-|   |   |       |-- twoDimensionalArrayApply
-|   |   |       `-- twoDimensionalArrayRealize
-|   |   |-- hashTable
-|   |   |   |-- hashTableApply
-|   |   |   `-- hashTableRealize
-|   |   `-- list
-|   |       |-- linkListRealize
-|   |       `-- listApply
-|   |-- sort
-|   |   |-- exterSort
-|   |   `-- innerSort
-|   |       |-- innerSortApply
-|   |       `-- innerSortRealize
-|   |           |-- normalSort
-|   |           |-- quickSort
-|   |           `-- simpleSort
-|   |-- stackHeapQueue
-|   |   |-- heap
-|   |   |-- queue
-|   |   |   |-- queueApply
-|   |   |   `-- queueRealize
-|   |   `-- stack
-|   |       |-- stackApply
-|   |       `-- stackRealize
-|   |-- string
-|   |   |-- stringApply
-|   |   `-- stringCompare
-|   `-- tree
-|       |-- bTree_bplusTree
-|       |-- balanceBinaryTree
-|       |   |-- avlTree
-|       |   `-- redBlackTree
-|       |       |-- apply
-|       |       `-- realize
-|       |-- binaryTree
-|       |   |-- apply
-|       |   `-- realize
-|       |-- huffman
-|       |-- intervalTree
-|       `-- two_three_tree
-|-- Logic
-|   |-- check
-|   |-- game
-|   |-- math
-|   |-- regular
-|   `-- utils
-`-- UnitTest
-    |-- algorithmTest
-    |   |-- combineTest
-    |   |   |-- backpackTest
-    |   |   `-- choirTest
-    |   |-- dynamicTest
-    |   |   |-- dynamicOrdinaryTest
-    |   |   `-- dynamicPrimaryTest
-    |   |       `-- PalindromeTest
-    |   `-- recallTest
-    |-- datastructureTest
-    |   |-- graphTest
-    |   |   `-- mstTest
-    |   |-- lineTest
-    |   |   |-- arrayTest
-    |   |   |   |-- oneDimensionalArrayTest
-    |   |   |   `-- twoDimensionalArrayTest
-    |   |   |       |-- applyTest
-    |   |   |       `-- realizeTest
-    |   |   `-- listTest
-    |   |       |-- linkListRealizeTest
-    |   |       `-- listApplyTest
-    |   |-- sortTest
-    |   |   |-- exterSortTest
-    |   |   `-- innerSortTest
-    |   |       |-- innerSortApplyTest
-    |   |       `-- innerSortRealizeTest
-    |   |-- stackHeapQueueTest
-    |   |   |-- heapTest
-    |   |   |-- queueTest
-    |   |   |   |-- queueApplyTest
-    |   |   |   `-- queueRealizeTest
-    |   |   `-- stackTest
-    |   |       |-- stackApplyTest
-    |   |       `-- stackRealizeTest
-    |   |-- stringTest
-    |   |   |-- sequenceApplayTest
-    |   |   |-- stringApplyTest
-    |   |   `-- stringCompareTest
-    |   `-- treeTest
-    `-- logicTest
-        |-- gametest
-        |-- mathtest
-        |-- regulartest
-        `-- utilsTest
-
-
++ Algorithm
+    + combine
+        + backpack
+        + choir
+    + dynamic
+        + dynamicOrdinary
+        + dynamicPrimary
+    + other
+        + other
+    + recall
+        + recall
+        + recall_apply
++ DataStructure
+    + graph
+        + BellmanFord.java
+        + Floyd.java
+        + graphApply
+        + graphConnection
+        + mst
+        + shortestPath
+    + line
+        + array
+        + hashTable
+        + list
+    + sort
+        + README.md
+        + exterSort
+        + innerSort
+    + stackHeapQueue
+        + heap
+        + queue
+        + stack
+    + string
+        + stringApply
+        + stringCompare
+    + tree
+        + README.md
+        + bTree_bplusTree
+        + balanceBinaryTree
+        + binaryTree
+        + huffman
+        + intervalTree
+        + two_three_tree
++  Logic
+   +  check
+   +  game
+   +  math
+   +  regular
+   + utils
++ UnitTest
+    + algorithmTest
+        + combineTest
+        + dynamicTest
+        + recallTest
+    + datastructureTest
+        + graphTest
+        + lineTest
+        + sortTest
+        + stackHeapQueueTest
+        + stringTest
+        + treeTest
+    + logicTest
+        + gametest
+        + mathtest
+        + regulartest
+        + utilsTest
