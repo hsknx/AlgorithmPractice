@@ -8,7 +8,8 @@
 + 最后通过博客前端链接访问我的[github](https://github.com/ljfirst/Algorithm)，查看具体代码实现。
 
 ### special：
-+ all the project in java
++ This project(java) consists of four parts：Algorithm、DataStructure、Logic、UnitTest.
++ all the projects in the java directory.
 
 ## Architecture:
 + Algorithm
