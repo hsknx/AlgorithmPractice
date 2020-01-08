@@ -22,17 +22,7 @@ public class KMPTest {
     @Resource
     KMP kmp ;
 
-    //正案例01：测试用例01
-    String source01 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
-    String pattern01 = "==1vyugbuiy1==";
 
-    //正案例02：测试用例02
-    String source02 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
-    String pattern02 = "1vyugbuiy1";
-
-    //反案例03：测试用例03
-    String source03 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
-    String pattern03 = "=1=1vyugbuiy1==";
     @Test
     public void testkmp(){
         boolean flag = kmp.kmp(source01, pattern01);
@@ -44,4 +34,16 @@ public class KMPTest {
         flag = kmp.kmp(source03, pattern03);
         assert !flag;
     }
+
+    //正案例01：测试用例01
+    String source01 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
+    String pattern01 = "==1vyugbuiy1==";
+
+    //正案例02：测试用例02
+    String source02 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
+    String pattern02 = "1vyugbuiy1";
+
+    //反案例03：测试用例03
+    String source03 = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
+    String pattern03 = "=1=1vyugbuiy1==";
 }
