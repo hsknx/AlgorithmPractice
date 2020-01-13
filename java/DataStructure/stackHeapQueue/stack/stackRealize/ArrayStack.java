@@ -1,5 +1,7 @@
 package DataStructure.stackHeapQueue.stack.stackRealize;
 
+import DataStructure.stackHeapQueue.stack.Stack;
+
 /**
  * @author liujun
  * @version 1.0
@@ -7,7 +9,7 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  * @author—Email:liujunfirst@outlook.com
  * @description: 数组栈的基本实现
  */
-public class ArrayStack {
+public class ArrayStack implements Stack {
 
     public int[] stackValue;
     public int stackTop;

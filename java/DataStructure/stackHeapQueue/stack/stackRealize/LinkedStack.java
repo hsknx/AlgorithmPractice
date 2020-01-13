@@ -1,5 +1,7 @@
 package DataStructure.stackHeapQueue.stack.stackRealize;
 
+import DataStructure.stackHeapQueue.stack.Stack;
+
 /**
  * @author liujun
  * @version 1.0
@@ -7,7 +9,7 @@ package DataStructure.stackHeapQueue.stack.stackRealize;
  * @author—Email:liujunfirst@outlook.com
  * @description: 链表栈的基本实现
  */
-public class LinkedStack {
+public class LinkedStack implements Stack {
 
     public Node stackTop;
     public int stackRealSize;

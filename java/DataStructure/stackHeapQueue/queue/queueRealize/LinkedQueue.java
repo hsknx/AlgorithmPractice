@@ -1,5 +1,7 @@
 package DataStructure.stackHeapQueue.queue.queueRealize;
 
+import DataStructure.stackHeapQueue.queue.Queue;
+
 /**
  * @author liujun
  * @version 1.0
@@ -7,7 +9,7 @@ package DataStructure.stackHeapQueue.queue.queueRealize;
  * @author—Email:liujunfirst@outlook.com
  * @description:
  */
-public class LinkedQueue {
+public class LinkedQueue implements Queue {
 
     public int QueueRealsize;
     public int QueueMaxsize;
@@ -34,6 +36,7 @@ public class LinkedQueue {
         front = tail = null;
     }
 
+    @Override
     public boolean offer(int value){
         //入队判满
         if(QueueRealsize < QueueMaxsize){
@@ -51,6 +54,7 @@ public class LinkedQueue {
         return false;
     }
 
+    @Override
     public int poll(){
         int value = -1;
         //出队判空
@@ -62,6 +66,7 @@ public class LinkedQueue {
         return value;
     }
 
+    @Override
     public int peek(){
         int value = -1;
         //出队判空
@@ -71,14 +76,17 @@ public class LinkedQueue {
         return value;
     }
 
+    @Override
     public int getRealsize(){
         return QueueRealsize;
     }
 
+    @Override
     public int getMaxsize(){
         return QueueMaxsize;
     }
 
+    @Override
     public boolean empty(){
         if(QueueRealsize == 0){
             return true;

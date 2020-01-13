@@ -1,5 +1,7 @@
 package DataStructure.stackHeapQueue.queue.queueRealize;
 
+import DataStructure.stackHeapQueue.queue.Queue;
+
 /**
  * @author liujun
  * @version 1.0
@@ -7,7 +9,7 @@ package DataStructure.stackHeapQueue.queue.queueRealize;
  * @author—Email:liujunfirst@outlook.com
  * @description:
  */
-public class ArrayQueue {
+public class ArrayQueue implements Queue {
 
     public int[] queue;
     public int QueueRealsize;
@@ -28,6 +30,7 @@ public class ArrayQueue {
         front = tail = 0;
     }
 
+    @Override
     public boolean offer(int value){
         //入队判满
         if(tail + 1 != front){
@@ -39,6 +42,7 @@ public class ArrayQueue {
         return false;
     }
 
+    @Override
     public int poll(){
         int value = -1;
         //出队判空
@@ -51,6 +55,7 @@ public class ArrayQueue {
     }
 
     //获取队首元素
+    @Override
     public int peek(){
         int value = -1;
         //出队判空
@@ -60,14 +65,17 @@ public class ArrayQueue {
         return value;
     }
 
+    @Override
     public int getRealsize(){
         return (tail + QueueMaxsize - front) % QueueMaxsize;
     }
 
+    @Override
     public int getMaxsize(){
         return QueueMaxsize;
     }
 
+    @Override
     public boolean empty(){
         return tail == front;
     }
