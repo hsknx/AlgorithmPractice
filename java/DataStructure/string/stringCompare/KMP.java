@@ -1,6 +1,6 @@
 package DataStructure.string.stringCompare;
 
-import org.springframework.stereotype.Repository;
+import DataStructure.string.StringCompare;
 
 /**
  *@author liujun
@@ -10,9 +10,11 @@ import org.springframework.stereotype.Repository;
  *@description: 设计并实现KMP算法
  *@version 1.0
  */
-@Repository("kmp")
-public class KMP {
-
+public class KMP implements StringCompare {
+	@Override
+	public boolean compare(String source, String target) {
+		return check(source, target) ? kmp(source, target) : false;
+	}
 	//kmp 匹配过程
 	public boolean kmp(String source, String pattern) {
 
@@ -36,15 +38,15 @@ public class KMP {
 		return false;
 	}
 
-	public int[] getNext(String s) {
+	public static int[] getNext(String s) {
 
 		int[] next = new int[s.length()];
 		getNext(s, next);
 		return next;
 	}
-	
+
 	//获取next数组:寻找最长前缀
-	public void getNext(String s, int[] next) {
+	public static void getNext(String s, int[] next) {
 
 		int point = 0;
 		int pointmatch = -1;

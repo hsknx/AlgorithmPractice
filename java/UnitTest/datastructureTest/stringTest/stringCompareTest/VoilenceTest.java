@@ -1,5 +1,9 @@
 package UnitTest.datastructureTest.stringTest.stringCompareTest;
 
+import DataStructure.string.stringCompare.Voilence;
+import UnitTest.datastructureTest.stringTest.StringCompareTest;
+import org.junit.Test;
+
 /**
  * @author liujun
  * @version 1.0
@@ -8,5 +12,10 @@ package UnitTest.datastructureTest.stringTest.stringCompareTest;
  * @description:
  * @blogURL:
  */
-public class VoilenceTest {
+public class VoilenceTest extends StringCompareTest {
+
+    @Test
+    public void testCompare(){
+        super.testCompare(new Voilence());
+    }
 }

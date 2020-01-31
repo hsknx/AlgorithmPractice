@@ -36,8 +36,8 @@ public class LSSopt {
 				end = i;                  //结束地址包括 i
 			}
 		}
-		System.out.println("maxValue:"+sum);
-		System.out.println("start position:"+(begin+1)+"  end position:"+(end+1));
+		//System.out.println("maxValue:"+sum);
+		//System.out.println("start position:"+(begin+1)+"  end position:"+(end+1));
 		return sum;
 	}
 }

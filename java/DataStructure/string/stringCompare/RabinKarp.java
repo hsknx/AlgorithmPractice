@@ -1,5 +1,7 @@
 package DataStructure.string.stringCompare;
 
+import DataStructure.string.StringCompare;
+
 /**
  * @author liujun
  * @version 1.0
@@ -8,5 +10,13 @@ package DataStructure.string.stringCompare;
  * @description:
  * @blogURL:
  */
-public class RabinKarp {
+public class RabinKarp implements StringCompare {
+    @Override
+    public boolean compare(String source, String target) {
+        return check(source, target) ? RabinKarpcmp(source, target) : false;
+    }
+
+    public boolean RabinKarpcmp(String source, String target){
+        return false;
+    }
 }

@@ -1,5 +1,7 @@
 package DataStructure.string.stringCompare;
 
+import DataStructure.string.StringCompare;
+
 import java.util.ArrayList;
 
 /**
@@ -9,7 +11,12 @@ import java.util.ArrayList;
  * @author¡ªEmail: liujunfirst@outlook.com
  * @description: ×Ó´®Æ¥Åä
  */
-public class SubstringCompare {
+public class SubstringCompare implements StringCompare {
+
+    @Override
+    public boolean compare(String source, String target) {
+        return check(source, target) ? specialStringCompare(source, target) : false;
+    }
 
     //×Ó´®Æ¥Åä
     public boolean specialStringCompare(String substring, String string){

@@ -1,5 +1,8 @@
 package DataStructure.string.stringCompare;
-/** 
+
+import DataStructure.string.StringCompare;
+
+/**
  *@author liujun
  *@date： 2019-8-26 下午07:32:21
  *@author—Email:liujunfirst@outlook.com
@@ -7,7 +10,11 @@ package DataStructure.string.stringCompare;
  *@description: Sunday算法是一种比KMP算法更快捷的算法。
  *@version 1.0
  */
-public class Sunday {
+public class Sunday implements StringCompare {
+	@Override
+	public boolean compare(String source, String target) {
+		return check(source, target) ? SundaySolution(source, target) : false;
+	}
 
 	//字符串匹配串匹配
 	public boolean SundaySolution(String source, String pattern) {

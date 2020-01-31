@@ -1,5 +1,9 @@
 package UnitTest.datastructureTest.stringTest.stringCompareTest;
 
+import DataStructure.string.stringCompare.KMP;
+import UnitTest.datastructureTest.stringTest.StringCompareTest;
+import org.junit.Test;
+
 /**
  * @author liujun
  * @version 1.0
@@ -8,5 +12,10 @@ package UnitTest.datastructureTest.stringTest.stringCompareTest;
  * @description:
  * @blogURL:
  */
-public class KMPTest {
+public class KMPTest extends StringCompareTest {
+
+    @Test
+    public void testCompare(){
+        super.testCompare(new KMP());
+    }
 }
