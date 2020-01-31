@@ -1,6 +1,8 @@
+ <h1> Welcome to join the project of AlgorithmPractice  </h1>
+
+
 ## Introduction
 + The purpose of this project is to constantly summarize and implement the data structure and algorithm problems in the interview and the actual scene. 
-+ Welcome to join us!
 
 ### notice：
 + You can first understand the general content of each part through my [mind map](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),
