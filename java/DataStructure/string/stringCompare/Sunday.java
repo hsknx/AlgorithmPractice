@@ -21,7 +21,7 @@ public class Sunday implements StringCompare {
 		
 		int sourceIndex = 0;
 		int patternIndex = 0;
-		boolean flag = false;
+
 		while(sourceIndex < source.length()){
 			int temp = sourceIndex + pattern.length();
 			while (sourceIndex < source.length() && patternIndex < pattern.length()) {
@@ -30,6 +30,7 @@ public class Sunday implements StringCompare {
 					patternIndex++;
 				}else{
 					if(temp < source.length() && pattern.lastIndexOf(source.charAt(temp)) != -1){
+						//这里指的是右移位数
 						sourceIndex = temp - pattern.lastIndexOf(source.charAt(temp));
 					}else{
 						sourceIndex = temp +1;
@@ -39,10 +40,9 @@ public class Sunday implements StringCompare {
 				}
 			}
 			if(patternIndex == pattern.length()){
-				flag = true;
-				break;
+				return true;
 			}
 		}
-		return flag;
+		return false;
 	}
 }
