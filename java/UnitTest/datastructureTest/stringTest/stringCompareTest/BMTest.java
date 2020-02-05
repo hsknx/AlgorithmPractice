@@ -1,7 +1,7 @@
 package UnitTest.datastructureTest.stringTest.stringCompareTest;
 
 import DataStructure.string.stringCompare.BM;
-import UnitTest.datastructureTest.stringTest.StringCompareTest;
+import UnitTest.datastructureTest.stringTest.StringCompareTestDemo;
 import org.junit.Test;
 
 /**
@@ -12,7 +12,7 @@ import org.junit.Test;
  * @description:
  * @blogURL:
  */
-public class BMTest extends StringCompareTest {
+public class BMTest extends StringCompareTestDemo {
 
     @Test
     public void testCompare(){

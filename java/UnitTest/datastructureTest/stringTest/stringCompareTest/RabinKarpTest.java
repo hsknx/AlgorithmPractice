@@ -1,7 +1,7 @@
 package UnitTest.datastructureTest.stringTest.stringCompareTest;
 
 import DataStructure.string.stringCompare.RabinKarp;
-import UnitTest.datastructureTest.stringTest.StringCompareTest;
+import UnitTest.datastructureTest.stringTest.StringCompareTestDemo;
 import org.junit.Test;
 
 /**
@@ -12,16 +12,17 @@ import org.junit.Test;
  * @description:
  * @blogURL:
  */
-public class RabinKarpTest extends StringCompareTest {
+public class RabinKarpTest extends StringCompareTestDemo {
 
     @Test//跟进制和素数的选择有关系
     public void testCompare(){
         super.testCompare(new RabinKarp());
     }
 
-    @Test
+
+
     public void testcomparemethod(){//未测试
         RabinKarp rabinKarp = new RabinKarp();
-        //rabinKarp.compare();
+        //rabinKarp.compare(String source, String target, int prime, int HEX);
     }
 }

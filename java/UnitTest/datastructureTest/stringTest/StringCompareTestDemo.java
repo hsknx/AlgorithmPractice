@@ -10,7 +10,7 @@ import DataStructure.string.StringCompare;
  * @description:
  * @blogURL:
  */
-public class StringCompareTest {
+public class StringCompareTestDemo {
 
     public void testCompare(StringCompare stringCompare){
         //正案例
@@ -32,6 +32,8 @@ public class StringCompareTest {
         flag = stringCompare.compare(source03f,pattern03f);
         assert !flag;
         flag = stringCompare.compare(source04f,pattern04f);
+        assert !flag;
+        flag = stringCompare.compare(source05f,pattern05f);
         assert !flag;
     }
 
@@ -73,4 +75,7 @@ public class StringCompareTest {
     //反案例04：测试用例04
     String source04f = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
     String pattern04f = "=1=1vyugbuiy1==";
+
+    String source05f = "20413";
+    String pattern05f = "12340202411322";
 }
