@@ -31,6 +31,8 @@ public class sequenceTestDemo {
         assert !flag;
         flag = sequenceCompare.compare(source04f,pattern04f);
         assert !flag;
+        flag = sequenceCompare.compare(source05f,pattern05f);
+        assert !flag;
     }
     
     //正案例01：
@@ -56,6 +58,9 @@ public class sequenceTestDemo {
     String source03f = "0123456789";
     String pattern03f ="01234567891";
     //反案例04：
-    String source04f = "xc4e8cc9q65a4dxa4wd5x";
-    String pattern04f ="8cc9q65a4d1";
+    String source04f = "8cc9q65a4d1";
+    String pattern04f ="xc4e8cc9q65a4dxa4wd5x";
+    //反案例04：
+    String source05f = "";
+    String pattern05f ="xc4e8cc9q65a4dxa4wd5x";
 }

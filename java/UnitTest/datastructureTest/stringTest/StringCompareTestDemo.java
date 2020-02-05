@@ -35,6 +35,8 @@ public class StringCompareTestDemo {
         assert !flag;
         flag = stringCompare.compare(source05f,pattern05f);
         assert !flag;
+        flag = stringCompare.compare(source06f,pattern06f);
+        assert !flag;
     }
 
 
@@ -59,7 +61,6 @@ public class StringCompareTestDemo {
     String pattern05 = "1vyugbuiy1";
 
 
-
     //反案例01：测试用例01
     String source01f = "12uw3wi345uri6789";
     String pattern01f = "uir";
@@ -75,7 +76,10 @@ public class StringCompareTestDemo {
     //反案例04：测试用例04
     String source04f = "dthggvjff==1vyugbuiy1==ufxewzqaszdxcvbpo";
     String pattern04f = "=1=1vyugbuiy1==";
-
+    //反案例05：测试用例05
     String source05f = "20413";
     String pattern05f = "12340202411322";
+    //反案例06：测试用例06
+    String source06f = "20413";
+    String pattern06f = null;
 }
