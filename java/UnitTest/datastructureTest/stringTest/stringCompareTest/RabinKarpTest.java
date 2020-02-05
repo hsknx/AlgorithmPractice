@@ -14,8 +14,14 @@ import org.junit.Test;
  */
 public class RabinKarpTest extends StringCompareTest {
 
-    @Test
+    @Test//跟进制和素数的选择有关系
     public void testCompare(){
         super.testCompare(new RabinKarp());
+    }
+
+    @Test
+    public void testcomparemethod(){//未测试
+        RabinKarp rabinKarp = new RabinKarp();
+        //rabinKarp.compare();
     }
 }
