@@ -14,18 +14,24 @@ public class LNRSubstringTest {
 
     LNRSubstring lnrSubstring = new LNRSubstring();
 
-    //正案例01：测试用例01
-    String source01 = "pwwkew";
-
-    //反案例02：测试用例02
-    String source02 = "aassddffgghh";
-
     @Test
     public void testLNRSubstring() {
-        int length = lnrSubstring.lengthOfLongestSubstring(source01);
+        int length = lnrSubstring.lengthOfLongestSubstring(demo01);
         assert length == 3;
 
-        length = lnrSubstring.lengthOfLongestSubstring(source02);
+        length = lnrSubstring.lengthOfLongestSubstring(demo02);
         assert length == 2;
+
+        length = lnrSubstring.lengthOfLongestSubstring(demo03);
+        assert length == 9;
     }
+
+    //正案例01：测试用例01
+    String demo01 = "pwwkew";
+
+    //反案例02：测试用例02
+    String demo02 = "aassddffgghh";
+
+    //反案例03：测试用例02
+    String demo03 = "aasdfghjkll";
 }
