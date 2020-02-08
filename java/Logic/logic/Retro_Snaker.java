@@ -1,4 +1,4 @@
-package Algorithm.other.other;
+package Logic.logic;
 
 import java.util.Scanner;
 

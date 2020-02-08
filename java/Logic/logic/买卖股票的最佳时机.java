@@ -1,4 +1,4 @@
-package Algorithm.other.other;
+package Logic.logic;
 
 /** 
  *@author liujun
