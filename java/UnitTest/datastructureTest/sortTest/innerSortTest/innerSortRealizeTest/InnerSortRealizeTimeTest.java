@@ -1,7 +1,6 @@
 package UnitTest.datastructureTest.sortTest.innerSortTest.innerSortRealizeTest;
 
-import DataStructure.sort.innerSort.SortInterface;
-import org.junit.Test;
+import DataStructure.sort.innerSort.innerSortRealize.SortInterface;
 
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
@@ -35,7 +34,7 @@ public class InnerSortRealizeTimeTest {
     String InsertSortName = packagename + "simpleSort.InsertSort";
     String SelectSortName = packagename + "simpleSort.SelectSort";
 
-    @Test
+    //@Test
     public void TestInnerSortRealizeTimeTest() {
         ArrayList<String> sortlist = new ArrayList<>();
 

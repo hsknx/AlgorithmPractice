@@ -1,7 +1,7 @@
 package DataStructure.sort.innerSort.innerSortRealize.normalSort;
 
 import DataStructure.line.hashTable.hashTableRealize.HashTableNode;
-import DataStructure.sort.innerSort.SortInterface;
+import DataStructure.sort.innerSort.innerSortRealize.SortInterface;
 
 /**
  *@author liujun

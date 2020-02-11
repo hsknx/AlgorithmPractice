@@ -1,13 +1,13 @@
 package DataStructure.sort.innerSort.innerSortRealize.simpleSort;
 
-import DataStructure.sort.innerSort.SortInterface;
+import DataStructure.sort.innerSort.innerSortRealize.SortInterface;
 
 /**
  * @author liujun
  * @version 1.0
  * @date£∫ 2019-11-14 22:15
  * @author°™Email: liujunfirst@outlook.com
- * @description:
+ * @description: ≤Â»Î≈≈–Ú
  * @blogURL:
  */
 public class InsertSort implements SortInterface {

@@ -1,13 +1,13 @@
 package DataStructure.sort.innerSort.innerSortRealize.quickSort;
 
-import DataStructure.sort.innerSort.SortInterface;
+import DataStructure.sort.innerSort.innerSortRealize.SortInterface;
 import DataStructure.sort.innerSort.innerSortRealize.simpleSort.InsertSort;
 
 /**
  *@author liujun
  *@date： 2019-3-23 下午12:08:37
  *@author—Email:liujunfirst@outlook.com
- *@description:采用插入法来优化快速排序
+ *@description: 采用插入法来优化快速排序
  *@URL:
  *@version 1.0
  */
@@ -50,6 +50,4 @@ public class QuickSortOpt implements SortInterface {
 		}
 		return sortNum;
 	}
-
-
 }

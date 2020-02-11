@@ -1,4 +1,4 @@
-package DataStructure.sort.innerSort;
+package DataStructure.sort.innerSort.innerSortRealize;
 
 /**
  * @author liujun

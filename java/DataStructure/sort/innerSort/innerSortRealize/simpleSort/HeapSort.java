@@ -1,13 +1,13 @@
 package DataStructure.sort.innerSort.innerSortRealize.simpleSort;
 
-import DataStructure.sort.innerSort.SortInterface;
+import DataStructure.sort.innerSort.innerSortRealize.SortInterface;
 
 /**
  * @author liujun
  * @version 1.0
  * @date： 2019-11-14 22:14
  * @author—Email: liujunfirst@outlook.com
- * @description:
+ * @description: 堆排序
  * 设计思路 1)初试化建堆，堆顶即最大元素。
  *      2)交换堆顶和数组末尾元素，然后针对剩余的n-1个元素，对堆顶元素进行调整即可，
  *      3)重复2),直到所有元素有序。
