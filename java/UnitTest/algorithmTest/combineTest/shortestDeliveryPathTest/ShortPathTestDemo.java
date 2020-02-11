@@ -1,7 +1,5 @@
 package UnitTest.algorithmTest.combineTest.shortestDeliveryPathTest;
 
-import Algorithm.comprehensive.shortestDeliveryPath.ShortPath;
-
 /**
  * @author liujun
  * @version 1.0
@@ -11,19 +9,6 @@ import Algorithm.comprehensive.shortestDeliveryPath.ShortPath;
  * @blogURL:
  */
 public class ShortPathTestDemo {
-
-    public void shortPath(ShortPath shortPath){
-        int sum = shortPath.shortPath(Demorow_01, Democolumn_01);
-        assert sum == 38;
-        sum = shortPath.shortPath(Demorow_02, Democolumn_02);
-        assert sum == -1;
-        sum = shortPath.shortPath(Demorow_03, Democolumn_03);
-        assert sum == -1;
-        sum = shortPath.shortPath(Demorow_04, Democolumn_04);
-        assert sum == -1;
-        sum = shortPath.shortPath(Demorow_05, Democolumn_05);
-        assert sum == 24;
-    }
 
     //Demo
     int[] Demorow_01 = {   4, 7, 1, 5, 6, 4};

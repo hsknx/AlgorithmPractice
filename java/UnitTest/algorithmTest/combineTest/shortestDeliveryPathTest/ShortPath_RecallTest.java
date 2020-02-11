@@ -1,24 +1,24 @@
 package UnitTest.algorithmTest.combineTest.shortestDeliveryPathTest;
 
 import Algorithm.comprehensive.shortestDeliveryPath.ShortPath;
-import Algorithm.comprehensive.shortestDeliveryPath.ShortPath_Greedy;
+import Algorithm.comprehensive.shortestDeliveryPath.ShortPath_Recall;
 import org.junit.Test;
 
 /**
  * @author liujun
  * @version 1.0
- * @date： 2020-02-11 14:34
+ * @date： 2020-02-11 16:08
  * @author—Email: liujunfirst@outlook.com
- * @description: 送货最短路径_贪心算法_UT ShortestDeliveryPath
+ * @description: 送货最短路径_回溯算法_UT ShortestDeliveryPath
  * @blogURL:
  */
-public class ShortPath_GreedyTest extends ShortPathTestDemo{
+public class ShortPath_RecallTest extends ShortPathTestDemo{
 
     @Test
     public void shortPath(){
-        ShortPath shortPath = new ShortPath_Greedy();
+        ShortPath shortPath = new ShortPath_Recall();
         int sum = shortPath.shortPath(Demorow_01, Democolumn_01);
-        assert sum == 38;
+        assert sum == 30;
         sum = shortPath.shortPath(Demorow_02, Democolumn_02);
         assert sum == -1;
         sum = shortPath.shortPath(Demorow_03, Democolumn_03);

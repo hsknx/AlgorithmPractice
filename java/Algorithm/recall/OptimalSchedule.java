@@ -1,4 +1,4 @@
-package Algorithm.branchandBound;
+package Algorithm.recall;
 
 /**
  * @author liujun

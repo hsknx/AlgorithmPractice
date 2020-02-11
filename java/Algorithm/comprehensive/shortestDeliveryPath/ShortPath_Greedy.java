@@ -5,8 +5,7 @@ package Algorithm.comprehensive.shortestDeliveryPath;
  * @version 1.0
  * @date： 2020-02-11 14:32
  * @author—Email: liujunfirst@outlook.com
- * @description: 送货最短路径接口 ShortestDeliveryPath
- * 贪心算法
+ * @description: 送货最短路径  贪心算法
  * @blogURL:
  */
 public class ShortPath_Greedy implements ShortPath {
@@ -20,11 +19,6 @@ public class ShortPath_Greedy implements ShortPath {
     //计算最短距离：prim思路
     public int shortPath_greedy(int[] position_row, int[] position_column) {
 
-        if (position_row == null || position_column == null
-                || position_row.length == 0 || position_column.length == 0
-                || position_row.length != position_column.length) {
-            return -1;
-        }
         //定义总距离 和 当前距离最小值
         int sum = 0;
         int min = Integer.MAX_VALUE;

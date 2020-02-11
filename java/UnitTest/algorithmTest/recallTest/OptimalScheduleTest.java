@@ -1,6 +1,6 @@
-package UnitTest.algorithmTest.BranchandBoundTest;
+package UnitTest.algorithmTest.recallTest;
 
-import Algorithm.branchandBound.OptimalSchedule;
+import Algorithm.recall.OptimalSchedule;
 import org.junit.Test;
 
 /**
