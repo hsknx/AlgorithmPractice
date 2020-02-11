@@ -1,4 +1,4 @@
-package Algorithm.combine.backpack;
+package Algorithm.comprehensive.backpack;
 
 /**
  *@author liujun

@@ -17,6 +17,7 @@ import Logic.check.MatrixCheck;
  *      列表部分表示，起点到当前点的路径。
  * @blogURL:
  */
+//贪心算法
 public class Dijkstra {
 
     public HashTableNode4Dijkstra[] getShortestPath(int startPoint, int[][] matrix){

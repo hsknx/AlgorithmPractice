@@ -1,4 +1,4 @@
-package Algorithm.BranchandBound;
+package Algorithm.branchandBound;
 
 /**
  * @author liujun

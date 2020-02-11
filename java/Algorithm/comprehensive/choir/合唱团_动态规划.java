@@ -1,4 +1,4 @@
-package Algorithm.combine.choir;
+package Algorithm.comprehensive.choir;
 
 import java.util.Scanner;
 
