@@ -1,6 +1,5 @@
  <h1> Welcome to join the project of AlgorithmPractice  </h1>
 
-
 ## Introduction
 + The purpose of this project is to constantly summarize and implement the data structure and algorithm problems in the interview and the actual scene. 
 
@@ -12,6 +11,11 @@
 ### special：
 + This project(java) consists of four parts：Algorithm、DataStructure、Logic、UnitTest.
 + all the projects in the java directory.
+### CodeStatistic
+|          | Algorithm | DataStructure | Logic  | total  |
+| -------- | :-----:   |    :----:     |:-----: | :-----:|
+| Code     |    34     |      78       |   24   |  136   | 
+| UT       |    23     |      50       |   4    |  77    |
 
 ## Architecture:
 + Algorithm
