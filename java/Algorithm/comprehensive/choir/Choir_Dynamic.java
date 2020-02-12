@@ -1,8 +1,6 @@
 package Algorithm.comprehensive.choir;
 
-import java.util.Scanner;
-
-/** 
+/**
  *@author liujun
  *@date： 2018-6-19 下午11:40:18
  *@author—Email:liujunfirst@outlook.com
@@ -19,57 +17,18 @@ public class Choir_Dynamic implements Choir {
 	}
 
 	public int countMaxValue(int[] array, int choseNum, int intervald) {
+
+		int arrayLength = array.length;
+		//存储正值和负值的二维矩阵
+		int[][] ValueMax = new int[choseNum][arrayLength];
+		int[][] ValueMin = new int[choseNum][arrayLength];
+		for (int i = 0; i < arrayLength; i++) {
+			for (int j = i; j < arrayLength; j++) {
+
+			}
+		}
+
 		return 0;
 	}
 
-	//学生人数以及每个学生的能力值
-	static int student_num ;
-	static long [] student_power ;
-	
-	//挑选k个学生和设置d个间距
-	static int k ,d ;
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner scan = new Scanner(System.in);
-		
-		//学生数量、学生能力值数组
-		System.out.println("请输入学生数量:");
-		student_num = scan.nextInt();
-		System.out.println("请输入每个学生能力值:");
-		student_power = new long [student_num];
-		
-		//能力值赋值
-		for (int i = 0; i < student_num; i++) {
-			student_power[i] = scan.nextInt();
-		}
-
-		//获取k个学生和设置d个间距
-		System.out.println("请输入带选取的学生数量k值:");
-		k = scan.nextInt();
-		System.out.println("请输入间距值d:");
-		d = scan.nextInt();
-		
-		//矩阵赋值
-		//二维数组，数组值表示当前最优解的值,行数表示挑选出来的k个学生，列数表示学生人数
-		//维护一个正数最大值列表
-		long [][] max_matrix = new long[k+1][student_num+1];
-		//维护一个负数最小值列表（负数最小值*最小值可以得到最大值）
-		long [][] min_matrix = new long[k+1][student_num+1];	
-		
-		//初始化矩阵——行初始化
-		for(int i=0;i<k+1;i++){
-			max_matrix[i][0] = 0;
-			min_matrix[i][0] = 0;
-		}
-		//初始化矩阵——列初始化
-		for(int j=0;j<student_num+1;j++){
-			max_matrix[0][j] = 0;
-			min_matrix[0][j] = 0;
-		}
-		
-
-		
-		
-	}
 }

@@ -25,6 +25,8 @@ public class ChoirTestDemo {
         assert value == BestValueDemo05;
         value = choir.getMaxValue(PowerDemo06, ChoseNum, intervald);
         assert value == BestValueDemo06;
+        value = choir.getMaxValue(PowerDemo07, ChoseNum, intervald);
+        assert value == BestValueDemo07;
     }
 
     //设置学生数量：K 和间距：D
@@ -37,6 +39,7 @@ public class ChoirTestDemo {
     int[] PowerDemo04 = {1, 5, -9, 7, 5, -3, 2, 8, 4, 6};
     int[] PowerDemo05 = {1, 5, -9, 7, 5, -3, 2, -8, 4, 6};
     int[] PowerDemo06 = {1, 5, -9, 7, 0, -3, 2, -8, 0, 4, 6, 5};
+    int[] PowerDemo07 = {9,1,1,1,1,1,9,1,1,9,1,1,9,9};
 
     int BestValueDemo01 = -1;
     int BestValueDemo02 = -1;
@@ -44,4 +47,5 @@ public class ChoirTestDemo {
     int BestValueDemo04 = 9072;
     int BestValueDemo05 = 15120;
     int BestValueDemo06 = 15120;
+    int BestValueDemo07 = 6561;
 }
