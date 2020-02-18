@@ -5,7 +5,7 @@ package DataStructure.tree.binaryTree.realize;
  * @date  2020-02-18 16:09
  * @description 根据按层/先/中/后序遍历的数组   创建  二叉树
  */
-public interface Array2BinaryTree {
+public interface array2BinaryTree {
 
     //按层构建二叉树
     public BinaryTreeImpl createBinaryTree(int[] array);
