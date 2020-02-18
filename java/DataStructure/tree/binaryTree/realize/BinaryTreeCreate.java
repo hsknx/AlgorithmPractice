@@ -20,6 +20,7 @@ public interface BinaryTreeCreate {
     public BinaryTreeImpl createPostOrder(BinaryTree root, int[] array);
 
     default boolean check(int[] array) {
-        return array == null ? false : array.length == 0;
+
+        return array == null ? false : array.length != 0;
     }
 }

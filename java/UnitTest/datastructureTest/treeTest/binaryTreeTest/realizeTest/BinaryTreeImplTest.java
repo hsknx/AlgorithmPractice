@@ -15,16 +15,16 @@ public class BinaryTreeImplTest extends BinaryTreeTestDemo {
 
         BinaryTreeImpl binaryTreeDemo = new BinaryTreeImpl();
 
-        binaryTreeDemo1 = null;
-        binaryTreeDemo2 = null;
-        binaryTreeDemo3 = gettreeDemo03();
-        binaryTreeDemo4 = gettreeDemo03();
+        binaryTreeImplDemo1 = null;
+        binaryTreeImplDemo2 = null;
+        binaryTreeImplDemo3 = gettreeDemo03();
+        binaryTreeImplDemo4 = gettreeDemo03();
 
-        assert binaryTreeDemo.equal(binaryTreeDemo1, binaryTreeDemo2);
-        assert !binaryTreeDemo.equal(binaryTreeDemo1, binaryTreeDemo3);
-        assert !binaryTreeDemo.equal(binaryTreeDemo1, binaryTreeDemo4);
-        assert !binaryTreeDemo.equal(binaryTreeDemo2, binaryTreeDemo3);
-        assert !binaryTreeDemo.equal(binaryTreeDemo2, binaryTreeDemo4);
-        assert binaryTreeDemo.equal(binaryTreeDemo3, binaryTreeDemo4);
+        assert binaryTreeDemo.equal(binaryTreeImplDemo1, binaryTreeImplDemo2);
+        assert !binaryTreeDemo.equal(binaryTreeImplDemo1, binaryTreeImplDemo3);
+        assert !binaryTreeDemo.equal(binaryTreeImplDemo1, binaryTreeImplDemo4);
+        assert !binaryTreeDemo.equal(binaryTreeImplDemo2, binaryTreeImplDemo3);
+        assert !binaryTreeDemo.equal(binaryTreeImplDemo2, binaryTreeImplDemo4);
+        assert binaryTreeDemo.equal(binaryTreeImplDemo3, binaryTreeImplDemo4);
     }
 }

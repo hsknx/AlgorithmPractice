@@ -9,18 +9,21 @@ public class BinaryTreeImpl implements BinaryTree {
 
     public BinaryTreeImpl left;    //左孩子
     public BinaryTreeImpl right;   //右孩子
+    public BinaryTreeImpl parent;  //父指针
     public int value = 0;          //默认二叉树的值为0
     public static int count = 0;   //定义一个全局静态计数变量
 
     public BinaryTreeImpl() {
         this.left = null;
         this.right = null;
+        this.parent = null;
         this.value = 0;
     }
 
     public BinaryTreeImpl(int value) {
         this.left = null;
         this.right = null;
+        this.parent = null;
         this.value = value;
     }
 
