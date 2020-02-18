@@ -10,6 +10,8 @@ DataStructureUT=$(find ./java/UnitTest/datastructureTest -iname "*.java" |grep  
 LogicUT=$(find ./java/UnitTest/logicTest        -iname "*.java" |grep  Test |wc -l)
 
 
-echo "      Algorithm/ - DataStructure/ -  Logic/"
-echo "Code:    $Algorithm      -    $DataStructure          -    $Logic"
-echo "UT  :    $AlgorithmUT      -    $DataStructureUT          -    $LogicUT"
+Total=$((Algorithm+DataStructure+Logic))
+TotalUT=$((AlgorithmUT+DataStructureUT+LogicUT))
+echo "       Total  - Algorithm  - DataStructure  -  Logic"
+echo "Code:  $Total    -    $Algorithm      -    $DataStructure          -    $Logic"
+echo "UT  :  $TotalUT     -    $AlgorithmUT      -    $DataStructureUT          -    $LogicUT"
