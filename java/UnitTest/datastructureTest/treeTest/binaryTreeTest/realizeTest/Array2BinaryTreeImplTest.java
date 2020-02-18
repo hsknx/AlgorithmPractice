@@ -1,7 +1,7 @@
 package UnitTest.datastructureTest.treeTest.binaryTreeTest.realizeTest;
 
-import DataStructure.tree.binaryTree.realize.BinaryTreeCreate;
-import DataStructure.tree.binaryTree.realize.BinaryTreeCreateImpl;
+import DataStructure.tree.binaryTree.realize.Array2BinaryTree;
+import DataStructure.tree.binaryTree.realize.Array2BinaryTreeImpl;
 import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
 import org.junit.Test;
 
@@ -10,9 +10,9 @@ import org.junit.Test;
  * @date 2020-02-18 18:02
  * @description
  */
-public class BinaryTreeCreateImplTest extends BinaryTreeTestDemo {
+public class Array2BinaryTreeImplTest extends BinaryTreeTestDemo {
 
-    BinaryTreeCreate binaryTreeCreate = new BinaryTreeCreateImpl();
+    Array2BinaryTree binaryTreeCreate = new Array2BinaryTreeImpl();
 
     @Test
     public void testBinaryTreeCreateImpl() {

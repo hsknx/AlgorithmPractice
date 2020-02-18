@@ -10,4 +10,6 @@ public interface BinaryTree {
     //判断两个二叉树是否相等
     public boolean equal(BinaryTreeImpl source, BinaryTreeImpl target);
 
+    //按行打印二叉树
+
 }
