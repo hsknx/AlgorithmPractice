@@ -1,7 +1,7 @@
 package DataStructure.tree.binaryTree.apply;
 
 import DataStructure.string.stringCompare.KMP;
-import DataStructure.tree.binaryTree.realize.BinaryTree;
+import DataStructure.tree.binaryTree.realize.BinaryTree1;
 
 /**
  *@author liujun
@@ -15,7 +15,7 @@ import DataStructure.tree.binaryTree.realize.BinaryTree;
  */
 public class TreeJudgeOps {
 
-	public boolean treeJudgeOps(BinaryTree tree1, BinaryTree tree2) {
+	public boolean treeJudgeOps(BinaryTree1 tree1, BinaryTree1 tree2) {
 
 		String s1PreOrder = subTreePreOrderSequence(tree1);
 		String s2PreOrder = subTreePreOrderSequence(tree2);
@@ -26,7 +26,7 @@ public class TreeJudgeOps {
 	}
 	
 	//子树序列化(先序)
-	public String subTreePreOrderSequence(BinaryTree tree) {
+	public String subTreePreOrderSequence(BinaryTree1 tree) {
 
 		if(tree == null){
 			return "";
@@ -35,7 +35,7 @@ public class TreeJudgeOps {
 	}
 	
 	//子树序列化(中序)
-	public String subTreeInOrderSequence(BinaryTree tree) {
+	public String subTreeInOrderSequence(BinaryTree1 tree) {
 
 		if(tree == null){
 			return "";

@@ -1,6 +1,6 @@
 package DataStructure.tree.binaryTree.apply;
 
-import DataStructure.tree.binaryTree.realize.BinaryTree;
+import DataStructure.tree.binaryTree.realize.BinaryTree1;
 
 /**
  *@author liujun
@@ -17,7 +17,7 @@ public class TreeJudge {
 	boolean flag = false;
 	
 	//子树判断
-	public boolean judgeTree(BinaryTree tree1, BinaryTree tree2) {
+	public boolean judgeTree(BinaryTree1 tree1, BinaryTree1 tree2) {
 		
 		if(tree1 == null || tree2 == null){
 			//此处直接return，否则进入下一个if,产生空指针异常
@@ -36,7 +36,7 @@ public class TreeJudge {
 	}
 	
 	//二叉树比对，判断二叉树是否完全一致
-	public boolean compare(BinaryTree tree1, BinaryTree tree2){
+	public boolean compare(BinaryTree1 tree1, BinaryTree1 tree2){
 		
 		//判断根节点是否相等,方法采用tree2匹配tree1，
 	    //当tree2为空时，无论tree1为何值，均可判断tree2匹配tree1。
@@ -66,8 +66,8 @@ public class TreeJudge {
 		int [] B = {8,9,-1,-1,2,-1,-1};
 		//int [] B = {9,-1,-1};
 
-		BinaryTree bta = new BinaryTree();
-		BinaryTree btb = new BinaryTree();
+		BinaryTree1 bta = new BinaryTree1();
+		BinaryTree1 btb = new BinaryTree1();
 		
 		//A数组先序遍历形成A树
 		bta.create_preOrder(bta, A, 0);

@@ -1,6 +1,6 @@
 package DataStructure.tree.binaryTree.apply;
 
-import DataStructure.tree.binaryTree.realize.BinaryTree;
+import DataStructure.tree.binaryTree.realize.BinaryTree1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +20,7 @@ public class 二叉树中最大子路径和 {
 	List<Integer> listtemp = new ArrayList<Integer>();
 	
 	//maxValue
-	public List<Integer> maxValue(BinaryTree root) {
+	public List<Integer> maxValue(BinaryTree1 root) {
 
 		if (root == null) {
 			return list;

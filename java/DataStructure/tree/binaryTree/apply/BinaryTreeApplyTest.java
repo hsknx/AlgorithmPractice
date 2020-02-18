@@ -1,6 +1,6 @@
 package DataStructure.tree.binaryTree.apply;
 
-import DataStructure.tree.binaryTree.realize.BinaryTree;
+import DataStructure.tree.binaryTree.realize.BinaryTree1;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
 public class BinaryTreeApplyTest {
 
 	public static void main(String[] args) {
-		BinaryTree root = new BinaryTree();
+		BinaryTree1 root = new BinaryTree1();
 		int [] tree_num ={1,5,7,-1,-1,-1,8,6,3,-1,-1,2,-1,-1,9,-1,-1};
 
 		//先序构建二叉树

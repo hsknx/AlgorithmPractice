@@ -1,6 +1,6 @@
 package DataStructure.tree.binaryTree.apply;
 
-import DataStructure.tree.binaryTree.realize.BinaryTree;
+import DataStructure.tree.binaryTree.realize.BinaryTree1;
 import java.util.ArrayList;
 
 /** 
@@ -24,7 +24,7 @@ public class 二叉树中和为某一值的路径_递归{
 	//所有路径list组成的all_list
 	ArrayList<ArrayList<Integer>> all_list = new ArrayList<ArrayList<Integer>>();
     
-	public ArrayList<ArrayList<Integer>> FindPath(BinaryTree root, int target) {
+	public ArrayList<ArrayList<Integer>> FindPath(BinaryTree1 root, int target) {
 		//遍历根节点
 		if(root == null){
 			//must have return 

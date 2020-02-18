@@ -1,7 +1,7 @@
 package DataStructure.tree.binaryTree.apply;
 
 
-import DataStructure.tree.binaryTree.realize.BinaryTree;
+import DataStructure.tree.binaryTree.realize.BinaryTree1;
 
 /**
  *@author liujun
@@ -12,13 +12,13 @@ import DataStructure.tree.binaryTree.realize.BinaryTree;
  */
 public class ¶þ²æÊ÷¾µÏñ {
 
-	public BinaryTree Mirro(BinaryTree root) {
+	public BinaryTree1 Mirro(BinaryTree1 root) {
 		// TODO Auto-generated method stub
 
 		if (root == null) {
 			return root;
 		}
-		BinaryTree temp = null;
+		BinaryTree1 temp = null;
 		temp = root.left;
 		root.left = root.right;
 		root.right = temp;

@@ -1,6 +1,6 @@
 package DataStructure.tree.binaryTree.apply;
 
-import DataStructure.tree.binaryTree.realize.BinaryTree;
+import DataStructure.tree.binaryTree.realize.BinaryTree1;
 
 import java.util.ArrayList;
 import java.util.Stack;
@@ -13,7 +13,7 @@ import java.util.Stack;
  * @description:
  */
 public class 二叉树中和为某一值的路径_非递归 {
-    public ArrayList<ArrayList<Integer>> FindPath(BinaryTree root, int target) {
+    public ArrayList<ArrayList<Integer>> FindPath(BinaryTree1 root, int target) {
         //路径list
         ArrayList<Integer> route_list = new ArrayList<Integer>();
         //所有路径list组成的list
@@ -22,9 +22,9 @@ public class 二叉树中和为某一值的路径_非递归 {
         //定义累加值sum匹配target
         int sum = 0;
         //定义二叉树结点
-        BinaryTree note = root;
+        BinaryTree1 note = root;
         //定义栈
-        Stack<BinaryTree> stack = new Stack<BinaryTree>();
+        Stack<BinaryTree1> stack = new Stack<BinaryTree1>();
 
         //采用先序非递归遍历来累加匹配
         while(!stack.empty() || note != null){
