@@ -10,6 +10,7 @@ import java.util.Queue;
  * 根据按层/先/中/后序遍历的数组   创建  二叉树
  */
 public class Array2BinaryTreeImpl implements Array2BinaryTree {
+
     @Override
     public BinaryTreeImpl createBinaryTree(int[] array) {
         if (!check(array)) {
