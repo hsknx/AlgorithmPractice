@@ -10,10 +10,10 @@ import org.junit.Test;
  */
 public class BinaryTreeImplTest extends BinaryTreeTestDemo {
 
-    @Test
-    public void testequals() {
+    BinaryTreeImpl binaryTreeDemo = new BinaryTreeImpl();
 
-        BinaryTreeImpl binaryTreeDemo = new BinaryTreeImpl();
+    @Test
+    public void Testequals() {
 
         binaryTreeImplDemo1 = null;
         binaryTreeImplDemo2 = null;
@@ -27,4 +27,18 @@ public class BinaryTreeImplTest extends BinaryTreeTestDemo {
         assert !binaryTreeDemo.equal(binaryTreeImplDemo2, binaryTreeImplDemo4);
         assert binaryTreeDemo.equal(binaryTreeImplDemo3, binaryTreeImplDemo4);
     }
+
+    @Test
+    public void TestprintTreebyLine() {
+
+        binaryTreeDemo.printTreebyLine(binaryTreeImplDemo1);
+        binaryTreeDemo.printTreebyLine(binaryTreeImplDemo2);
+        binaryTreeImplDemo3 = gettreeDemo03();
+        binaryTreeImplDemo4 = gettreeDemo04();
+        System.out.println("===3==");
+        binaryTreeDemo.printTreebyLine(binaryTreeImplDemo3);
+        System.out.println("===4==");
+        binaryTreeDemo.printTreebyLine(binaryTreeImplDemo4);
+    }
+
 }

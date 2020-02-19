@@ -11,5 +11,6 @@ public interface BinaryTree {
     public boolean equal(BinaryTreeImpl source, BinaryTreeImpl target);
 
     //按行打印二叉树
+    public void printTreebyLine(BinaryTreeImpl root);
 
 }

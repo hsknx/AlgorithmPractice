@@ -9,11 +9,10 @@ import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
  */
 public class BinaryTreeTestDemo {
 
-    BinaryTreeImpl binaryTreeImplDemo1;
-    BinaryTreeImpl binaryTreeImplDemo2;
-    BinaryTreeImpl binaryTreeImplDemo3;
-    BinaryTreeImpl binaryTreeImplDemo4;
-
+    BinaryTreeImpl binaryTreeImplDemo1 = null;
+    BinaryTreeImpl binaryTreeImplDemo2 = null;
+    BinaryTreeImpl binaryTreeImplDemo3 = null;
+    BinaryTreeImpl binaryTreeImplDemo4 = null;
 
     int[] treeDemo01 = {};
     int[] treeDemo02 = null;

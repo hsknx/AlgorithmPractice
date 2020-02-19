@@ -72,6 +72,8 @@ public class BinaryTreeTraversal {
 	public void clear(){
 		count = 0;
 	}
+
+
 	//二叉树的层次遍历,使用队来辅助实现
 	public void levelTraverse(BinaryTreeTraversal root){
 		// Queue is just an interface, LinkedList is Realization
