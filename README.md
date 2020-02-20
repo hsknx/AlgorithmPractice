@@ -1,12 +1,13 @@
  <h1> 算法和数据结构的java实践  </h1>
 
 ## 项目目的
-+ 用java实现一遍常用的数据结构，了解数据结构的底层原理
-+ 实现常见的面试题，并从多个角度进行分析
++ 通过动手实践了解数据结构和算法的底层原理；
++ 记录面试中遇到的面试题，并从多个角度进行分析；
++ 建立知识结构体系，下次遇见类似题目的时候，方便查找；
++ 欢迎更多志同道合的朋友一起来提升（欢迎提issue和pull request）。
 
 ## 项目结构
-![Image](../resource/1.jpg)
->>>>>>> upload image
+![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/StructureImage.jpg)
 
 ### 注意：
 + 你可以首先通过我的 [思维导图](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),对项目整体架构有个了解,
@@ -14,10 +15,10 @@
 + 最后通过跳转至我的 [GitHub](https://github.com/ljfirst/Algorithm) 查看具体的实现代码.
 
 ### 目前的代码量
-|          | Algorithm | DataStructure | Logic  | total  |
-| -------- | :-----:   |    :----:     |:-----: | :-----:|
-| Code     |    34     |      78       |   24   |  136   | 
-| UT       |    23     |      50       |   4    |  77    |
+|          | total | Algorithm | DataStructure | Logic  |
+| -------- |:-----:|  :----:   |   :-----:     | :-----:|
+| Code     |  142  |    33     |      85       |   24   |  
+| UT       |  81   |    22     |      55       |   4    | 
 
 ## 具体的项目结构:
 + Algorithm
@@ -86,3 +87,5 @@
         + mathtest
         + regulartest
         + utilsTest
+        
+#### 有知仍无畏
