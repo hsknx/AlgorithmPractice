@@ -23,10 +23,7 @@ public class BinaryTreeApplyTest {
 		System.out.println("层次遍历");
 		root.levelTraverse(root);
 		System.out.println();
-		
-		System.out.println("二叉树反转");
-		二叉树镜像 er = new 二叉树镜像();
-		root = er.Mirro(root);
+
 		
 		System.out.println("按行遍历");
 		root.printTreebyLine(root);

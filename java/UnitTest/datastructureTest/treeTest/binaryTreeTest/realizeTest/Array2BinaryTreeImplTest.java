@@ -3,6 +3,7 @@ package UnitTest.datastructureTest.treeTest.binaryTreeTest.realizeTest;
 import DataStructure.tree.binaryTree.realize.Array2BinaryTree;
 import DataStructure.tree.binaryTree.realize.Array2BinaryTreeImpl;
 import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
+import UnitTest.datastructureTest.treeTest.BinaryTreeTestDemo;
 import org.junit.Test;
 
 /**
@@ -31,5 +32,6 @@ public class Array2BinaryTreeImplTest extends BinaryTreeTestDemo {
         binaryTreeImplDemo1 = binaryTreeCreate.createBinaryTree(treeDemo04);
         binaryTreeImplDemo4 = gettreeDemo04();
         assert binaryTree.equal(binaryTreeImplDemo1, binaryTreeImplDemo4);
+
     }
 }

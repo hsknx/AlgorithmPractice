@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.treeTest.binaryTreeTest.realizeTest;
+package UnitTest.datastructureTest.treeTest;
 
 import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
 
@@ -9,18 +9,18 @@ import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
  */
 public class BinaryTreeTestDemo {
 
-    BinaryTreeImpl binaryTreeImplDemo1 = null;
-    BinaryTreeImpl binaryTreeImplDemo2 = null;
-    BinaryTreeImpl binaryTreeImplDemo3 = null;
-    BinaryTreeImpl binaryTreeImplDemo4 = null;
+    public BinaryTreeImpl binaryTreeImplDemo1 = null;
+    public BinaryTreeImpl binaryTreeImplDemo2 = null;
+    public BinaryTreeImpl binaryTreeImplDemo3 = null;
+    public BinaryTreeImpl binaryTreeImplDemo4 = null;
 
-    int[] treeDemo01 = {};
-    int[] treeDemo02 = null;
-    int[] treeDemo03 = {
+    public int[] treeDemo01 = {};
+    public int[] treeDemo02 = null;
+    public int[] treeDemo03 = {
             1,
             2, 3,
             4, 5, 6, 7};
-    int[] treeDemo04 = {
+    public int[] treeDemo04 = {
             1,
             2, 3,
             4, -1, -1, 7};
