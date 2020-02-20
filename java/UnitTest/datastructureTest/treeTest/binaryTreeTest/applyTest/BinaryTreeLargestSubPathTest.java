@@ -30,6 +30,9 @@ public class BinaryTreeLargestSubPathTest extends BinaryTreeTestDemo {
 
         arrayValue = largestSubPath.countLargestSubPath(gettreeDemo04());
         assert Arrays.equals(arrayValue,Demo04);
+
+        arrayValue = largestSubPath.countLargestSubPath(gettreeDemo05());
+        assert Arrays.equals(arrayValue,Demo05);
     }
 
     @Test
@@ -51,4 +54,5 @@ public class BinaryTreeLargestSubPathTest extends BinaryTreeTestDemo {
     int[] Demo02 = {};
     int[] Demo03 = {1,3,7};
     int[] Demo04 = {1,3,7};
+    int[] Demo05 = {1,3,7,10,16,17,18,19};
 }
