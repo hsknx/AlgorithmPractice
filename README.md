@@ -8,7 +8,7 @@
 
 ## 项目结构
 ![Image text](
-https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/StructureImage.png)
+https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/Architecture.png)
 
 ### 建议：
 + 你可以首先通过我的 [思维导图](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),对项目整体架构有个了解,
