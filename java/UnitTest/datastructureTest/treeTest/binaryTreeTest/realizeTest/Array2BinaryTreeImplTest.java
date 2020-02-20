@@ -9,7 +9,8 @@ import org.junit.Test;
 /**
  * @author liujun
  * @date 2020-02-18 18:02
- * @description
+ * @description 测试二叉树的实现
+ * 根据按层/先/中/后序遍历的 数组   创建  二叉树
  */
 public class Array2BinaryTreeImplTest extends BinaryTreeTestDemo {
 
@@ -33,5 +34,8 @@ public class Array2BinaryTreeImplTest extends BinaryTreeTestDemo {
         binaryTreeImplDemo4 = gettreeDemo04();
         assert binaryTree.equal(binaryTreeImplDemo1, binaryTreeImplDemo4);
 
+        binaryTreeImplDemo1 = binaryTreeCreate.createBinaryTree(treeDemo05);
+        binaryTreeImplDemo4 = gettreeDemo05();
+        assert binaryTree.equal(binaryTreeImplDemo1, binaryTreeImplDemo4);
     }
 }

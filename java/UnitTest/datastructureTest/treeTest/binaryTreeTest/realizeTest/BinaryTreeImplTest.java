@@ -7,7 +7,7 @@ import org.junit.Test;
 /**
  * @author liujun
  * @date 2020-02-18 18:47
- * @description 测试二叉树的equal方法
+ * @description 测试二叉树的equal方法、二叉树的按行打印
  */
 public class BinaryTreeImplTest extends BinaryTreeTestDemo {
 
