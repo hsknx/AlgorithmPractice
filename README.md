@@ -1,10 +1,13 @@
- <h1> 算法和数据结构的java实现  </h1>
+ <h1> 算法和数据结构的java实践  </h1>
 
-## Introduction
-+ 这个项目旨在收集 
+## 项目目的
++ 用java实现一遍常用的数据结构，了解数据结构的底层原理
++ 实现常见的面试题，并从多个角度进行分析
 
-### notice：
-+ You can first understand the general content of each part through my [mind map](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),
+![Image](../resource/1.jpg)
+
+### 注意：
++ 你可以首先通过我的 [思维导图](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),对项目整体架构有个了解。
 + Then jump to my [blog](https://blog.csdn.net/ljfirst) according to the link in the mind map to view the specific notes
 + Finally, visit my [GitHub](https://github.com/ljfirst/Algorithm) through the blog link to see the code implementation.
 
