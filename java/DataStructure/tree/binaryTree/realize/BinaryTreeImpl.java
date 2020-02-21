@@ -7,6 +7,9 @@ import java.util.Queue;
  * @author liujun
  * @date： 2020-02-18 16:09
  * 二叉树
+ * method one:判断两个二叉树是否相等
+ * method two:按行打印二叉树
+ * method three:判断二叉树相似
  */
 public class BinaryTreeImpl implements BinaryTree {
 
@@ -41,7 +44,7 @@ public class BinaryTreeImpl implements BinaryTree {
     @Override
     public void printTreebyLine(BinaryTreeImpl root) {
 
-        if (root==null) {
+        if (root == null) {
             return;
         }
         Queue<BinaryTreeImpl> queue = new LinkedList<>();
