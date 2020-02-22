@@ -4,7 +4,7 @@
 + 通过动手实践了解数据结构和算法的底层原理；
 + 记录面试中遇到的面试题，并从多个角度进行分析；
 + 建立知识结构体系，方便查找；
-+ 欢迎更多志同道合的朋友一起来提升（欢迎提issue和pull request）。
++ 欢迎更多志同道合的朋友加入项目[AlgorithmPractice](https://github.com/ljfirst/AlgorithmPractice)，（欢迎提issue和pull request）。
 
 ## 项目结构简图
 ![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/Architecture.png)
