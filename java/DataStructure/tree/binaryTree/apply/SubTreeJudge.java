@@ -12,23 +12,27 @@ import DataStructure.tree.binaryTree.realize.BinaryTree1;
  *compare函数对两个树进行相似判断。
  *@version 1.0
  */
-public class TreeJudge {
+public class SubTreeJudge {
 
 	boolean flag = false;
 	
 	//子树判断
-	public boolean judgeTree(BinaryTree1 tree1, BinaryTree1 tree2) {
-		
-		if(tree1 == null || tree2 == null){
+	public boolean judgeTree(BinaryTree1 tree, BinaryTree1 subtree) {
+
+		if(tree == null && subtree == null){
+			//此处直接return，否则进入下一个if,产生空指针异常
+			return true;
+		}
+		if(tree == null || subtree == null){
 			//此处直接return，否则进入下一个if,产生空指针异常
 			return false;
 		}
 		//如果值相等，进行子树判断。
-		if(tree1.value == tree2.value && compare(tree1, tree2)){
+		if(tree.value == subtree.value && compare(tree, subtree)){
 			flag = true;
 		}else {
-			if(judgeTree(tree1.left, tree2) ||
-					judgeTree(tree1.right, tree2)){
+			if(judgeTree(tree.left, subtree) ||
+					judgeTree(tree.right, subtree)){
 				flag = true;
 			}
 		}
@@ -36,22 +40,22 @@ public class TreeJudge {
 	}
 	
 	//二叉树比对，判断二叉树是否完全一致
-	public boolean compare(BinaryTree1 tree1, BinaryTree1 tree2){
+	public boolean compare(BinaryTree1 tree, BinaryTree1 subtree){
 		
-		//判断根节点是否相等,方法采用tree2匹配tree1，
-	    //当tree2为空时，无论tree1为何值，均可判断tree2匹配tree1。
-		if(tree2 ==null){
+		//判断根节点是否相等,方法采用subtree匹配tree，
+	    //当subtree为空时，无论tree为何值，均可判断subtree匹配tree。
+		if(subtree ==null){
 			return true;
 		}
 		
-		//当tree1为空，但是tree2不为空，判断tree2不是tree1的一部分。
-		if(tree1 == null && tree2 !=null){
+		//当tree为空，但是subtree不为空，判断subtree不是tree的一部分。
+		if(tree == null && subtree !=null){
 			return false;
 		}
-		//当tree1和tree2均不为空，且值相等，递归判断相同
-		if(tree1.value == tree2.value){
-			return compare(tree1.left, tree2.left)
-			&&compare(tree1.right, tree2.right);
+		//当tree和subtree均不为空，且值相等，递归判断相同
+		if(tree.value == subtree.value){
+			return compare(tree.left, subtree.left)
+			&&compare(tree.right, subtree.right);
 		}
 		
 		return false;
@@ -76,7 +80,7 @@ public class TreeJudge {
 		btb.create_preOrder(btb, B, 0);
 		
 		//子树判断
-		TreeJudge zishu = new TreeJudge();
+		SubTreeJudge zishu = new SubTreeJudge();
 	    System.out.println(zishu.judgeTree(bta,btb));
 		
 		/*TreeJudgeOps tjo = new TreeJudgeOps();

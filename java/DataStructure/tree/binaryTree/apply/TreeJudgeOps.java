@@ -51,6 +51,6 @@ public class TreeJudgeOps {
     }
 
 	public static void main(String[] args) {
-		TreeJudge g = new TreeJudge();
+		SubTreeJudge g = new SubTreeJudge();
 	}
 }

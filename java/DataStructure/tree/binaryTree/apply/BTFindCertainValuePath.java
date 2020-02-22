@@ -2,9 +2,8 @@ package DataStructure.tree.binaryTree.apply;
 
 import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
+import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @author liujun
@@ -52,6 +51,7 @@ public class BTFindCertainValuePath {
                     return diff > 0 ? 1 : -1;
                 }
             });
+
         }
     }
 
@@ -88,6 +88,43 @@ public class BTFindCertainValuePath {
     }
 
     public ArrayList<ArrayList<Integer>> FindPathStack(BinaryTreeImpl root, int Value) {
+
+        route_list = new ArrayList<Integer>();
+        all_list = new ArrayList<ArrayList<Integer>>();
+        if (Value <= 0 || root == null) {
+            return all_list;
+        }
+        Stack<BinaryTreeImpl> stack = new Stack<>();
+        int sum = 0;
+        BinaryTreeImpl node = root;
+
+        //先序遍历左孩子，再遍历右孩子
+        while (!stack.empty() || node != null) {
+
+            while (node != null && sum + node.value < Value) {
+                sum += node.value;
+                stack.push(node);
+                node = node.left;
+            }
+            if (!stack.empty()) {//出栈检查
+                if(node != null && sum + node.value == Value){
+                    stack.push(node);
+                    route_list = (ArrayList<Integer>) stack.stream().map(x -> x.value).collect(Collectors.toList());
+                    all_list.add(route_list);
+                    stack.pop();
+                }
+                node = stack.peek();
+                node = node.right;
+            }
+            if (node != null && sum + node.value == Value) {
+                stack.push(node);
+                route_list = (ArrayList<Integer>) stack.stream().map(x -> x.value).collect(Collectors.toList());
+                all_list.add(route_list);
+                stack.pop();
+            }
+
+
+        }
         return all_list;
     }
 }

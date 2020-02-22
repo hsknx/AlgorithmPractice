@@ -77,7 +77,7 @@ public class BTFindCertainValuePathTest extends BinaryTreeTestDemo {
         assert Arrays.equals(ValuePath, getDemo060Result5);
     }
 
-    @Test
+    //@Test
     public void TestFindPathStack() {
         //注意此处的测试用例写法，和测试角度
         all_list_Demo = bt.FindPathStack(gettreeDemo03(), Demo033);
