@@ -41,7 +41,7 @@ public class BTFindCertainValuePath {
 
     public void sort() {
         if (all_list.size() >= 2) {
-            Collections.sort(all_list, new Comparator<ArrayList<Integer>>() {
+            /*Collections.sort(all_list, new Comparator<ArrayList<Integer>>() {
                 @Override
                 public int compare(ArrayList<Integer> o1, ArrayList<Integer> o2) {
                     int diff = o1.size() - o2.size();
@@ -50,8 +50,9 @@ public class BTFindCertainValuePath {
                     }
                     return diff > 0 ? 1 : -1;
                 }
-            });
+            });*/
 
+            all_list= (ArrayList<ArrayList<Integer>>) all_list.stream().sorted(Comparator.comparing(ArrayList::size)).collect(Collectors.toList());
         }
     }
 

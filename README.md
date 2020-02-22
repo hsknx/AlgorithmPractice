@@ -1,15 +1,13 @@
  <h1> 算法和数据结构的Java实践  </h1>
 
-## 项目目的
-+ 通过动手实践了解数据结构和算法的底层原理；
-+ 记录面试中遇到的面试题，并从多个角度进行分析；
-+ 建立知识结构体系，方便查找；
-+ 欢迎更多志同道合的朋友加入项目[AlgorithmPractice](https://github.com/ljfirst/AlgorithmPractice)，（欢迎提issue和pull request）。
+## 项目介绍
++ 本项目通过分解各大厂的常见笔面试题，追本溯源至数据结构和算法的底层实现原理，知其然知其所以然；
++ 建立知识结构体系，方便查找，欢迎更多志同道合的朋友加入项目[AlgorithmPractice，](https://github.com/ljfirst/AlgorithmPractice)（欢迎提issue和pull request）。
 
 ## 项目结构简图
 ![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/Architecture.png)
 
-### 建议：
+### 阅读建议：
 + 首先，你可以通过我的 [思维导图](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),对项目整体架构有个了解,
 + 然后，可以跳转到我的 [博客](https://blog.csdn.net/ljfirst) 查看实现细节,
 + 最后，通过跳转至我的 [GitHub](https://github.com/ljfirst/Algorithm) 查看具体的实现代码.
