@@ -1,7 +1,6 @@
 package DataStructure.tree.binaryTree.apply;
 
 import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
-
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -23,13 +22,13 @@ import java.util.stream.Collectors;
 public class BTFindCertainValuePath {
 
     //路径list
-    ArrayList<Integer> route_list;
+    ArrayList<BinaryTreeImpl> route_list;
     //所有路径list组成的all_list
-    ArrayList<ArrayList<Integer>> all_list;
+    ArrayList<ArrayList<BinaryTreeImpl>> all_list;
 
-    public ArrayList<ArrayList<Integer>> FindPath(BinaryTreeImpl root, int Value) {
-        route_list = new ArrayList<Integer>();
-        all_list = new ArrayList<ArrayList<Integer>>();
+    public ArrayList<ArrayList<BinaryTreeImpl>> FindPath(BinaryTreeImpl root, int Value) {
+        route_list = new ArrayList<BinaryTreeImpl>();
+        all_list = new ArrayList<ArrayList<BinaryTreeImpl>>();
         if (Value <= 0 || root == null) {
             return all_list;
         }
@@ -41,6 +40,7 @@ public class BTFindCertainValuePath {
 
     public void sort() {
         if (all_list.size() >= 2) {
+            //Collections 重写 compare 方法
             /*Collections.sort(all_list, new Comparator<ArrayList<Integer>>() {
                 @Override
                 public int compare(ArrayList<Integer> o1, ArrayList<Integer> o2) {
@@ -51,18 +51,20 @@ public class BTFindCertainValuePath {
                     return diff > 0 ? 1 : -1;
                 }
             });*/
-
-            all_list= (ArrayList<ArrayList<Integer>>) all_list.stream().sorted(Comparator.comparing(ArrayList::size)).collect(Collectors.toList());
+            //stream 写法
+            all_list = (ArrayList<ArrayList<BinaryTreeImpl>>) all_list.stream().sorted(Comparator.comparing(ArrayList::size)).collect(Collectors.toList());
         }
     }
 
-    private ArrayList<ArrayList<Integer>> FindPathComponent(BinaryTreeImpl root, int Value) {
+    private ArrayList<ArrayList<BinaryTreeImpl>> FindPathComponent(BinaryTreeImpl root, int Value) {
         if (root == null) {
             return all_list;
         }
-        route_list.add((Integer) root.value);
-        //why not keep the routelist and Value at same time?
-        //because Value is not a global variable,stack will do it(the stack level retain the valve).
+        route_list.add(root);
+        /*
+        why not keep the routelist and Value at same time?
+        because Value is not a global variable,stack will do it(the stack level retain the valve).
+        */
         Value -= root.value;
 
         //解法1：当遍历到叶子结点，并且累加值为target的时候，结束
@@ -75,7 +77,7 @@ public class BTFindCertainValuePath {
         if (Value <= 0) {
             //错误写法：all_list.add(route_list);
             if (Value == 0) {
-                all_list.add(new ArrayList<Integer>(route_list));
+                all_list.add(new ArrayList<BinaryTreeImpl>(route_list));
             }
             route_list.remove(route_list.size() - 1);//退出时不保留当前值
             return all_list;
@@ -88,10 +90,10 @@ public class BTFindCertainValuePath {
         return all_list;
     }
 
-    public ArrayList<ArrayList<Integer>> FindPathStack(BinaryTreeImpl root, int Value) {
+    public ArrayList<ArrayList<BinaryTreeImpl>> FindPathStack(BinaryTreeImpl root, int Value) {
 
-        route_list = new ArrayList<Integer>();
-        all_list = new ArrayList<ArrayList<Integer>>();
+        route_list = new ArrayList<BinaryTreeImpl>();
+        all_list = new ArrayList<ArrayList<BinaryTreeImpl>>();
         if (Value <= 0 || root == null) {
             return all_list;
         }
@@ -99,33 +101,43 @@ public class BTFindCertainValuePath {
         int sum = 0;
         BinaryTreeImpl node = root;
 
-        //先序遍历左孩子，再遍历右孩子
+        //先序遍历左孩子，再遍历右孩子，判断点要写在左孩子的循环内
         while (!stack.empty() || node != null) {
 
-            while (node != null && sum + node.value < Value) {
+            while (node != null && sum + root.value <= Value) {
                 sum += node.value;
+                route_list.add(node);
                 stack.push(node);
+                if (sum == Value) {
+                    all_list.add(new ArrayList<>(route_list));
+                }
+                if (sum >= Value) {//剪枝
+                    stack.pop();
+                    break;
+                }
                 node = node.left;
             }
+
             if (!stack.empty()) {//出栈检查
-                if(node != null && sum + node.value == Value){
-                    stack.push(node);
-                    route_list = (ArrayList<Integer>) stack.stream().map(x -> x.value).collect(Collectors.toList());
-                    all_list.add(route_list);
-                    stack.pop();
+                node = stack.pop();
+                while (node.right == null && !stack.empty()) {
+                    sum -= node.value;
+                    route_list.remove(node);
+                    node = stack.pop();
                 }
-                node = stack.peek();
+                //更新 sum 和 route_list
+                while (route_list.size() > 0 && node != route_list.get(route_list.size() - 1)) {
+                    sum -= route_list.get(route_list.size() - 1).value;
+                    route_list.remove(route_list.size() - 1);
+                }
                 node = node.right;
             }
-            if (node != null && sum + node.value == Value) {
-                stack.push(node);
-                route_list = (ArrayList<Integer>) stack.stream().map(x -> x.value).collect(Collectors.toList());
-                all_list.add(route_list);
-                stack.pop();
+            //循环退出条件
+            if ((node == null || sum + node.value > Value) && stack.empty()) {
+                break;
             }
-
-
         }
+        sort();
         return all_list;
     }
 }
