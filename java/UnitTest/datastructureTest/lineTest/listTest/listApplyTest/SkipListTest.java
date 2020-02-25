@@ -15,16 +15,38 @@ public class SkipListTest {
     @Test
     public void testSkipList() {
         SkipList skipList = new SkipList();
-        for (int i = 25; i > 0; i--) {
+        for (int i = 1; i <= 30; i++) {
             skipList.add(i);
         }
-        System.out.println(skipList.SkipListlevel);
-        for (int i = 0; i < 20; i++) {
-            skipList.print();
-            System.out.println();
+        skipList.print();
+        assert skipList.SkipListlevel == 5;
+        assert skipList.SkipListnum == 30;
+
+        for (int i = 1; i <= 30; i++) {
+            assert skipList.find(i);
         }
-        System.out.println(skipList.find(22));
-        System.out.println(skipList.find(13));
-        System.out.println(skipList.find(102));
+        for (int i = 1; i <= 30; i++) {
+            assert skipList.delete(i);
+        }
+        for (int i = 1; i <= 30; i++) {
+            assert !skipList.delete(i);
+        }
+
+        assert skipList.SkipListlevel == 1;
+        assert skipList.SkipListnum == 0;
+
+        for (int i = 1; i <= 30; i++) {
+            skipList.add(i);
+        }
+        for (int i = 15; i < 22; i++) {
+            skipList.delete(i);
+        }
+        for (int i = 1; i < 18; i++) {
+            skipList.add(i);
+        }
+        for (int i = 2; i <= 30; i++) {
+            skipList.delete(i);
+        }
+        assert skipList.SkipListnum == 1;
     }
 }

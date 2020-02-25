@@ -8,7 +8,7 @@ package DataStructure.line.list.listApply;
  * @description:
  */
 //ÌøÔ¾±í½áµã
-class SkipListNode{
+class SkipListNode {
 
     int value;
     SkipListNode next;
