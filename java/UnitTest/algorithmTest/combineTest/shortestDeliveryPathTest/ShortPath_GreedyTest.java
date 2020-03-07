@@ -2,7 +2,7 @@ package UnitTest.algorithmTest.combineTest.shortestDeliveryPathTest;
 
 import Algorithm.comprehensive.shortestDeliveryPath.ShortPath;
 import Algorithm.comprehensive.shortestDeliveryPath.ShortPath_Greedy;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 /**
  * @author liujun
