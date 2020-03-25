@@ -64,5 +64,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="jarlib" level="project" />
   </component>
 </module>
