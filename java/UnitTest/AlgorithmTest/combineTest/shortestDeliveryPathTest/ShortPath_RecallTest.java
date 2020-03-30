@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.combineTest.shortestDeliveryPathTest;
+package UnitTest.AlgorithmTest.combineTest.shortestDeliveryPathTest;
 
 import Algorithm.comprehensive.shortestDeliveryPath.ShortPath;
 import Algorithm.comprehensive.shortestDeliveryPath.ShortPath_Recall;

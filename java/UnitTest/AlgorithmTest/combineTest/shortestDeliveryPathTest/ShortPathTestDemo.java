@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.combineTest.shortestDeliveryPathTest;
+package UnitTest.AlgorithmTest.combineTest.shortestDeliveryPathTest;
 
 /**
  * @author liujun

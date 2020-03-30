@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.recallTest;
+package UnitTest.AlgorithmTest.recallTest;
 
 import Algorithm.recall.OptimalSchedule;
 import org.junit.Test;

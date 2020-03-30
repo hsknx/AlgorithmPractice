@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest.PalindromeTest;
+package UnitTest.AlgorithmTest.dynamicTest.dynamicPrimaryTest.PalindromeTest;
 
 import Algorithm.dynamic.dynamicPrimary.palindrome.CreatePalindromebyDelete;
 import org.junit.Test;

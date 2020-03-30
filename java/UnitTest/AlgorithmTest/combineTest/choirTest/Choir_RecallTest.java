@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.combineTest.choirTest;
+package UnitTest.AlgorithmTest.combineTest.choirTest;
 
 import Algorithm.comprehensive.choir.Choir_Recall;
 import org.junit.Test;
