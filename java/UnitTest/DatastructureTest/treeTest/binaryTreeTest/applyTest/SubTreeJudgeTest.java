@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.treeTest.binaryTreeTest.applyTest;
+package UnitTest.DatastructureTest.treeTest.binaryTreeTest.applyTest;
 
 import DataStructure.tree.binaryTree.apply.SubTreeJudge;
 import org.junit.Test;

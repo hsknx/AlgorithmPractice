@@ -1,4 +1,4 @@
-package UnitTest.logicTest.logictest;
+package UnitTest.LogicTest.logictest;
 
 import Logic.logic.SaleStocks;
 import org.junit.Test;

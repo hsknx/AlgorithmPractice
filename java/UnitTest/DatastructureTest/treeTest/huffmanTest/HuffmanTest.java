@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.treeTest.huffmanTest;
+package UnitTest.DatastructureTest.treeTest.huffmanTest;
 
 import DataStructure.tree.huffman.Huffman;
 import org.junit.Test;

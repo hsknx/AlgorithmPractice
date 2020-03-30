@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.lineTest.arrayTest.oneDimensionalArrayTest;
+package UnitTest.DatastructureTest.lineTest.arrayTest.oneDimensionalArrayTest;
 
 import DataStructure.line.array.oneDimensionalArray.FindDiffinMonotonousArray;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.stackHeapQueueTest.stackTest.stackApplyTest;
+package UnitTest.DatastructureTest.stackHeapQueueTest.stackTest.stackApplyTest;
 
 /**
  * @author liujun

@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.treeTest;
+package UnitTest.DatastructureTest.treeTest;
 
 import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
 

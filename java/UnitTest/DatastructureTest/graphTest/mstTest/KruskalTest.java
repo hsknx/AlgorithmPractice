@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.graphTest.mstTest;
+package UnitTest.DatastructureTest.graphTest.mstTest;
 
 /**
  * @author liujun

@@ -1,7 +1,7 @@
-package UnitTest.datastructureTest.sortTest.innerSortTest.innerSortRealizeTest.normalSortTest;
+package UnitTest.DatastructureTest.sortTest.innerSortTest.innerSortRealizeTest.normalSortTest;
 
 import DataStructure.sort.innerSort.innerSortRealize.normalSort.BucketSort;
-import UnitTest.datastructureTest.sortTest.innerSortTest.innerSortRealizeTest.InnerSortRealizeDemo;
+import UnitTest.DatastructureTest.sortTest.innerSortTest.innerSortRealizeTest.InnerSortRealizeDemo;
 import org.junit.Test;
 
 /**

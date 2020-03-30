@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.lineTest.arrayTest.twoDimensionalArrayTest.applyTest;
+package UnitTest.DatastructureTest.lineTest.arrayTest.twoDimensionalArrayTest.applyTest;
 
 import DataStructure.line.array.twoDimensionalArray.twoDimensionalArrayApply.Matrix_Multiply;
 import org.junit.Test;
