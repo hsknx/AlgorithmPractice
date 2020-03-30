@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.treeTest.balanceTreeTest.radBlackTreeTest;
+package UnitTest.DatastructureTest.treeTest.balanceTreeTest.radBlackTreeTest;
 
 import DataStructure.tree.balanceBinaryTree.redBlackTree.apply.StatisticsSumofNum;
 import org.junit.Test;

@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.sortTest.innerSortTest.innerSortApplyTest;
+package UnitTest.DatastructureTest.sortTest.innerSortTest.innerSortApplyTest;
 
 import DataStructure.sort.innerSort.innerSortApply.Decompress;
 import org.junit.Test;

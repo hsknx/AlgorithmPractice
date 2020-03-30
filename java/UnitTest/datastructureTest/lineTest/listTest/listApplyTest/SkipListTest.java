@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.lineTest.listTest.listApplyTest;
+package UnitTest.DatastructureTest.lineTest.listTest.listApplyTest;
 
 import DataStructure.line.list.listApply.SkipList;
 import org.junit.Test;

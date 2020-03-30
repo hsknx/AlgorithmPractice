@@ -1,6 +1,6 @@
-package UnitTest.datastructureTest.stringTest.stringCompareTest;
+package UnitTest.DatastructureTest.stringTest.stringCompareTest;
 
-import UnitTest.datastructureTest.stringTest.StringCompareTestDemo;
+import UnitTest.DatastructureTest.stringTest.StringCompareTestDemo;
 import org.junit.Test;
 
 /**

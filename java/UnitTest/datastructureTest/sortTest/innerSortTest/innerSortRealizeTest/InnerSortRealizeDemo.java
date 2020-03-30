@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.sortTest.innerSortTest.innerSortRealizeTest;
+package UnitTest.DatastructureTest.sortTest.innerSortTest.innerSortRealizeTest;
 
 import DataStructure.sort.innerSort.innerSortRealize.SortInterface;
 import java.util.Arrays;

@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.stringTest;
+package UnitTest.DatastructureTest.stringTest;
 
 import DataStructure.string.StringCompare;
 

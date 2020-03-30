@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.stackHeapQueueTest.stackTest.stackApplyTest;
+package UnitTest.DatastructureTest.stackHeapQueueTest.stackTest.stackApplyTest;
 
 import DataStructure.stackHeapQueue.stack.stackApply.LongestEffectBrackets;
 import org.junit.Test;

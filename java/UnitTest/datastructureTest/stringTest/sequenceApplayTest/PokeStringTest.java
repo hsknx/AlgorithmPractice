@@ -1,7 +1,7 @@
-package UnitTest.datastructureTest.stringTest.sequenceApplayTest;
+package UnitTest.DatastructureTest.stringTest.sequenceApplayTest;
 
 import DataStructure.string.sequenceApply.PokeString;
-import UnitTest.datastructureTest.stringTest.sequenceTestDemo;
+import UnitTest.DatastructureTest.stringTest.sequenceTestDemo;
 import org.junit.Test;
 
 /**

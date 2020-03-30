@@ -1,7 +1,7 @@
-package UnitTest.datastructureTest.treeTest.binaryTreeTest.realizeTest;
+package UnitTest.DatastructureTest.treeTest.binaryTreeTest.realizeTest;
 
 import DataStructure.tree.binaryTree.realize.BinaryTreeImpl;
-import UnitTest.datastructureTest.treeTest.BinaryTreeTestDemo;
+import UnitTest.DatastructureTest.treeTest.BinaryTreeTestDemo;
 import org.junit.Test;
 
 /**

@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.stackHeapQueueTest.stackTest.stackRealizeTest;
+package UnitTest.DatastructureTest.stackHeapQueueTest.stackTest.stackRealizeTest;
 
 import DataStructure.stackHeapQueue.stack.stackRealize.LinkedStack;
 import org.junit.Test;

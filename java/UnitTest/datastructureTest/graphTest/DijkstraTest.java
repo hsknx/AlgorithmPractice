@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.graphTest;
+package UnitTest.DatastructureTest.graphTest;
 
 import DataStructure.graph.shortestPath.singleSourceShortestPath.Dijkstra;
 import DataStructure.line.hashTable.hashTableRealize.HashTableNode4Dijkstra;

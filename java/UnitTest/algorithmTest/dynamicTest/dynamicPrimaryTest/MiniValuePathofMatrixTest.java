@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.dynamicTest.dynamicPrimaryTest;
+package UnitTest.AlgorithmTest.dynamicTest.dynamicPrimaryTest;
 
 import Algorithm.dynamic.dynamicPrimary.MiniValuePathofMatrix;
 import org.junit.Test;

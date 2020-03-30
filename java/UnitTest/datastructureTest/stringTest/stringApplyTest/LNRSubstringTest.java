@@ -1,4 +1,4 @@
-package UnitTest.datastructureTest.stringTest.stringApplyTest;
+package UnitTest.DatastructureTest.stringTest.stringApplyTest;
 
 import DataStructure.string.stringApply.LNRSubstring;
 import org.junit.Test;

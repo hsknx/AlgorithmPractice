@@ -1,4 +1,4 @@
-package UnitTest.algorithmTest.dynamicTest.dynamicOrdinaryTest;
+package UnitTest.AlgorithmTest.dynamicTest.dynamicOrdinaryTest;
 
 /**
  * @author liujun

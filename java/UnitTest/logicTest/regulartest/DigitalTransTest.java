@@ -1,4 +1,4 @@
-package UnitTest.logicTest.regulartest;
+package UnitTest.LogicTest.regulartest;
 
 import Logic.regular.DigitalTrans;
 import org.junit.Test;

@@ -1,7 +1,7 @@
-package UnitTest.datastructureTest.stringTest.stringCompareTest;
+package UnitTest.DatastructureTest.stringTest.stringCompareTest;
 
 import DataStructure.string.stringCompare.RabinKarp;
-import UnitTest.datastructureTest.stringTest.StringCompareTestDemo;
+import UnitTest.DatastructureTest.stringTest.StringCompareTestDemo;
 import org.junit.Test;
 
 /**

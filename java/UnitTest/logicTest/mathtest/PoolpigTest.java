@@ -1,4 +1,4 @@
-package UnitTest.logicTest.mathtest;
+package UnitTest.LogicTest.mathtest;
 
 import Logic.math.Poolpig;
 import org.junit.Test;
