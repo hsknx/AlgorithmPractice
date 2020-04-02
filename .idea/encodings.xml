@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/java/UnitTest/AlgorithmTest/combineTest/choirTest/ChoirTestDemo.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/java/UnitTest/AlgorithmTest/combineTest/choirTest/Choir_DynamicTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/java/UnitTest/AlgorithmTest/combineTest/choirTest/Choir_RecallTest.java" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/java/UnitTest/LogicTest/regulartest/DigitalTransTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javaVersion/UnitTest/AlgorithmTest/combineTest/choirTest/ChoirTestDemo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javaVersion/UnitTest/AlgorithmTest/combineTest/choirTest/Choir_DynamicTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javaVersion/UnitTest/AlgorithmTest/combineTest/choirTest/Choir_RecallTest.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/javaVersion/UnitTest/LogicTest/regulartest/DigitalTransTest.java" charset="GBK" />
     <file url="PROJECT" charset="GBK" />
   </component>
 </project>
