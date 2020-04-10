@@ -18,6 +18,11 @@
 | Code     |  142  |    33     |      85       |   24   |  
 | UT       |  81   |    22     |      55       |   4    | 
 
+## 特色合集
++ [九大排序算法，一次性给你讲清楚](https://blog.csdn.net/ljfirst/article/details/102762758)
++ [常见动态规划集锦，一次性给你整明白](https://blog.csdn.net/ljfirst/article/details/103082359)
++ [五大字符串匹配算法，一次性给你忽悠瘸了](https://blog.csdn.net/ljfirst/article/details/104448266)
+
 ## 项目结构图
 ![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/AlgorithmPractice.png)
 
