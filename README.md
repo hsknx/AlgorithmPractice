@@ -11,6 +11,9 @@
 + 首先，你可以通过我的 [思维导图](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),对项目整体架构有个了解,
 + 然后，可以跳转到我的 [博客](https://blog.csdn.net/ljfirst) 查看实现细节,
 + 最后，通过跳转至我的 [GitHub](https://github.com/ljfirst/Algorithm) 查看具体的实现代码.
++ 学习入口
+  + java语言的代码入口在[javaVersion](https://github.com/ljfirst/AlgorithmPractice/tree/master/javaVersion)
+  + go语言的代码入口在[goVersion](https://github.com/ljfirst/AlgorithmPractice/tree/master/goVersion)
 
 ### 目前的代码量
 |          | Total | Algorithm | DataStructure | Logic  |
@@ -27,7 +30,7 @@
 ![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/AlgorithmPractice.png)
 
 ## 具体的项目目录结构:
-+ Algorithm
++ [Algorithm](https://github.com/ljfirst/AlgorithmPractice/tree/master/javaVersion/Algorithm)
     + combine
         + backpack
         + choir
@@ -39,7 +42,7 @@
     + recall
         + recall
         + recall_apply
-+ DataStructure
++ [DataStructure](https://github.com/ljfirst/AlgorithmPractice/tree/master/javaVersion/DataStructure)
     + graph
         + BellmanFord.java
         + Floyd.java
@@ -70,13 +73,13 @@
         + huffman
         + intervalTree
         + two_three_tree
-+  Logic
++  [Logic](https://github.com/ljfirst/AlgorithmPractice/tree/master/javaVersion/Logic)
    +  check
    +  game
    +  math
    +  regular
    + utils
-+ UnitTest
++ [UnitTest](https://github.com/ljfirst/AlgorithmPractice/tree/master/javaVersion/UnitTest)
     + algorithmTest
         + combineTest
         + dynamicTest
