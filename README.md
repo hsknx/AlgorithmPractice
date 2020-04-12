@@ -25,6 +25,7 @@
 + [九大排序算法，一次性给你讲清楚](https://blog.csdn.net/ljfirst/article/details/102762758)
 + [常见动态规划集锦，一次性给你整明白](https://blog.csdn.net/ljfirst/article/details/103082359)
 + [五大字符串匹配算法，一次性给你忽悠瘸了](https://blog.csdn.net/ljfirst/article/details/104448266)
++ [十大常见设计模式，一次性让你面试通过](https://blog.csdn.net/ljfirst/article/details/105470727)
 
 ## 项目结构图
 ![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/AlgorithmPractice.png)
