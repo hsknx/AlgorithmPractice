@@ -5,7 +5,7 @@
 + 建立知识结构体系，方便查找，欢迎更多志同道合的朋友加入项目[AlgorithmPractice，](https://github.com/ljfirst/AlgorithmPractice)（欢迎提issue和pull request）。
 
 ## 项目结构简图
-![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/Architecture.png)
+![Image text](https://github.com/ljfirst/AlgorithmPractice/blob/master/resource/ProjectArchitecture.png)
 
 ### 阅读建议：
 + 首先，你可以通过我的 [思维导图](https://www.processon.com/mindmap/5cbb5fcae4b09b16ffc06360),对项目整体架构有个了解,
