@@ -16,10 +16,10 @@
   + go语言的代码入口在[goVersion](https://github.com/ljfirst/AlgorithmPractice/tree/master/goVersion)
 
 ### 目前的代码量
-|          | Total | Algorithm | DataStructure | Logic  |
-| -------- |:-----:|  :----:   |   :-----:     | :-----:|
-| Code     |  144  |    34     |      85       |   25   |  
-| UT       |  87   |    23     |      58       |   6    | 
+|          | Total | Algorithm | DataStructure | DesignPattern |  Logic  |
+| -------- |:-----:|  :----:   |   :-----:     |    :-----:    | :-----: |
+| Code     |  173  |    34     |      85       |     29        |   25    |
+| UT       |  91   |    23     |      58       |     4         |   6     |
 
 ## 特色合集
 + [九大排序算法，一次性给你讲清楚](https://blog.csdn.net/ljfirst/article/details/102762758)
